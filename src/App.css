@@ -19,9 +19,9 @@ body{
 }
 
 :root{
-  --main: #1c1c1c;
-  --secondary: rgb(20, 20, 20, .98);
-
+  --main: rgba(20, 20, 20, .9);
+  --secondary: rgba(20, 20, 20, .98);
+  --shadow: 0 0 14px 8px rgba(0, 0, 0, 1);
 }
 
 .container{
@@ -80,7 +80,7 @@ ul{
   margin: 0 auto;
   padding-block: 40px;
   line-height: 2;
-  background: rgba(28, 28, 28, .9);
+  background-color: rgba(28, 28, 28, .9);
 }
 
 .header-logo{
@@ -265,7 +265,7 @@ ul{
 .footer-container{
   width: 100%;
   z-index: 0;
-  background-color: var(--main);
+  background-color: var(--secondary);
 }
 
 .site-footer{
@@ -356,7 +356,6 @@ ul{
     width: 90%;
     padding: 20px auto;
     z-index: 0;
-    background-color: var(--main);
     padding-bottom: 10px;
     padding-top: 40px;
     margin: 20px auto;
@@ -548,129 +547,69 @@ ul{
 }
 
 
-/*-----------------------------------MEDIA PAGE-------------------------------------------------*/
+/*-------------------------------------MENU STYLE------------------------*/
 
+.menu-page{
+  background-color: var(--main);
+  width: 85%;
+  margin: 0 auto;
+  padding: 10px;
+  box-shadow: var(--shadow);
+}
 
-.media-page{
-  display: flex;
-  flex-direction: column;
-  width: 90%;
+.menu-top{
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   margin: 0 auto;
 }
 
-  .media-page h1{
-    margin: 1em;
-    font-size: 80px;
-  }
-
-
-.photo-gallery {
-  display: grid;
-  grid-gap: 40px;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  align-items: center;
-  margin-bottom: 40px;
+.menu-nav{
+  margin: 0 auto;
+  width: 25%;
 }
-  .photo-gallery img {
-    max-width: 100%;
-    height: auto;
+  .menu-nav a{
+    align-items: center;
+    width: 33%;
+    margin-inline: 10px;
   }
-  .photo-gallery img:hover {
-    scale: 105%;
-    box-shadow: 0 0 12px 2px rgba(55, 55, 55, .8);
-    transition: 0.1s ease-in-out;
-  }
-  
 
-.video-gallery {
+
+.category{
+  display: flex;
+  flex-direction: column;
+}
+
+.category-title{
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-top: 40px;
-}
-
-.video {
-  width: 32%;
-  height: 300px;
-  margin-bottom: 40px;
-}
-
-  .video iframe {
-    border: none;
-    width: 100%;
-    height: 100%;
-    max-width: 560px;
-    max-height: 315px;
-  }
-
-@media (max-width: 600px){
-  .media-page h1{
-    margin: 1em;
-    font-size: 40px;
-  }
-  .video-gallery{
-    flex-direction: column;
-    width: 360px;
-    width: auto;
-    justify-content: center;
-  }
-  .video{
-    width: 100%;
-    margin: 20px auto;
-  }
-}
-
-
-.lightbox {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
-  display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1000; /* Ensure the lightbox is on top of other elements */
 }
 
-.lightbox img {
-  max-width: 90%; /* Adjust as needed */
-  max-height: 90vh; /* Adjust as needed */
+
+.subcategory{
+  
 }
 
-.close-button {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  padding: 8px;
-  background-color: transparent; /* Semi-transparent white background */
-  color: gray;
-  border: none;
-  cursor: pointer;
-  z-index: 1001; /* Ensure the close button is on top of the lightbox */
-  font-size: 40px;
+.subcategory-title{
+
 }
 
-.arrow-button {
-  position: absolute;
-  padding: 8px;
-  background-color: transparent; /* Semi-transparent white background */
-  border: none;
-  cursor: pointer;
-  z-index: 1001; /* Ensure the arrow button is on top of the lightbox */
-  font-size: 40px;
+
+
+.item-list{
+  display: flex;
+  flex-direction: column;
 }
 
-  .arrow-button.left {
-    left: 80px;
-  }
 
-  .arrow-button.right {
-    right: 80px;
-  }
-
+hr{
+  border:2px solid #545454;
+  width:70%;
+  margin-top:50px;
+  margin-bottom:10px;
+}
 
 /*-----------------------------------CONTACT PAGE-------------------------------------------------*/
 
@@ -893,54 +832,6 @@ textarea{
   }
 }
 
-
-/*-----------------------------------SONG LIST PAGE--------------------------------------------------*/
-
-.song-list-page{
-  display: flex;
-  flex-direction: column;
-  margin: 0 auto;
-  width: 50%;
-}
-
-.song-list-header{
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 20px;
-}
-  .song-list-header h1{
-    font-size: 80px;
-    font-weight: 400;
-    margin-bottom: 40px;
-  }
-  .song-list-header h2{
-    font-size: 30px;
-    font-weight: 100;
-  }
-
-.song-list{
-  align-items: start;
-  text-align: start;
-  line-height: 1.75;
-  margin: 20px 0;
-}
-
-
-@media (max-width: 600px){
-  .song-list-page{
-    width: 100%;
-    padding: 10px;
-  }
-  .song-list{
-    line-height: 1.75;
-  }
-  .song-list-header h1{
-    font-size: 58px;
-  }
-  .song-list-header h2{
-    font-size: 22px;
-  }
-}
 
 /*-----------------------------------SOCIAL MEDIA--------------------------------------------------*/
 
