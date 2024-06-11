@@ -1,8 +1,13 @@
+import wafflesImg from "../content/images/menu/waffles.jpg";
+import omelettesImg from "../content/images/menu/omelettes.jpg";
+import veggiesImg from "../content/images/menu/veggies.jpg";
+
 const breakfastItems = [
   {
     id: 1,
     title: "2 Egg Classics and Scramblers",
     info: "All Egg Breakfasts Served with Two Eggs, Home Fries, and Toast OR Biscuits 'n' Gravy. (Substitute Croissant or Bagel, Add $1.50) (Gluten free Bread $2.25)",
+    image: omelettesImg,
     items: [
       { name: "JUST EGGS (2 Eggs)", price: "9.99", description: "" },
       { name: "APPLEWOOD SMOKED BACON (4 Strips)", price: "13.99", description: "" },
@@ -37,6 +42,7 @@ const breakfastItems = [
     id: 2,
     title: "Eggs Benedict",
     info: "On an English Muffin, topped with Hollandaise, served with Home Fries",
+    image: omelettesImg,
     items: [
       {
         name: "TRADITIONAL (Ham)",
@@ -72,7 +78,8 @@ const breakfastItems = [
   {
     id: 3,
     title: "Omelettes",
-    info: "Made with Three Eggs, Served with Toast OR Biscuits ‘n‛ Gravy AND Home Fries (substitute Croissant or Bagel, Add 1.50), (Gluten Free Toast 2.25).Watching your cholesterol? All Omelettes can be made with no yolks! (Egg Beaters - add  $3.00)",
+    info: "Made with Three Eggs, Served with Toast OR Biscuits ‘n‛ Gravy AND Home Fries (substitute Croissant or Bagel, Add 1.50), (Gluten Free Toast 2.25). Watching your cholesterol? All Omelettes can be made with no yolks! (Egg Beaters - add  $3.00)",
+    image: omelettesImg,
     items: [
       {
         name: "SIDE STREET SPECIAL",
@@ -122,6 +129,7 @@ const breakfastItems = [
     id: 4,
     title: "South of the Border",
     info: "",
+    image: omelettesImg,
     items: [
       {
         name: "Erik's Omelette",
@@ -145,8 +153,35 @@ const breakfastItems = [
   },
   {
     id: 5,
+    title: "Fan Favorites",
+    info: "",
+    image: omelettesImg,
+    items: [
+      {
+        name: "Breakfast Club Sandwich",
+        price: "13.99",
+        description:
+          "Scrambled Eggs with Bacon and Cheddar Cheese on a large English Muffin. Served with Home Fries.",
+      },
+      {
+        name: "Corned Beef Hash",
+        price: "15.99",
+        description:
+          "Homemade! With Sautéed Mushrooms, Onions Parsley, Sliced Tomatoes and 2 Eggs Any Style. Choice of Toast or Biscuits ‘n‛ Gravy.",
+      },
+      {
+        name: "The Whiplash Sandwich",
+        price: "14.99",
+        description:
+          "Fried Eggs with Bacon, Sausage and Cheddar Cheese n a choice of bread. Served with Home Fries.",
+      },
+    ],
+  },
+  {
+    id: 6,
     title: "Waffles",
     info: "Made from scratch, Belgian style, lightly dusted with Powdered Sugar and Cinnamon",
+    image: omelettesImg,
     items: [
       { name: "WAFFLE (Plain)", price: "9.99", description: "" },
       { name: "PECAN WAFFLE", price: "10.99", description: "" },
@@ -166,9 +201,10 @@ const breakfastItems = [
     ],
   },
   {
-    id: 6,
+    id: 7,
     title: "Pancakes",
     info: "",
+    image: omelettesImg,
     items: [
       { name: "BUTTERMILK PANCAKES (2 LARGE)", price: "8.99", description: "" },
       { name: "BLUEBERRY PANCAKES", price: "9.99", description: "with Whipped Cream" },
@@ -191,9 +227,10 @@ const breakfastItems = [
     ],
   },
   {
-    id: 7,
+    id: 8,
     title: "Not So Hungry",
     info: "",
+    image: omelettesImg,
     items: [
       { name: "CROISSANT", price: "5.99", description: "w/ Butter and Jelly" },
       { name: "BAGEL & CREAM CHEESE", price: "5.99", description: "" },
@@ -209,9 +246,10 @@ const breakfastItems = [
     ],
   },
   {
-    id: 8,
+    id: 9,
     title: "Side Orders",
     info: "",
+    image: omelettesImg,
     items: [
       { name: "APPLEWOOD SMOKED BACON (4 Strips)", price: "6.99", description: "" },
       { name: "TURKEY SAUSAGE (4 Links)", price: "5.99", description: "" },
@@ -243,38 +281,14 @@ const breakfastItems = [
       { name: "SIDE OF CHICKEN BREAST", price: "4.99", description: "" },
     ],
   },
-  {
-    id: 9,
-    title: "Fan Favorites",
-    info: "",
-    items: [
-      {
-        name: "Breakfast Club Sandwich",
-        price: "13.99",
-        description:
-          "Scrambled Eggs with Bacon and Cheddar Cheese on a large English Muffin. Served with Home Fries.",
-      },
-      {
-        name: "Corned Beef Hash",
-        price: "15.99",
-        description:
-          "Homemade! With Sautéed Mushrooms, Onions Parsley, Sliced Tomatoes and 2 Eggs Any Style. Choice of Toast or Biscuits ‘n‛ Gravy.",
-      },
-      {
-        name: "The Whiplash Sandwich",
-        price: "14.99",
-        description:
-          "Fried Eggs with Bacon, Sausage and Cheddar Cheese n a choice of bread. Served with Home Fries.",
-      },
-    ],
-  },
 ];
 
 const lunchItems = [
   {
     id: 1,
     title: "Sandwiches",
-    info: "Served with your choice of One Side: Homemade Potato Salad, Cole Slaw, Cottage Cheese, Fresh Fruit, or French Fries",
+    info: "Most of our sandwiches are served on White, Wheat, Rye, Sourdough or 7-Grain Bread (gluten free bread +$2.25). Sub a Croissant or French Roll, or add Cheese +$1.50. All include your choice of French Fries, Cole Slaw, Potato Salad, Soup or Mixed Green Salad (add Onion Rings or Sweet Potato Fries +$1.50). WE USE ABF FRESH CHICKEN BREASTS.",
+    image: omelettesImg,
     items: [
       {
         name: "ALBACORE TUNA SANDWICH",
@@ -318,65 +332,226 @@ const lunchItems = [
         description:
           "Chicken Breast, Bacon, Tomato, Avocado, Lettuce and Swiss Cheese on Grilled Wheat",
       },
+      {
+        name: "CALIFORNIA MELT",
+        price: "13.99",
+        description: "Turkey, Avocado, Bacon and Jack Cheese on Grilled Sourdough",
+      },
+      {
+        name: "TUNA AVOCADO SWISS MELT",
+        price: "13.99",
+        description: "on Grilled Sourdough",
+      },
+      {
+        name: "REUBEN",
+        price: "11.99",
+        description: "Corned Beef or Turkey on Grilled Rye with Swiss Cheese and Sauerkraut",
+      },
+      {
+        name: "BEEFEATER",
+        price: "11.99",
+        description: "Roast Beef on Grilled Sourdough with Ortega Chilies and Jack Cheese",
+      },
+      {
+        name: "SUZANNE'S LUNCH",
+        price: "13.99",
+        description:
+          "Grilled French Garlic Roll stuffed with Turkey, Jack Cheese, Ortega Chilies and Tomato",
+      },
+      {
+        name: "GRILLED HAM and CHEESE",
+        price: "9.99",
+        description: "",
+      },
+      {
+        name: "GRILLED CHEESE",
+        price: "8.99",
+        description: "",
+      },
+      {
+        name: "BBQ TRI-TIP",
+        price: "14.99",
+        description: "on a French Roll",
+      },
+      {
+        name: "FRENCH DIP",
+        price: "14.99",
+        description: "with Au Jus on a French Roll",
+      },
+      {
+        name: "BEEF PHILLY",
+        price: "15.99",
+        description: "with Onions, Bell Pepper and Jack Cheese",
+      },
+      {
+        name: "SIDE STREET CLUB",
+        price: "13.99",
+        description: "Turkey, Ham, Bacon, Swiss and American Cheese, Lettuce, Tomato and Mayo",
+      },
+      {
+        name: "TURKEY SANDWICH",
+        price: "9.99",
+        description: "",
+      },
+      {
+        name: "HAM SANDWICH",
+        price: "9.99",
+        description: "",
+      },
+      {
+        name: "ROAST BEEF or CORNED BEEF",
+        price: "10.99",
+        description: "",
+      },
+      {
+        name: "TUNA SALAD SANDWICH",
+        price: "10.99",
+        description: "",
+      },
+      {
+        name: "CHICKEN SALAD SANDWICH",
+        price: "10.99",
+        description: "",
+      },
+      {
+        name: "BACON, LETTUCE and TOMATO",
+        price: "10.99",
+        description: "(add Avocado +$2.95)",
+      },
+      {
+        name: "VEGGIE SANDWICH",
+        price: "12.99",
+        description: "Lettuce, Sprouts, Avocado, Cucumber, Swiss Cheese and Tomato",
+      },
+      {
+        name: "HEALTHY ROLL-UPS",
+        price: "13.99",
+        description:
+          "Choice of Turkey, Chicken Salad, Tuna Salad, Roast Beef with Swiss Cheese, Avocado, Sprouts, Lettuce and Tomatoes Rolled in Whole Wheat Wrap with Brown Mustard and Mayo",
+      },
+      {
+        name: "MALIBU CHICKEN SANDWICH",
+        price: "14.99",
+        description: "Chicken, Ham, Swiss, Avocado, Lettuce and Tomato",
+      },
+      {
+        name: "CHICKEN PHILLY",
+        price: "13.99",
+        description: "with Onions, Bell Pepper and Jack Cheese",
+      },
     ],
   },
   {
     id: 2,
-    title: "Hot Sandwiches",
-    info: "Served with Mashed Potatoes, Vegetables and Gravy",
+    title: "Hamburgers",
+    info: "All burgers are served with your choice of French Fries, Potato Salad, Cole Slaw, Soup, or Mixed Green Salad (Sub Onion Rings or Sweet Potato Fries +$1.00)",
     items: [
       {
-        name: "HOT TURKEY SANDWICH",
-        price: "14.99",
+        name: "BURGER",
+        price: "9.99",
+        description: "(with Cheese +$1.50)",
+      },
+      {
+        name: "ORTEGA JACK BURGER",
+        price: "11.99",
         description: "",
       },
       {
-        name: "HOT BEEF SANDWICH",
-        price: "14.99",
+        name: "CHEDDAR AVOCADO BURGER",
+        price: "13.99",
         description: "",
+      },
+      {
+        name: "GARDEN VEGGIE BURGER",
+        price: "12.99",
+        description: "Sprouts, Tomato, Onion and Avocado",
+      },
+      {
+        name: "PATTY MELT (on Rye)",
+        price: "11.99",
+        description: "with American Cheese and Grilled Onion",
+      },
+      {
+        name: "SIDE STREET BURGER",
+        price: "14.99",
+        description:
+          "with Corned Beef, American and Swiss Cheese, Bacon, Avocado, Mushrooms and Grilled Onions",
+      },
+      {
+        name: "HICKORY BURGER",
+        price: "13.99",
+        description: "Bacon, Jack Cheese, BBQ Sauce topped with an Onion Ring",
+      },
+      {
+        name: "CALIFORNIA BURGER",
+        price: "12.99",
+        description: "Avocado and Sprouts",
+      },
+      {
+        name: "SOURDOUGH MELT BURGER",
+        price: "11.99",
+        description: "with Tomato, Grilled Onions and American Cheese",
       },
     ],
   },
   {
     id: 3,
-    title: "Burgers",
-    info: "Served with your choice of One Side: Homemade Potato Salad, Cole Slaw, Cottage Cheese, Fresh Fruit, or French Fries",
+    title: "Soups and Salads",
+    info: "Served with Garlic Toast and choice of dressing. (Sorry NO SOUP ON THE WEEKENDS)",
     items: [
       {
-        name: "Side Street Burger",
-        price: "14.99",
-        description: "Avocado, Bacon, Lettuce, Tomato, American Cheese, Pickles, and Onions",
+        name: "SOUP OF THE DAY",
+        price: "4.99/$5.99",
+        description: "",
       },
       {
-        name: "TRADITIONAL BURGER",
-        price: "11.99",
+        name: "SOUP and Garden Salad",
+        price: "8.99",
+        description: "",
+      },
+      {
+        name: "BOWL SOUP or SALAD and 1/2 SANDWICH",
+        price: "8.99",
+        description: "(Choice of Ham, Turkey, Tuna, Roast Beef or Chicken Salad)",
+      },
+      {
+        name: "SIDE SALAD",
+        price: "4.99",
+        description: "(Accompanied with Meal - $2.50)",
+      },
+      {
+        name: "GRILLED CHICKEN SALAD",
+        price: "13.99",
         description:
-          "with Lettuce, Tomato, Onion, Pickles and 1000 Island Dressing (Add Cheese $1.00)",
+          "Grilled Chicken Breast over Tossed Greens, Red Onion, Cucumber Slices, Tomatoes, Sliced Hard Boiled Egg",
       },
       {
-        name: "CALIFORNIA BURGER",
-        price: "12.99",
-        description: "Avocado, Lettuce, Tomato and Swiss Cheese",
-      },
-      {
-        name: "BACON CHEESEBURGER",
-        price: "12.99",
-        description: "American Cheese, Lettuce, Tomato and Bacon",
-      },
-      {
-        name: "MUSHROOM BURGER",
-        price: "12.99",
-        description: "Swiss Cheese, Grilled Mushrooms, Lettuce, Tomato and Onion",
-      },
-      {
-        name: "GUACAMOLE BACON BURGER",
+        name: "CHEF SALAD",
         price: "14.99",
-        description: "Pepper Jack Cheese, Bacon, Lettuce, Tomato, Guacamole, Pickles and Onion",
+        description:
+          "Ham and Turkey, Red Onion, Cheddar and Jack Cheese, Hard-Boiled Egg, Bacon, Tomatoes on a bed of Fresh Lettuce",
       },
       {
-        name: "ORTEGA BURGER",
-        price: "12.99",
-        description: "Jack Cheese, Ortega Chile, Lettuce and Tomato",
+        name: "CHICKEN SALAD or TUNA SALAD",
+        price: "13.99",
+        description:
+          "Generous Scoop of Homemade Tuna/Chicken Salad on Crisp Salad Greens, Red Onion, Tomato, Sliced Hard-Boiled Egg and Cucumber",
+      },
+      {
+        name: "CAESAR SALAD",
+        price: "10.99",
+        description: "Add Chicken +$2.50",
+      },
+      {
+        name: "SPINACH SALAD",
+        price: "13.99",
+        description:
+          "Leaf Spinach topped with Crumbled Egg, Bacon, Mushrooms, Tomato. Served with Hot Bacon Dressing",
+      },
+      {
+        name: "SHELLY'S CHINESE CHICKEN SALAD",
+        price: "14.99",
+        description: "Shredded Chicken Breast served over Tossed Greens, Chopped",
       },
     ],
   },
@@ -384,6 +559,7 @@ const lunchItems = [
     id: 4,
     title: "Sides",
     info: "",
+    image: omelettesImg,
     items: [
       { name: "French Fries", price: "5.99", description: "" },
       { name: "Fresh Fruit", price: "5.99", description: "" },
@@ -402,6 +578,7 @@ const drinkItems = [
     id: 1,
     title: "Drinks",
     info: "",
+    image: omelettesImg,
     items: [
       { name: "COFFEE", price: "3.50", description: "" },
       { name: "COLD BREW COFFEE", price: "4.25", description: "" },

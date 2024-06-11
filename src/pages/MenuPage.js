@@ -1,6 +1,8 @@
 import React from "react";
 import { breakfastItems, lunchItems, drinkItems } from "../data/menuItems";
 
+// Consider compartmentalizing
+
 const MenuPage = () => {
   return (
     <div className="menu-page">
@@ -32,35 +34,31 @@ const MenuPage = () => {
           <hr />
         </section>
 
-        {/* 2 Egg Classics and Scramblers */}
-        <div className="subcategory">
-          <h2 className="subcategory-title">{}</h2>
-          <p className="subcategory-info">{}</p>
-          <div className="item-row">
-            <div className="item-list">{}</div>
+        {breakfastItems.map((category) => (
+          <div key={category.id} className="subcategory">
+            <div className="subcategory-image">
+              <img src={category.image} />
+            </div>
+            <div>
+              <div className="subcategory-title">
+                <h2>{category.title}</h2>
+                <p>{category.info}</p>
+              </div>
+              <div className="items-container">
+                {/* Map over items in each category */}
+                {category.items.map((item, index) => (
+                  <div key={index} className="menu-item">
+                    <div className="item-row">
+                      <h3>{item.name}</h3>
+                    </div>
+                    <p className="item-info">{item.description}</p>
+                    <p className="item-price">${item.price}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
-        </div>
-
-        {/* Eggs Benedict */}
-        <div className="subcategory">
-          <h2 className="subcategory-title"></h2>
-        </div>
-
-        {/* Omelettes */}
-
-        {/* South of the Border */}
-
-        {/* Waffles */}
-
-        {/* Pancakes */}
-
-        {/* French Toast */}
-
-        {/* Not So Hungry */}
-
-        {/* Side Orders */}
-
-        {/* Fan Favorites */}
+        ))}
       </div>
 
       {/* LUNCH */}
@@ -71,11 +69,31 @@ const MenuPage = () => {
           <hr />
         </section>
 
-        {/* Burgers */}
-
-        {/* Sandwiches */}
-
-        {/* Soups and Salads */}
+        {lunchItems.map((category) => (
+          <div key={category.id} className="subcategory">
+            <div className="subcategory-image">
+              <img src={category.image} />
+            </div>
+            <div>
+              <div className="subcategory-title">
+                <h2>{category.title}</h2>
+                <p>{category.info}</p>
+              </div>
+              <div className="items-container">
+                {/* Map over items in each category */}
+                {category.items.map((item, index) => (
+                  <div key={index} className="menu-item">
+                    <div className="item-row">
+                      <h3>{item.name}</h3>
+                    </div>
+                    <p className="item-info">{item.description}</p>
+                    <p className="item-price">${item.price}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        ))}
       </div>
 
       {/* DRINKS */}
@@ -85,8 +103,27 @@ const MenuPage = () => {
           <h2>Drinks</h2>
           <hr />
         </section>
-
-        <div>{}</div>
+        {drinkItems.map((category) => (
+          <div key={category.id} className="subcategory">
+            <div className="subcategory-image">
+              <img src={category.image} />
+            </div>
+            <div>
+              <div className="items-container">
+                {/* Map over items in each category */}
+                {category.items.map((item, index) => (
+                  <div key={index} className="menu-item">
+                    <div className="item-row">
+                      <h3>{item.name}</h3>
+                    </div>
+                    <p className="item-info">{item.description}</p>
+                    <p className="item-price">${item.price}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        ))}
       </div>
 
       <div className="menu-bottom">
