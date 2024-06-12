@@ -48,7 +48,7 @@ const MenuPage = () => {
                 {/* Map over items in each category */}
                 {category.items.map((item, index) => (
                   <div key={index} className="menu-item">
-                    <div className="item-row">
+                    <div className="">
                       <h3>{item.name}</h3>
                     </div>
                     <p className="item-info">{item.description}</p>
@@ -83,7 +83,7 @@ const MenuPage = () => {
                 {/* Map over items in each category */}
                 {category.items.map((item, index) => (
                   <div key={index} className="menu-item">
-                    <div className="item-row">
+                    <div className="">
                       <h3>{item.name}</h3>
                     </div>
                     <p className="item-info">{item.description}</p>
@@ -108,19 +108,14 @@ const MenuPage = () => {
             <div className="subcategory-image">
               <img src={category.image} />
             </div>
-            <div>
-              <div className="items-container">
-                {/* Map over items in each category */}
-                {category.items.map((item, index) => (
-                  <div key={index} className="menu-item">
-                    <div className="item-row">
-                      <h3>{item.name}</h3>
-                    </div>
-                    <p className="item-info">{item.description}</p>
-                    <p className="item-price">${item.price}</p>
-                  </div>
-                ))}
-              </div>
+            <div className="drink-container">
+              {/* Map over items in each category */}
+              {category.items.map((item, index) => (
+                <div key={index} className="menu-item drink">
+                  <h3>{item.name}</h3>
+                  <p className="drink-price">${item.price}</p>
+                </div>
+              ))}
             </div>
           </div>
         ))}

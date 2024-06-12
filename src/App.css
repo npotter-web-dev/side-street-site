@@ -547,7 +547,7 @@ ul{
 }
 
 
-/*-------------------------------------MENU STYLE------------------------*/
+/*-------------------------------------MENU PAGE------------------------*/
 
 .menu-page{
   background-color: var(--main);
@@ -603,7 +603,7 @@ ul{
   justify-content: center;
   max-width: 100%;
   margin: 10px auto;
-  border: 2px dotted;
+  /* border: 2px dotted; */
 }
 
 .subcategory-image{
@@ -636,7 +636,7 @@ ul{
   flex-wrap:wrap;
   justify-content: space-evenly;
   align-items: baseline;
-  border: 2px solid;
+  /* border: 2px solid; */
   height: fit-content;
 }
 
@@ -655,6 +655,7 @@ ul{
   font-size: 18px;
 }
 
+
 .item-info{
   width: 75%;
   font-size: 14px;
@@ -671,56 +672,55 @@ ul{
   font-weight: 500;
 }
 
+.drink-container{
+  display:table-column;
+  column-count: 2;
+  column-gap: 0;
+  border: 2px solid;
+  height: fit-content;
+  width: 100%;
+  margin: 0 auto;
+
+  
+}
+
+.drink{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: 2px solid;
+  min-width: 50%;
+  max-width: 50%;
+}
+
+.drink-row{
+}
+
 /*-----------------------------------CONTACT PAGE-------------------------------------------------*/
 
 .contact-container{
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
-  margin: 0 auto;
-  padding-block: 11em;
+  justify-content: right;
+  height: 100%;
 }
 
-.contact-left{
+.contact-right{
   display: flex;
   flex-direction: column;
   text-align: center;
   line-height: 2.5;
+  background-color: var(--main);
+  background-position: 50% 100%;
+  width: 50%;
+  height: 100%;
 }
-  .contact-left h1{
+  .contact-right h1{
     font-size: 40px;
     font-weight: bold;
   }
 
-.input-container{
-  display: flex;
-  flex-direction: column;
-}
-
-.input-container input, textarea{
-background: transparent;
-border: none;
-border-bottom: 1px solid white;
-outline: none; /*Remove input focus outline*/
-margin-top: 4px;
-padding: 8px;
-margin-inline: 2px;
-resize: none;
-}
-
-.input-container::placeholder{
-  font-size: 20px;
-}
-
-textarea{
-  height: 6em;
-}
-
-.input-row{
-  display: flex;
-  flex-direction: row;
-}
 
 @media (max-width: 600px){
   .contact-container{
@@ -729,168 +729,8 @@ textarea{
     margin: 0 auto;
     padding-block: 2em;
   }
-
-  .input-row{
-    flex-direction: column;
-  }
 }
 
-
-.contact-submit{
-  border-radius: 5px;
-  border: 1px solid #ccc;
-  background-color: transparent;
-  width: 30%;
-  padding: 4px;
-  text-align: center;
-  margin: 10px auto;
-  text-decoration: none;
-}
-  .contact-submit:hover{
-    color: rgb(0, 69, 133);
-    text-shadow: 0px 2px 2px rgba(0, 0, 0, 1);
-  }
-
-
-.mail-chimp{
-  color: #141414;
-}
-
-/*-----------------------------------BAND BIOS PAGE-------------------------------------------------*/
-
-.band-bio-page{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.bio-heading{
-  width: 50%;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  margin: 40px auto;
-}
-
-.band-bio{
-  font-size: 18px;
-  font-weight: 100;
-  line-height: 2;
-}
-
-.member-container{
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-
-.member-preview{
-  display: flex;
-  flex-direction: row;
-  height: fit-content;
-}
-
-.member-preview.mirror{
-  transform: scaleX(-1);
-}
-.mirror .member-bio-container{
-  transform: scaleX(-1);
-}
-
-.member-title{
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  margin: 10px auto;
-  font-size: 40px;
-  text-shadow: 0px 2px 4px rgba(0, 0, 0, 1);
-}
-
-.member-img-container{
-  display: flex;
-  flex-direction: column;
-  width: 50%;
-}
-
-.member-img{
-  width: 100%;
-  box-shadow: 0 0 8px 2px rgba(0, 0, 0, 1);
-}
-
-.member-bio-container{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 50%;
-  margin: 2px 2px;
-  padding: 0 0 0 16px;
-}
-
-.member-bio{
-  width: 50%;
-  text-align: center;
-  font-size: 18px;
-  font-weight: 100;
-}
-
-@media (max-width: 600px){
-
-  .bio-heading{
-    width: 100%;
-    text-align: start;
-    margin: 0 auto;
-    padding: 10px;
-  }
-
-  .bio-heading h1{
-    line-height: 1.5;
-    font-size: 48px;
-  }
-
-  .band-bio{
-    line-height: 1.5;
-  }
-
-  .member-container{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin-bottom: 40px;
-  }
-
-  .member-preview{
-    flex-direction: column;
-  }
-
-  .member-preview.mirror{
-    transform: scaleX(1);
-  }
-  .mirror .member-bio-container{
-    transform: scaleX(1);
-  }
-
-  .member-img-container{
-    width: 100%;
-  }
-
-  .member-img{
-    width: 100%;
-    box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
-    margin-top: 20px;
-  }
-
-  .member-bio-container{
-    width: 100%;
-    margin: 0;
-    padding: 0 10px;
-  }
-
-  .member-bio{
-    width: 100%;
-    text-align: start;
-  }
-}
 
 
 /*-----------------------------------SOCIAL MEDIA--------------------------------------------------*/

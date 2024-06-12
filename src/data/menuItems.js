@@ -445,6 +445,7 @@ const lunchItems = [
     id: 2,
     title: "Hamburgers",
     info: "All burgers are served with your choice of French Fries, Potato Salad, Cole Slaw, Soup, or Mixed Green Salad (Sub Onion Rings or Sweet Potato Fries +$1.00)",
+    image: omelettesImg,
     items: [
       {
         name: "BURGER",
@@ -498,6 +499,7 @@ const lunchItems = [
     id: 3,
     title: "Soups and Salads",
     info: "Served with Garlic Toast and choice of dressing. (Sorry NO SOUP ON THE WEEKENDS)",
+    image: omelettesImg,
     items: [
       {
         name: "SOUP OF THE DAY",
@@ -559,7 +561,7 @@ const lunchItems = [
     id: 4,
     title: "Sides",
     info: "",
-    image: omelettesImg,
+    image: "",
     items: [
       { name: "French Fries", price: "5.99", description: "" },
       { name: "Fresh Fruit", price: "5.99", description: "" },
@@ -588,7 +590,7 @@ const drinkItems = [
       { name: "SODA (One Refill)", price: "3.00", description: "" },
       { name: "LEMONADE", price: "3.00", description: "" },
       { name: "MILK", price: "3.50/4.00", description: "" },
-      { name: "HOT CHOCOLATE", price: "3.90", description: "with Whipped Cream" },
+      { name: "HOT CHOCOLATE", price: "3.90", description: "" },
       { name: "CHOCOLATE MILK", price: "3.00/4.25", description: "" },
       { name: "CRANBERRY JUICE", price: "3.25/4.99", description: "" },
       { name: "GRAPEFRUIT JUICE", price: "3.25/4.99", description: "" },
