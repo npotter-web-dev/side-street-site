@@ -11,16 +11,19 @@
 body{
   /* background: #1c1c1c; */
   z-index: 0;
-  background-image: url('./content/images/wallpaperflare.com_wallpaper.jpg');
-  background-size: cover;
-  background-position: 50% 0;
+  /* background-image: url('./content/images/country-cafe.jpeg'); */
+  /* background-image: url('./content/images/wallpaperflare.com_wallpaper.jpg'); */
+  background-size: 100%;
+  background-position: 50% 50%;
   background-repeat: no-repeat;
   background-attachment: fixed; 
 }
 
 :root{
-  --main: rgba(20, 20, 20, .9);
+  --main: rgba(255, 255, 255, 0.9);
+  /* --main: rgba(20, 20, 20, .9); */
   --secondary: rgba(20, 20, 20, .98);
+  --sage: rgba(186, 184, 108, .8);
   --shadow: 0 0 14px 8px rgba(0, 0, 0, 1);
 }
 
@@ -34,7 +37,8 @@ body{
   max-width: 100vw;
   height: 100%;
   margin: 0 auto;
-  color: #ffffff;
+  color: black;
+  /* color: #ffffff; */
 }
 @media (max-width: 600px){
   .app{
@@ -43,6 +47,11 @@ body{
     width: 100%;
     justify-content: center;
   }
+}
+
+h1, h2 {
+  color: rgb(112, 130, 56);
+  /* color: rgb(178, 172, 136); */
 }
 
 /*-----------------------------------------HEADER-------------------------------------------*/
@@ -80,7 +89,7 @@ ul{
   margin: 0 auto;
   padding-block: 40px;
   line-height: 2;
-  background-color: rgba(28, 28, 28, .9);
+  background-color: rgba(255, 251, 200, 0.9);
 }
 
 .header-logo{
@@ -146,7 +155,7 @@ ul{
   justify-content: flex-end;
   width: 100%;
   max-width: 100%;
-  background-color: var(--secondary);
+  background-color: var(--sage);
 }
 
 .navbar-options{
@@ -258,14 +267,12 @@ ul{
 }
 
 
-
-
 /*-----------------------------------FOOTER--------------------------------------------------*/
 
 .footer-container{
   width: 100%;
   z-index: 0;
-  background-color: var(--secondary);
+  background-color: var(--sage);
 }
 
 .site-footer{
@@ -391,6 +398,7 @@ ul{
 .page-container{
   display: flex;
   flex-direction: row;
+  min-height: 900px;
   z-index: 0;
 }
 @media (max-width: 600px){
@@ -439,20 +447,26 @@ ul{
 
 
 .home-img{
-  background-image: url('./content/images/wallpaperflare.com_wallpaper.jpg');
+  background-image: url('./content/images/country-cafe.jpeg');
   background-size: cover;
   background-position: 50% 0;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  width: 100%;
 }
 
 .home-container{
   display: flex;
   flex-direction: column;
+  font-size: 18px;
+  font-weight: 100;
+}
+
+.home-main{
   width: 50%;
+  height: 800px;
   padding: 40px 40px;
   text-align: center;
-  z-index: 1;
   background-color: var(--main);
 }
 
@@ -478,7 +492,6 @@ ul{
   margin: 10px auto;
 }
 
-
 .home-info{
   display: flex;
   flex-direction: column;
@@ -486,12 +499,23 @@ ul{
   align-items: center;
   text-align: center;
   width: 50%;
-  font-size: 18px;
-  font-weight: 100;
   line-height: 2;
   margin: 0 auto;
 }
 
+.home-bio{
+  width: 100%;
+  margin-block: 20px;
+  padding-block: 20px;
+  background-color: var(--main);
+  align-items: center;
+}
+  .home-bio p{
+    width: 75%;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
 
 @media (max-width: 600px){
   
@@ -698,30 +722,58 @@ ul{
 
 /*-----------------------------------CONTACT PAGE-------------------------------------------------*/
 
+
 .contact-container{
+  background-image: url('./content/images/restaurant/cafe-image.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-row{
   display: flex;
   flex-direction: row;
+  justify-content: center;
   align-items: center;
-  justify-content: right;
-  height: 100%;
+  height: 900px;
+  width: 100%;
+  margin: 0 auto;
 }
+
+.contact-left{
+  width: 50%;
+}
+
+  .contact-left iframe{
+    width: 100%;
+    height: 600px;
+  }
+
 
 .contact-right{
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   text-align: center;
-  line-height: 2.5;
+  line-height: 3.5;
   background-color: var(--main);
-  background-position: 50% 100%;
+  /* background-position: 50% 100%; */
   width: 50%;
-  height: 100%;
+  height: 600px;
 }
   .contact-right h1{
     font-size: 40px;
     font-weight: bold;
   }
 
-
+ .contact-container .social-buttons{
+  width: 25%;
+  justify-content: center;
+  margin: 0 auto;
+ }
 @media (max-width: 600px){
   .contact-container{
     flex-direction: column;
@@ -732,6 +784,37 @@ ul{
 }
 
 
+/*-------------------------------------MENU PAGE------------------------*/
+
+
+.reviews-page{
+  display: flex;
+  flex-direction: column;
+  background-color: var(--main);
+}
+
+.reviews-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.review-card{
+  width: 30%;
+  background-color: rgba(255, 255, 255, .6);
+  border-radius: 5px;
+  box-shadow: var(--shadow);
+  margin: 8px;
+}
+
+  .review-card:hover{
+    transform: scale(101%);
+    transition: ease-in-out .3s;
+    box-shadow:0 0 14px 8px  rgba(255, 255, 255, .2);
+  }
 
 /*-----------------------------------SOCIAL MEDIA--------------------------------------------------*/
 
@@ -753,23 +836,23 @@ ul{
 
 .twitter {
   background: #55ACEE;
-  color: white;
+  color: black;
 } 
 
 .facebook {
   background: #316FF6;
-  color: white;
+  color: black;
   transform: scale(75%);
 } 
 
 .instagram{
   background: #fb3958;
-  color:white;
+  color:black;
 }
 
 .youtube{
   background: #FF0000;
-  color:white;
+  color:black;
 }
 
   /* For social icons in social-buttons */
