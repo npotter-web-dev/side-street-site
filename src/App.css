@@ -23,7 +23,7 @@ body{
   --main: rgba(255, 255, 255, 0.9);
   /* --main: rgba(20, 20, 20, .9); */
   --secondary: rgba(20, 20, 20, .98);
-  --sage: rgba(186, 184, 108, .8);
+  --sage: rgba(186, 184, 108, .4);
   --shadow: 0 0 14px 8px rgba(0, 0, 0, 1);
 }
 
@@ -50,7 +50,7 @@ body{
 }
 
 h1, h2 {
-  color: rgb(112, 130, 56);
+  color: rgba(112, 130, 56, .8);
   /* color: rgb(178, 172, 136); */
 }
 
@@ -89,7 +89,7 @@ ul{
   margin: 0 auto;
   padding-block: 40px;
   line-height: 2;
-  background-color: rgba(255, 251, 200, 0.9);
+  background-color: rgba(252, 246, 215, 0.3);
 }
 
 .header-logo{
@@ -447,7 +447,7 @@ ul{
 
 
 .home-img{
-  background-image: url('./content/images/country-cafe.jpeg');
+  background-image: url('./content/images/rooster_background.png');
   background-size: cover;
   background-position: 50% 0;
   background-repeat: no-repeat;

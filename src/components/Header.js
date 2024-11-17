@@ -4,7 +4,7 @@ import { FontAwesomeIcon as Icon } from "@fortawesome/react-fontawesome";
 import "../utils/icons/fontawesome";
 import CopyEmail from "../utils/CopyEmail";
 import social from "../data/socialMedia";
-import logo from "../content/images/Sidestreet-Cafe-Logo.png";
+import logo from "../content/images/ss_title.png";
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
