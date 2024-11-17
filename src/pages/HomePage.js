@@ -37,9 +37,6 @@ const HomePage = () => {
           </div>
 
           <div className="home-bio">
-            <div>
-              <img className="bio-image" src={bioImage}></img>
-            </div>
             <p>
               With a rich background in fine dining, Suzanne Garman made a life-changing decision to
               shift from the bustling nightlife of the dinner scene to the vibrant and welcoming
