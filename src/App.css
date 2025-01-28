@@ -19,6 +19,16 @@ body{
   background-attachment: fixed; 
 }
 
+@font-face {
+  font-family: 'Vintage';
+  src: url('utils/fonts/Goldsmith-Vintage.otf');
+}
+
+@font-face {
+  font-family: 'Brandink';
+  src: url('utils/fonts/BrandinkSans-Light.otf');
+}
+
 :root{
   --main: rgba(255, 255, 255, 0.9);
   /* --main: rgba(20, 20, 20, .9); */
@@ -117,9 +127,10 @@ ul{
 
 .header-subtitle{
   justify-content: center;
-  font-size: 28px;
+  font-family: "Vintage";
+  font-size: 34px;
   font-weight: 200;
-  font-style: italic;
+  line-height: normal;
 }
 
 
@@ -132,16 +143,20 @@ ul{
   /* max-width: 25%; */
   line-height: 1.5;
   font-size: 20px;
-  font-weight: 200;
+  font-weight: 100;
   /* padding-inline: 16em; */
   /* padding: 100px */
 }
+
+  .header-contact p {
+  font-family: "Brandink";
+  }
   .lefter{
     width: 50%;
     /* margin-right: 20em; */
     justify-content: center;
     align-items: center;
-    margin: 0 auto
+    margin: 0 auto;
  }
  .right{
   width: 50%;
@@ -169,6 +184,7 @@ ul{
 
 .navbar-options .link{
   text-decoration: none;
+  font-family: "Brandink";
   font-size: 16px;
   font-weight: 100;
   padding-inline: 20px;
@@ -480,7 +496,8 @@ ul{
 }
 
 .home-title{
-  font-size: 80px;
+  font-family: "Vintage";
+  font-size: 100px;
   font-weight: 500;
   line-height: 2;
   margin: 10px auto;
