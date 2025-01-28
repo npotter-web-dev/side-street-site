@@ -25,8 +25,12 @@ body{
 }
 
 @font-face {
-  font-family: 'Brandink';
+  font-family: 'BrandinkLight';
   src: url('utils/fonts/BrandinkSans-Light.otf');
+}
+@font-face {
+  font-family: 'Brandink';
+  src: url('utils/fonts/BrandinkSans.otf');
 }
 
 :root{
@@ -483,6 +487,7 @@ ul{
   width: 50%;
   height: 800px;
   padding: 40px 40px;
+  margin-left: 50%;
   text-align: center;
   background-color: var(--main);
 }
@@ -504,9 +509,9 @@ ul{
 }
 
 .home-subtitle{
+  font-family: "Brandink";
   font-size: 28px;
   font-weight: 400;
-  font-style: italic;
   margin: 10px auto;
 }
 
@@ -519,8 +524,11 @@ ul{
   width: 50%;
   line-height: 2;
   margin: 0 auto;
+  font-family: "BrandinkLight";
 }
-
+  .home-info p{
+    font-family: "Brandink";
+  }
 .home-bio{
   width: 100%;
   margin-block: 20px;
@@ -783,8 +791,12 @@ ul{
   height: 600px;
 }
   .contact-right h1{
+    font-family: "Brandink";
     font-size: 40px;
     font-weight: bold;
+  }
+  .contact-right p{
+    font-family: "BrandinkLight";
   }
 
  .contact-container .social-buttons{

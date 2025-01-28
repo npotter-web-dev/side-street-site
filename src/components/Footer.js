@@ -72,7 +72,8 @@ const Footer = () => {
           </div>
         </div>
         <label className="copyright">
-          Copyright © The 6202 Band. Web design by Nathan Potter. All rights reserved.
+          Copyright © Side Street Cafe Newbury Park. Web design by Nathan Potter. All rights
+          reserved.
         </label>
       </div>
     </div>

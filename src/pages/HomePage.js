@@ -30,8 +30,7 @@ const HomePage = () => {
               feeling like a great breakfast or lunch in a great environment, Side Street Cafè is
               the place to be! <br />
               <br />
-              <b>We are open 7 days a week:</b>
-              <br />
+              <p>We are open 7 days a week:</p>
               Weekdays from 6:30am to 2:00pm and weekends from 7am to 2pm. Join us!
             </p>
           </div>
