@@ -69,12 +69,12 @@ ul{
 
 
 .site-header{
-  /* z-index: 0;
-  background-image: url('./content/images/wallpaperflare.com_wallpaper.jpg');
-  background-size: cover;
+  z-index: 0;
+  background-image: url('./content/images/country-cafe.jpeg');
+  background-size: contain;
   background-position: 50% 0;
   background-repeat: no-repeat;
-  background-attachment: fixed; */
+  background-attachment: fixed;
 }
 
 .mobile-menu-button{
@@ -107,6 +107,7 @@ ul{
   margin: 0 auto;
   /* max-width: 400px; */
   max-height: 180px;
+  transform: scale(2.5);
 }
 
 .header-title{
@@ -724,7 +725,7 @@ ul{
 
 
 .contact-container{
-  background-image: url('./content/images/restaurant/cafe-image.jpg');
+  background-image: url('./content/images/country-cafe.jpeg');
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
