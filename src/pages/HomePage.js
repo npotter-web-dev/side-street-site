@@ -5,7 +5,7 @@ const HomePage = () => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
       const backgroundPosition = `50% ${-(scrollPosition / 2)}px`;
-      document.querySelector(".home-img").style.backgroundPosition = backgroundPosition;
+      document.querySelector(".page-container").style.backgroundPosition = backgroundPosition;
     };
 
     window.addEventListener("scroll", handleScroll);

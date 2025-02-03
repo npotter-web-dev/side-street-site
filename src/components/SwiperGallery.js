@@ -6,23 +6,27 @@ import "swiper/css/effect-fade";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { EffectFade, Pagination, Navigation, Autoplay } from "swiper/modules";
-import * as content from "../content/content.js";
+import * as content from "../content/contentExport.js";
 
 const slidesData = [
   {
     id: 1,
-    image: content.availableWattpadSlide,
-    caption: "Available on Wattpad",
+    image: content.omelettes,
+    caption: "Omelette",
   },
   {
     id: 2,
-    image: content.truthOrDareSlide,
-    caption: "Truth or Dare",
-    link: "/book/6",
+    image: content.veggies,
+    caption: "Veggies",
+  },
+  {
+    id: 3,
+    image: content.waffles,
+    caption: "Waffles",
   },
 ];
 
-const FadeCarousel = () => {
+const SwiperGallery = () => {
   return (
     <div className="swiper-container">
       <Swiper
@@ -52,7 +56,7 @@ const FadeCarousel = () => {
         {slidesData.map((slide) => (
           <SwiperSlide key={slide.id}>
             <Link to={slide.link}>
-              <img src={slide.image} />
+              <img src={slide.image} className="swiper-img" />
             </Link>
           </SwiperSlide>
         ))}
@@ -70,4 +74,4 @@ const FadeCarousel = () => {
   );
 };
 
-export default FadeCarousel;
+export default SwiperGallery;

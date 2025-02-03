@@ -427,6 +427,12 @@ ul{
 
 /*-----------------------------------GENERAL PAGE SETTING--------------------------------------------------*/
 .page-container{
+  background-image: var(--background1);
+  background-size: cover;
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100%;
   display: flex;
   flex-direction: row;
   min-height: 900px;
@@ -478,12 +484,12 @@ ul{
 
 
 .home-img{
-  background-image: var(--background1);
+  /* background-image: var(--background1);
   background-size: cover;
   background-position: 50% 0;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  width: 100%;
+  width: 100%; */
 }
 
 .home-container{
@@ -613,34 +619,72 @@ ul{
 
 /*-------------------------------------MENU PAGE------------------------*/
 
+
 .menu-page{
-  /* background-color: var(--main); */
-  background-image: var(--background1);
-  background-size: cover;
-  background-position: 50% 0;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
   width: 100%;
-  /* width: 85%; */
   margin: 0 auto;
   padding: 10px;
+  backdrop-filter: blur(10px);
 }
+
+  .menu-page p{
+    font-family: "Brandink";
+  }
+
+.menu-gallery{
+  justify-content: center;
+  width: 80%;
+  margin: 0 auto;
+  margin-block: 100px;
+}
+
+  .swiper-container{
+    display: block;
+  }
+  .swiper-img{
+    width: 100%;
+    height: auto;
+  }
+  .swiper-pagination{
+    opacity: .3;
+  }
+  .swiper-container:hover .swiper-pagination{
+    opacity: 1;
+  }
+  .slider-arrow{
+    opacity: 0;
+    color: rgba(250, 250, 250, .3);
+  }  
+    .swiper-container:hover .slider-arrow{
+      opacity: 1;
+      color: rgba(250, 250, 250, .3);
+      text-shadow: 0 0 2px rgba(0, 0, 0, .5);
+      transition: .2s ease-in-out;
+    }
+  
 
 .menu-top{
   align-items: center;
   justify-content: center;
   text-align: center;
   margin: 0 auto;
+  line-height: 2;
+  font-size: 20px;
 }
 
 .menu-nav{
-  margin: 0 auto;
-  width: 25%;
+  display: flex;
+  flex-direction: row;
+  margin: 20px auto;
+  width: 50%;
+  font-family: "Brandink";
+  font-size: 40px;
 }
   .menu-nav a{
-    align-items: center;
-    width: 33%;
     margin-inline: 10px;
+    width: 33%;
+    font-family: "Brandink";
+    font-size: 38px;
   }
 
 
@@ -698,7 +742,6 @@ ul{
   .subcategory-title p{
     text-align:center;
     justify-content: center;
-    
     font-size: 18px;
     font-style: italic;
     line-height: 1.25;
@@ -777,12 +820,7 @@ ul{
 /*-----------------------------------CONTACT PAGE-------------------------------------------------*/
 
 
-.contact-container{
-  background-image: var(--background1);
-  background-size: cover;
-  background-position: 50% 0;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+.contact-page{
   width: 100%;
   justify-content: center;
   align-items: center;
@@ -828,7 +866,7 @@ ul{
     font-family: "BrandinkLight";
   }
 
- .contact-container .social-buttons{
+ .contact-page .social-buttons{
   width: 25%;
   justify-content: center;
   margin: 0 auto;
