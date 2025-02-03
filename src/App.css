@@ -37,8 +37,10 @@ body{
   --main: rgba(255, 255, 255, 0.9);
   /* --main: rgba(20, 20, 20, .9); */
   --secondary: rgba(20, 20, 20, .98);
-  --sage: rgba(186, 184, 108, .4);
+  --sage: rgba(122, 186, 108, 0.4);
   --shadow: 0 0 14px 8px rgba(0, 0, 0, 1);
+
+  --background1: url('./content/images/wood-focus.jpg');
 }
 
 .container{
@@ -84,11 +86,13 @@ ul{
 
 .site-header{
   z-index: 0;
-  background-image: url('./content/images/country-cafe.jpeg');
-  background-size: contain;
+  /* background-color: rgb(249, 255, 230); */
+  background-image: var(--background1);
+  background-size: cover;
   background-position: 50% 0;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  width: 100%;
 }
 
 .mobile-menu-button{
@@ -99,11 +103,10 @@ ul{
   display: flex;
   flex-direction: row;
   justify-content: center;
-  height: 20em;
+  height: 17em;
   margin: 0 auto;
-  padding-block: 40px;
+  padding-block: 10px;
   line-height: 2;
-  background-color: rgba(252, 246, 215, 0.3);
 }
 
 .header-logo{
@@ -135,6 +138,7 @@ ul{
   font-size: 34px;
   font-weight: 200;
   line-height: normal;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 1);
 }
 
 
@@ -175,7 +179,9 @@ ul{
   justify-content: flex-end;
   width: 100%;
   max-width: 100%;
-  background-color: var(--sage);
+  background-color: rgba(255, 255, 255, .2);
+  backdrop-filter: blur(25px);
+  
 }
 
 .navbar-options{
@@ -194,7 +200,7 @@ ul{
   padding-inline: 20px;
 }
 .navbar-options .link:hover{
-  color: rgb(255, 217, 0);
+  color: rgb(143, 238, 144);
   text-shadow: 0px 2px 2px rgba(0, 0, 0, 1);
   transition: color 0.2s ease-in-out, text-shadow 0.1s ease-in-out;
 }
@@ -228,7 +234,8 @@ ul{
 
   .mobile-menu {
     display: block;
-    background-color: var(--secondary);
+    /* background-color: var(--main); */
+    background-image: var(--background1);
     position: fixed;
     top: 0;
     left: 0;
@@ -236,6 +243,7 @@ ul{
     height: 100%;
     z-index: 1000;
     transition: ease-in-out 1.5s;
+    backdrop-filter: blur(0px);
   }
 
   .mobile-menu .navbar-options {
@@ -249,7 +257,7 @@ ul{
   .mobile-menu .link {
     text-decoration: none;
     font-size: 18px;
-    color: #fff;
+    color: rgba(0, 0, 0, 1));
     line-height: 3;
     font-size: 24px;
     margin-inline: 0;
@@ -267,11 +275,13 @@ ul{
 
   .header-logo{
     position: relative;
+    margin-top: 0;
   }
 
   .site-logo{
     position: relative;
     max-width: 300px;
+    transform: scale(2);
   }
   
   .header-contact{
@@ -293,7 +303,7 @@ ul{
 .footer-container{
   width: 100%;
   z-index: 0;
-  background-color: var(--sage);
+  background-color: white;
 }
 
 .site-footer{
@@ -301,15 +311,15 @@ ul{
   flex-direction: column;
   position: relative;
   width: 75%;
-  padding: 20px auto;
-  padding-bottom: 10px;
-  padding-top: 40px;
-  margin: 20px auto;
+  padding: 10px auto;
+  margin: 10px auto;
 }
 .site-footer h1{
   font-size: 28px;
   font-weight: 100;
   margin-left: 10%;
+  color: black;
+  font-family: "Brandink";
 }
 .footer-top{
   display: flex;
@@ -318,7 +328,7 @@ ul{
   align-items: center;
   width: 100%;
   margin: 0 auto;
-  padding-bottom: 40px;
+  padding-bottom: 10px;
 }
 
 .footer-navigation{
@@ -468,7 +478,7 @@ ul{
 
 
 .home-img{
-  background-image: url('./content/images/rooster_background.png');
+  background-image: var(--background1);
   background-size: cover;
   background-position: 50% 0;
   background-repeat: no-repeat;
@@ -481,6 +491,7 @@ ul{
   flex-direction: column;
   font-size: 18px;
   font-weight: 100;
+  margin-top: 20px;
 }
 
 .home-main{
@@ -489,7 +500,8 @@ ul{
   padding: 40px 40px;
   margin-left: 50%;
   text-align: center;
-  background-color: var(--main);
+  /* background-color: var(--main); */
+  backdrop-filter: blur(25px);
 }
 
 .home-header{
@@ -551,14 +563,16 @@ ul{
     width: 100%;
     text-align: start;
     margin: 0;
-    margin-top: 300px;
+    margin-top: 30px;
     padding: 8px;
   }
   .home-img{
-    background-size: 200%;
-    background-position:top;
-    background-repeat: no-repeat;
-    background-attachment:local;
+    background-image: none;
+  }
+
+  .home-main{
+    margin:0;
+    width: 100%;
   }
 
   .home-header{
@@ -600,11 +614,16 @@ ul{
 /*-------------------------------------MENU PAGE------------------------*/
 
 .menu-page{
-  background-color: var(--main);
-  width: 85%;
+  /* background-color: var(--main); */
+  background-image: var(--background1);
+  background-size: cover;
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100%;
+  /* width: 85%; */
   margin: 0 auto;
   padding: 10px;
-  box-shadow: var(--shadow);
 }
 
 .menu-top{
@@ -636,10 +655,12 @@ ul{
   justify-content: center;
   align-items:center;
   text-align: center;
-  font-size: 50px;
 }
   .category-title h2{
-    margin-inline: 20px;
+    font-family: "Vintage";
+    font-size: 70px;
+    width: 50%;
+    margin: 10px;
   }
   .category-title hr{
     border:2px solid #545454;
@@ -670,10 +691,14 @@ ul{
   width: 50%;
   margin: 10px auto;
 }
+  .subcategory-title h2{
+    font-family: "Brandink";
+  }
 
   .subcategory-title p{
     text-align:center;
     justify-content: center;
+    
     font-size: 18px;
     font-style: italic;
     line-height: 1.25;
@@ -698,16 +723,19 @@ ul{
   min-width: 30%;
   max-width: 30%;
   padding: 10px;
+  backdrop-filter: blur(12px);
 }
 
 
 .menu-item h3{
-  font-size: 18px;
+  font-family: "Brandink";
+  font-size: 16px;
 }
 
 
 .item-info{
   width: 75%;
+  font-family: "Brandink";
   font-size: 14px;
   font-weight: 100;
   padding: 8px 4px;
@@ -750,8 +778,9 @@ ul{
 
 
 .contact-container{
-  background-image: url('./content/images/country-cafe.jpeg');
+  background-image: var(--background1);
   background-size: cover;
+  background-position: 50% 0;
   background-repeat: no-repeat;
   background-attachment: fixed;
   width: 100%;

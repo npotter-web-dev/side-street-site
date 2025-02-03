@@ -1,8 +1,23 @@
 import social from "../data/socialMedia";
 import { FontAwesomeIcon as Icon } from "@fortawesome/react-fontawesome";
 import "../utils/icons/fontawesome";
+import React, { useEffect } from "react";
 
 const ContactPage = () => {
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollPosition = window.scrollY;
+      const backgroundPosition = `50% ${-(scrollPosition / 2)}px`;
+      document.querySelector(".contact-container").style.backgroundPosition = backgroundPosition;
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <div className="contact-container">
       <div className="contact-row">

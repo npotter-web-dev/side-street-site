@@ -6,7 +6,6 @@ import { breakfastItems, lunchItems, drinkItems } from "../data/menuItems";
 const MenuPage = () => {
   return (
     <div className="menu-page">
-      <h1>Welcome to Side Street Cafe!</h1>
       <div className="menu-top">
         <div className="menu-nav">
           <a href="#breakfast">Breakfast</a>

@@ -33,7 +33,6 @@ const Header = () => {
         <div className="header-logo">
           <img className="site-logo" src={logo} alt="The 6202 Band Logo" />
           <h2 className="header-subtitle">Where the Locals Eat!</h2>
-          <h2 className="header-subtitle">Est. 2002</h2>
         </div>
 
         <div className="header-contact right">
