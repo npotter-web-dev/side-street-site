@@ -70,6 +70,62 @@ h1, h2 {
   /* color: rgb(178, 172, 136); */
 }
 
+/*-----------------------------------SOCIAL MEDIA--------------------------------------------------*/
+
+/* Style all font awesome icons */
+.social-icons {
+  /* margin-bottom: 20px; */
+  /* padding: 20px; */
+  font-size: 28px;
+  width: 26px;
+  text-align: center;
+  margin: 0 8px;
+}
+
+/* Add a hover effect if you want */
+.social-icons:hover {
+  opacity: .9;
+  color:black;
+}
+
+.facebook {
+  background: #316FF6;
+  color: black;
+  transform: scale(75%);
+} 
+  .facebook:hover{
+    color: #316FF6;
+  }
+
+.instagram{
+  background: #fb3958;
+  color:black;
+}
+  .instagram:hover{
+    color:#fb3958;
+  }
+.yelp{
+  background: red;
+  color: black;
+  transform: scale(95%);
+}
+  .yelp:hover{
+    color:red;
+  }
+.google{
+  background: #34a853;
+  color: black;
+}
+  .google:hover{
+    color:#34a853;
+  }
+  /* For social icons in social-buttons */
+.social-buttons .social-icons{
+  background: transparent;
+  height: 75%;
+  position: relative;
+} 
+
 /*-----------------------------------------HEADER-------------------------------------------*/
 
 nav{
@@ -1017,24 +1073,33 @@ ul{
 }
 
 
-/*-------------------------------------MENU PAGE------------------------*/
+/*-------------------------------------REVIEWS PAGE------------------------*/
 
 
 .reviews-page{
-  display: flex;
-  flex-direction: column;
-  background-color: var(--main);
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .reviews-container{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
-  margin: 0 auto;
+  justify-content: space-around;
+  margin: 100px auto;
   width: 80%;
+  background-color: rgba(255, 255, 255, .3);
+  backdrop-filter: blur(0px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, .4), 0 2px 4px rgba(0, 0, 0, .1);
 }
 
+  .reviews-container a{
+    transform: scale(100%);
+  }
+
+/* 
 .review-card{
   width: 30%;
   background-color: rgba(255, 255, 255, .6);
@@ -1047,62 +1112,5 @@ ul{
     transform: scale(101%);
     transition: ease-in-out .3s;
     box-shadow:0 0 14px 8px  rgba(255, 255, 255, .2);
-  }
+  } */
 
-/*-----------------------------------SOCIAL MEDIA--------------------------------------------------*/
-
-/* Style all font awesome icons */
-.social-icons {
-  /* margin-bottom: 20px; */
-  /* padding: 20px; */
-  font-size: 28px;
-  width: 26px;
-  text-align: center;
-  margin: 0 8px;
-}
-
-/* Add a hover effect if you want */
-.social-icons:hover {
-  opacity: .9;
-  color:black;
-}
-
-.twitter {
-  background: #55ACEE;
-  color: black;
-} 
-
-.facebook {
-  background: #316FF6;
-  color: black;
-  transform: scale(75%);
-} 
-
-.instagram{
-  background: #fb3958;
-  color:black;
-}
-
-.youtube{
-  background: #FF0000;
-  color:black;
-}
-
-  /* For social icons in social-buttons */
-.social-buttons .social-icons{
-  background: transparent;
-  height: 75%;
-  position: relative;
-} 
-.social-buttons .twitter:hover{
-  color: #657786;
-}
-.social-buttons .facebook:hover{
-  color: #316FF6;
-}
-.social-buttons .instagram:hover{
-  color:#fb3958;
-}
-.social-buttons .youtube:hover{
-  color:#FF0000;
-}

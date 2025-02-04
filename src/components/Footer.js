@@ -49,23 +49,23 @@ const Footer = () => {
           <div className="footer-column col3">
             <ul className="social-buttons">
               <li>
+                <a href={social.yelp} target="_blank" rel="noopener noreferrer">
+                  <Icon icon="fa-brands fa-yelp" className="social-icons yelp" />
+                </a>
+              </li>
+              <li>
+                <a href={social.google} target="_blank" rel="noopener noreferrer">
+                  <Icon icon="fa-brands fa-google" className="social-icons google" />
+                </a>
+              </li>
+              <li>
                 <a href={social.facebook} target="_blank" rel="noopener noreferrer">
                   <Icon icon="fa-brands fa-facebook-f" className="social-icons facebook" />
                 </a>
               </li>
               <li>
-                <a href={social.youtube} target="_blank" rel="noopener noreferrer">
-                  <Icon icon="fa-brands fa-youtube" className="social-icons youtube" />
-                </a>
-              </li>
-              <li>
                 <a href={social.instagram} target="_blank" rel="noopener noreferrer">
                   <Icon icon="fa-brands fa-instagram" className="social-icons instagram" />
-                </a>
-              </li>
-              <li>
-                <a onClick={CopyEmail} target="_blank" rel="noopener noreferrer">
-                  <Icon icon="fa-regular fa-envelope" className="social-icons envelope" />
                 </a>
               </li>
             </ul>

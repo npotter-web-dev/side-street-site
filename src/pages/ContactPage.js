@@ -40,13 +40,18 @@ const ContactPage = () => {
             <p>(805) 499-9323</p>
             <ul className="social-buttons">
               <li>
-                <a href={social.facebook} target="_blank" rel="noopener noreferrer">
-                  <Icon icon="fa-brands fa-facebook-f" className="social-icons facebook" />
+                <a href={social.yelp} target="_blank" rel="noopener noreferrer">
+                  <Icon icon="fa-brands fa-yelp" className="social-icons yelp" />
                 </a>
               </li>
               <li>
-                <a href={social.youtube} target="_blank" rel="noopener noreferrer">
-                  <Icon icon="fa-brands fa-youtube" className="social-icons youtube" />
+                <a href={social.google} target="_blank" rel="noopener noreferrer">
+                  <Icon icon="fa-brands fa-google" className="social-icons google" />
+                </a>
+              </li>
+              <li>
+                <a href={social.facebook} target="_blank" rel="noopener noreferrer">
+                  <Icon icon="fa-brands fa-facebook-f" className="social-icons facebook" />
                 </a>
               </li>
               <li>

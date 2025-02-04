@@ -33,18 +33,6 @@ const HomePage = () => {
             Weekdays from 6:30am to 2:00pm and weekends from 7am to 2pm. Join us!
           </p>
         </div>
-
-        {/* <div className="home-bio">
-            <p>
-              With a rich background in fine dining, Suzanne Garman made a life-changing decision to
-              shift from the bustling nightlife of the dinner scene to the vibrant and welcoming
-              atmosphere of daytime dining. In 2002, she embarked on this new journey by purchasing
-              Side Street Café. This move has proven to be the best business decision of her career,
-              allowing her to blend her culinary expertise with a passion for creating delightful
-              breakfast and lunch experiences. Since then, Suzanne has been dedicated to offering
-              exceptional meals and a warm, inviting environment for all guests.
-            </p>
-          </div> */}
       </div>
     </div>
   );
