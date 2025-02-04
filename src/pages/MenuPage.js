@@ -1,10 +1,22 @@
-import React from "react";
+import React, { useRef } from "react";
 import { breakfastItems, lunchItems, drinkItems } from "../data/menuItems";
 import SwiperGallery from "../components/SwiperGallery";
 
 // Consider compartmentalizing
 
 const MenuPage = () => {
+  const scrollTop = useRef(null);
+  const scrollBreakfast = useRef(null);
+  const scrollLunch = useRef(null);
+  const scrollDrinks = useRef(null);
+
+  const scrollToElement = (menuScrolls) => {
+    menuScrolls.current.scrollIntoView({
+      behavior: "smooth", // Smooth scrolling
+      block: "start", // Aligns the element to the top
+    });
+  };
+
   return (
     <div className="page-container">
       <div className="menu-page">
@@ -12,10 +24,11 @@ const MenuPage = () => {
           <SwiperGallery />
         </div>
 
-        <div className="menu-top">
+        <div className="menu-top" ref={scrollTop}>
           <div className="menu-nav">
-            <a href="#breakfast">Breakfast</a>|<a href="#lunch">Lunch</a>|
-            <a href="#drinks">Drinks</a>
+            <a onClick={() => scrollToElement(scrollBreakfast)}>Breakfast</a>
+            <a onClick={() => scrollToElement(scrollLunch)}>Lunch</a>
+            <a onClick={() => scrollToElement(scrollDrinks)}>Drinks</a>
           </div>
 
           <p>
@@ -25,10 +38,11 @@ const MenuPage = () => {
             <br />
             Take Out? Call (805) 499-9323
           </p>
+          <p className="tiny-script">(No Online Orders)</p>
         </div>
 
         {/* BREAKFAST */}
-        <div id="breakfast" className="category">
+        <div className="category" ref={scrollBreakfast}>
           <section className="category-title">
             <hr />
             <h2>Breakfast - Served All Day</h2>
@@ -40,7 +54,7 @@ const MenuPage = () => {
               <div className="subcategory-image">
                 <img src={category.image} />
               </div>
-              <div>
+              <div className="subcategory-container">
                 <div className="subcategory-title">
                   <h2>{category.title}</h2>
                   <p>{category.info}</p>
@@ -49,9 +63,7 @@ const MenuPage = () => {
                   {/* Map over items in each category */}
                   {category.items.map((item, index) => (
                     <div key={index} className="menu-item">
-                      <div className="">
-                        <h3>{item.name}</h3>
-                      </div>
+                      <h3>{item.name}</h3>
                       <p className="item-info">{item.description}</p>
                       <p className="item-price">${item.price}</p>
                     </div>
@@ -63,7 +75,7 @@ const MenuPage = () => {
         </div>
 
         {/* LUNCH */}
-        <div id="lunch" className="category">
+        <div className="category" ref={scrollLunch}>
           <section className="category-title">
             <hr />
             <h2>Let's Do Lunch!</h2>
@@ -75,7 +87,7 @@ const MenuPage = () => {
               <div className="subcategory-image">
                 <img src={category.image} />
               </div>
-              <div>
+              <div className="subcategory-container">
                 <div className="subcategory-title">
                   <h2>{category.title}</h2>
                   <p>{category.info}</p>
@@ -84,9 +96,7 @@ const MenuPage = () => {
                   {/* Map over items in each category */}
                   {category.items.map((item, index) => (
                     <div key={index} className="menu-item">
-                      <div className="">
-                        <h3>{item.name}</h3>
-                      </div>
+                      <h3>{item.name}</h3>
                       <p className="item-info">{item.description}</p>
                       <p className="item-price">${item.price}</p>
                     </div>
@@ -98,7 +108,7 @@ const MenuPage = () => {
         </div>
 
         {/* DRINKS */}
-        <div id="drinks" className="category">
+        <div className="category" ref={scrollDrinks}>
           <section className="category-title">
             <hr />
             <h2>Drinks</h2>
@@ -106,14 +116,11 @@ const MenuPage = () => {
           </section>
           {drinkItems.map((category) => (
             <div key={category.id} className="subcategory">
-              <div className="subcategory-image">
-                <img src={category.image} />
-              </div>
               <div className="drink-container">
                 {/* Map over items in each category */}
                 {category.items.map((item, index) => (
-                  <div key={index} className="menu-item drink">
-                    <h3>{item.name}</h3>
+                  <div key={index} className="drink">
+                    <p className="drink-name">{item.name}</p>
                     <p className="drink-price">${item.price}</p>
                   </div>
                 ))}
@@ -123,21 +130,7 @@ const MenuPage = () => {
         </div>
 
         <div className="menu-bottom">
-          <div className="menu-nav">
-            <a href="#breakfast">Breakfast</a>
-            <a href="#lunch">Lunch</a>
-            <a href="#drinks">Drinks</a>
-          </div>
-          <p>
-            MAXIMUM OF 3 DIVIDED CHECKS PER TABLE.
-            <br />
-            WE RESERVE THE RIGHT TO REFUSE SERVICE TO ANYONE.
-          </p>
-          <p>
-            Kid's Menu Available
-            <br />
-            Take Out? Call (805) 499-9323
-          </p>
+          <a onClick={() => scrollToElement(scrollTop)}>Back to the top</a>
         </div>
       </div>
     </div>

@@ -17,25 +17,24 @@ const HomePage = () => {
 
   return (
     <div className="page-container">
-      <div className="home-img">
-        <div className="home-container">
-          <div className="home-main">
-            <div className="home-header">
-              <h1 className="home-title">Side Street Cafe</h1>
-              <h2 className="home-subtitle">Where the Locals Eat!</h2>
-            </div>
-
-            <p className="home-info">
-              Thank you for visiting Side Street Cafè, located in Newbury Park, CA. If you are
-              feeling like a great breakfast or lunch in a great environment, Side Street Cafè is
-              the place to be! <br />
-              <br />
-              <p>We are open 7 days a week:</p>
-              Weekdays from 6:30am to 2:00pm and weekends from 7am to 2pm. Join us!
-            </p>
+      <div className="home-page">
+        <div className="home-main">
+          <div className="home-header">
+            <h1 className="home-title">Side Street Cafe</h1>
+            <h2 className="home-subtitle">Where the Locals Eat!</h2>
           </div>
 
-          <div className="home-bio">
+          <p className="home-info">
+            Thank you for visiting Side Street Cafè, located in Newbury Park, CA. If you are feeling
+            like a great breakfast or lunch in a great environment, Side Street Cafè is the place to
+            be! <br />
+            <br />
+            <p>We are open 7 days a week:</p>
+            Weekdays from 6:30am to 2:00pm and weekends from 7am to 2pm. Join us!
+          </p>
+        </div>
+
+        {/* <div className="home-bio">
             <p>
               With a rich background in fine dining, Suzanne Garman made a life-changing decision to
               shift from the bustling nightlife of the dinner scene to the vibrant and welcoming
@@ -45,8 +44,7 @@ const HomePage = () => {
               breakfast and lunch experiences. Since then, Suzanne has been dedicated to offering
               exceptional meals and a warm, inviting environment for all guests.
             </p>
-          </div>
-        </div>
+          </div> */}
       </div>
     </div>
   );

@@ -200,8 +200,8 @@ ul{
   padding-inline: 20px;
 }
 .navbar-options .link:hover{
-  color: rgb(143, 238, 144);
-  text-shadow: 0px 2px 2px rgba(0, 0, 0, 1);
+  color: rgb(255, 255, 255);
+  text-shadow: 0px 2px 8px rgb(0, 0, 0);
   transition: color 0.2s ease-in-out, text-shadow 0.1s ease-in-out;
 }
 
@@ -304,6 +304,7 @@ ul{
   width: 100%;
   z-index: 0;
   background-color: white;
+  padding-top: 20px;
 }
 
 .site-footer{
@@ -483,21 +484,12 @@ ul{
 /*-----------------------------------HOME PAGE-------------------------------------------------*/
 
 
-.home-img{
-  /* background-image: var(--background1);
-  background-size: cover;
-  background-position: 50% 0;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  width: 100%; */
-}
-
-.home-container{
+.home-page{
   display: flex;
   flex-direction: column;
   font-size: 18px;
   font-weight: 100;
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 .home-main{
@@ -524,6 +516,10 @@ ul{
   font-weight: 500;
   line-height: 2;
   margin: 10px auto;
+}
+
+.home-title h2{
+  font-family: "Brandink";
 }
 
 .home-subtitle{
@@ -621,10 +617,9 @@ ul{
 
 
 .menu-page{
-  width: 100%;
+  width: 80%;
   margin: 0 auto;
   padding: 10px;
-  backdrop-filter: blur(10px);
 }
 
   .menu-page p{
@@ -677,7 +672,6 @@ ul{
   flex-direction: row;
   margin: 20px auto;
   width: 50%;
-  font-family: "Brandink";
   font-size: 40px;
 }
   .menu-nav a{
@@ -687,10 +681,21 @@ ul{
     font-size: 38px;
   }
 
+  .menu-nav a:hover{
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 2px 8px rgb(0, 0, 0);
+    transition: color 0.2s ease-in-out, text-shadow 0.1s ease-in-out;
+  }
+
+.tiny-script{
+  font-size: 14px;
+  color: red;
+}
 
 .category{
   display: flex;
   flex-direction: column;
+  margin-bottom: 50px;
 }
 
 .category-title{
@@ -702,8 +707,8 @@ ul{
 }
   .category-title h2{
     font-family: "Vintage";
-    font-size: 70px;
-    width: 50%;
+    font-size: 90px;
+    width: 75%;
     margin: 10px;
   }
   .category-title hr{
@@ -727,16 +732,26 @@ ul{
   transform: scale(75%);
 }
 
+.subcategory-container{
+  width: 95%;
+  padding-block: 60px;
+  background-color: rgba(255, 255, 255, .3);
+  backdrop-filter: blur(0px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, .4), 0 2px 4px rgba(0, 0, 0, .1);
+}
+
 .subcategory-title{
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-size: 30px;
   width: 50%;
   margin: 10px auto;
 }
   .subcategory-title h2{
     font-family: "Brandink";
+    font-size: 36px;
+    text-shadow: 0 0 2px rgba(0, 0, 0, .2);
+    margin-bottom: 10px;
   }
 
   .subcategory-title p{
@@ -754,67 +769,188 @@ ul{
   flex-wrap:wrap;
   justify-content: space-evenly;
   align-items: baseline;
-  /* border: 2px solid; */
   height: fit-content;
+  width: 90%;
+  margin: 0 auto;  
 }
 
 .menu-item{
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
-  text-align: start;
-  min-width: 30%;
-  max-width: 30%;
+  min-width: 26%;
+  max-width: 26%;
   padding: 10px;
-  backdrop-filter: blur(12px);
+  margin-bottom: 10px;
 }
-
 
 .menu-item h3{
   font-family: "Brandink";
   font-size: 16px;
+  text-align: center;
+  padding-bottom: 10px;
 }
 
 
 .item-info{
-  width: 75%;
+  width: 80%;
   font-family: "Brandink";
   font-size: 14px;
   font-weight: 100;
-  padding: 8px 4px;
+  text-align: center;
+  padding-bottom: 5px;
 }
 
 .item-price{
-  width: 75%;
   font-weight: 100;
-  padding-left: 8px;
   font-size: 18px;
   font-style: italic;
   font-weight: 500;
+  text-align: center;
+  line-height: 1.2;
 }
 
 .drink-container{
-  display:table-column;
-  column-count: 2;
-  column-gap: 0;
-  border: 2px solid;
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
   height: fit-content;
-  width: 100%;
+  width: 75%;
   margin: 0 auto;
-
-  
+  padding-block: 50px;
+  background-color: rgba(255, 255, 255, .3);
+  backdrop-filter: blur(0px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, .4), 0 2px 4px rgba(0, 0, 0, .1);
 }
 
 .drink{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  border: 2px solid;
-  min-width: 50%;
-  max-width: 50%;
+  line-height: 1.5;
+  width: 35%;
+  margin: 5px;
+  padding-inline: 30px;
 }
 
-.drink-row{
+.drink-name{
+  font-weight: bold;
+}
+
+.menu-bottom{
+  margin: 100px auto;
+  text-align: center;
+}
+
+  .menu-bottom a{
+    font-family: "Brandink";
+    font-size: 38px;
+  }
+
+  .menu-bottom a:hover{
+    color: rgb(255, 255, 255);
+    text-shadow: 0px 2px 8px rgb(0, 0, 0);
+    transition: color 0.2s ease-in-out, text-shadow 0.1s ease-in-out;
+    user-select: none;
+  }
+
+
+
+
+@media (max-width: 600px){
+
+  .menu-page{
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+  }
+  .menu-nav{
+    flex-direction: column;
+    margin: 20px auto;
+    font-size: 40px;
+    text-align: center;
+    align-items: center;
+  }
+  .menu-nav a{
+    text-align: center;
+    align-items: center;
+  }
+
+  .subcategory{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 100%;
+    margin: 5px auto;
+    /* border: 2px dotted; */
+  }
+  
+  .subcategory-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    transform: scale(.25);
+    max-width: 380px;
+  }
+  
+  
+  .subcategory-image img{
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+  }
+
+  .subcategory-container{
+    width: 100%;
+    padding-block: 60px;
+    background-color: rgba(255, 255, 255, .3);
+    backdrop-filter: blur(0px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .4), 0 2px 4px rgba(0, 0, 0, .1);
+  }
+  
+
+.items-container{
+  display: flex;
+  flex-direction: column;
+  flex-wrap:wrap;
+  justify-content: space-evenly;
+  align-items: baseline;
+  height: fit-content;
+  width: 90%;
+  margin: 0 auto;  
+}
+
+.menu-item{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  min-width: 100%;
+  max-width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.menu-item h3{
+  font-family: "Brandink";
+  font-size: 18px;
+  text-align: left;
+  padding-bottom: 10px;
+}
+
+
+.item-info{
+  width: 100%;
+  font-family: "Brandink";
+  font-size: 16px;
+  font-weight: 100;
+  text-align: left;
+  padding-bottom: 5px;
+}
 }
 
 /*-----------------------------------CONTACT PAGE-------------------------------------------------*/
