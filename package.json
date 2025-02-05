@@ -1,6 +1,6 @@
 {
-  "name": "side-street-site",
   "homepage": "https://npotter-web-dev.github.io/side-street-site/",
+  "name": "side-street-site",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
