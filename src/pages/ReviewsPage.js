@@ -22,6 +22,9 @@ const ReviewsPage = () => {
     <div className="page-container">
       <div className="reviews-page">
         <div className="reviews-container">
+          <div className="reviews-title">
+            <h1>Interested in leaving a review?</h1>
+          </div>
           <ul className="social-buttons">
             <li>
               <a href={social.yelp} target="_blank" rel="noopener noreferrer">

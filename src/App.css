@@ -291,7 +291,9 @@ ul{
   .mobile-menu {
     display: block;
     /* background-color: var(--main); */
-    background-image: var(--background1);
+    /* background-image: var(--background1); */
+    background-color: rgba(255, 255, 255, .3);
+    backdrop-filter: blur(10px);
     position: fixed;
     top: 0;
     left: 0;
@@ -299,7 +301,6 @@ ul{
     height: 100%;
     z-index: 1000;
     transition: ease-in-out 1.5s;
-    backdrop-filter: blur(0px);
   }
 
   .mobile-menu .navbar-options {
@@ -499,6 +500,7 @@ ul{
   .page-container{
     flex-direction: column;
     background-size: cover;
+    background-repeat: repeat-y;
   }
 }
 
@@ -1035,34 +1037,34 @@ ul{
   margin: 0 auto;
 }
 
-.contact-left{
-  width: 50%;
-}
-
-  .contact-left iframe{
-    width: 100%;
-    height: 600px;
-  }
-
-
-.contact-right{
+.contact-main{
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   text-align: center;
   line-height: 3.5;
-  background-color: var(--main);
+  background-color: rgba(255, 255, 255, .4);
+  backdrop-filter: blur(2px);
   /* background-position: 50% 100%; */
   width: 50%;
   height: 600px;
 }
-  .contact-right h1{
+  .contact-main h1{
     font-family: "Brandink";
     font-size: 40px;
     font-weight: bold;
   }
-  .contact-right p{
+  .contact-main p{
     font-family: "BrandinkLight";
+  }
+
+.contact-map{
+  width: 50%;
+}
+
+  .contact-map iframe{
+    width: 100%;
+    height: 600px;
   }
 
  .contact-page .social-buttons{
@@ -1071,11 +1073,32 @@ ul{
   margin: 0 auto;
  }
 @media (max-width: 600px){
-  .contact-container{
+  .contact-row{
+    display: flex;
     flex-direction: column;
-    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 95%;
     margin: 0 auto;
-    padding-block: 2em;
+    margin-block:15px;
+  }
+
+  .contact-main{
+    width: 100%;
+    height: fit-content;
+    margin-block: 10px;
+    padding-block: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .4), 0 2px 4px rgba(0, 0, 0, .1);
+  }
+  .contact-main h1{
+    line-height: 1.5;
+    padding-block: 10px;
+  }
+  .contact-map{
+    width: 100%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .4), 0 2px 4px rgba(0, 0, 0, .1);
+    margin-block: 10px
   }
 }
 
@@ -1092,20 +1115,51 @@ ul{
 
 .reviews-container{
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin: 100px auto;
-  width: 80%;
+  width: 60%;
+  height: 25em;
   background-color: rgba(255, 255, 255, .3);
   backdrop-filter: blur(0px);
   box-shadow: 0 2px 8px rgba(0, 0, 0, .4), 0 2px 4px rgba(0, 0, 0, .1);
 }
 
-  .reviews-container a{
-    transform: scale(100%);
+  .reviews-title{
+    width: 100%;
+    font-family: "Brandink";
+    border:solid;
+    align-items: top;
   }
 
+  .reviews-title h1{
+    font-family: "Brandink";
+    border:solid;
+    align-items: top;
+  }
+
+  .reviews-container .social-icons{
+    transform: scale(1000%);
+  }
+  .reviews-container .social-buttons{
+    width: 100%;
+    justify-content: space-around;
+  }
+
+  .reviews-container .social-icons{
+    text-shadow: 0px 2px 8px rgb(0, 0, 0);
+    transition: color 0.2s ease-in-out, text-shadow 0.1s ease-in-out;}
+
+  @media (max-width: 600px){
+    .reviews-container{
+      width: 95%;
+    }
+    
+  .reviews-container .social-icons{
+    transform: scale(500%);
+  }
+  }
 /* 
 .review-card{
   width: 30%;
