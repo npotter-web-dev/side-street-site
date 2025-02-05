@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/side-street-site/static/css/main.837ae47d.css",
+    "main.js": "/side-street-site/static/js/main.e79621db.js",
+    "static/media/wood-focus.jpg": "/side-street-site/static/media/wood-focus.ea79c8cc023e5862e421.jpg",
+    "static/media/ss_sign3.png": "/side-street-site/static/media/ss_sign3.6a11995e865eb5fa5514.png",
+    "static/media/veggies.jpg": "/side-street-site/static/media/veggies.e6f24e79718faacc2421.jpg",
+    "static/media/waffles.jpg": "/side-street-site/static/media/waffles.a080ebdf6fae1226d6d7.jpg",
+    "static/media/Goldsmith-Vintage.otf": "/side-street-site/static/media/Goldsmith-Vintage.6e570f7f7ca066b39504.otf",
+    "static/media/omelettes.jpg": "/side-street-site/static/media/omelettes.3ac35747a8616bfec1fb.jpg",
+    "static/media/BrandinkSans-Light.otf": "/side-street-site/static/media/BrandinkSans-Light.df21b83c1ecf2068ccd7.otf",
+    "static/media/BrandinkSans.otf": "/side-street-site/static/media/BrandinkSans.5bed742da5f32e7f1466.otf",
+    "index.html": "/side-street-site/index.html",
+    "main.837ae47d.css.map": "/side-street-site/static/css/main.837ae47d.css.map",
+    "main.e79621db.js.map": "/side-street-site/static/js/main.e79621db.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.837ae47d.css",
+    "static/js/main.e79621db.js"
+  ]
+}
