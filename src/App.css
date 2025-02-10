@@ -292,6 +292,7 @@ ul{
 
   .site-header{
     margin-block: 0;
+    background-attachment: scroll;
   }
 
   .mobile-menu-button{
@@ -308,8 +309,8 @@ ul{
     display: block;
     /* background-color: var(--main); */
     /* background-image: var(--background1); */
-    background-color: rgba(255, 255, 255, .3);
-    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, .6);
+    backdrop-filter: blur(20px);
     position: fixed;
     top: 0;
     left: 0;
@@ -521,8 +522,6 @@ ul{
 @media (max-width: 600px){
   .page-container{
     flex-direction: column;
-    /* background-size:contain; */
-    background-attachment:fixed;
   }
 }
 
