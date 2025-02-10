@@ -51,7 +51,7 @@ const MenuPage = () => {
           {breakfastItems.map((category) => (
             <div key={category.id} className="subcategory">
               <div className="subcategory-image">
-                <img src={category.image} />
+                <img src={category.image} load="lazy" />
               </div>
               <div className="subcategory-container">
                 <div className="subcategory-title">
@@ -84,7 +84,7 @@ const MenuPage = () => {
           {lunchItems.map((category) => (
             <div key={category.id} className="subcategory">
               <div className="subcategory-image">
-                <img src={category.image} />
+                <img src={category.image} load="lazy" />
               </div>
               <div className="subcategory-container">
                 <div className="subcategory-title">
