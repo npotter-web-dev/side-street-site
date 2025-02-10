@@ -552,7 +552,7 @@ ul{
 
 .home-main{
   width: 50%;
-  height: 90vh;
+  height: 100vh;
   padding: 40px;
   margin-left: 50%;
   justify-content: center;
@@ -817,7 +817,7 @@ ul{
     justify-content: center;
     font-size: 1.25em;
     font-style: italic;
-    line-height: 1.25;
+    line-height: 1.5;
     padding: 10px;
   }
 
@@ -842,13 +842,13 @@ ul{
   margin-bottom: 10px;
 }
 
-.menu-item h3{
+.item-name{
   font-family: "Brandink";
   font-size: 1.25em;
+  font-weight: bold;
   text-align: center;
   padding-bottom: 10px;
 }
-
 
 .item-info{
   width: 80%;
@@ -892,10 +892,6 @@ ul{
   padding-inline: 30px;
 }
 
-.drink-name{
-  font-weight: bold;
-}
-
 .menu-bottom{
   margin: 100px auto;
   text-align: center;
@@ -919,6 +915,16 @@ ul{
     width: 100%;
     margin: 0 auto;
     padding: 10px;
+  }
+
+
+
+
+  .menu-gallery{
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    width: 100%;
   }
 
   .menu-nav{
@@ -977,7 +983,9 @@ ul{
     width: 100%;
   }
   .subcategory-title p{
-    font-size: 18px;
+    font-size: 1em;
+    text-align: justify;
+    margin-inline: 20px;
   }
 
 
@@ -1021,25 +1029,28 @@ ul{
 }
 
 .drink-container{
-  display:flex;
-  flex-direction: row;
-  justify-content: start;
-  padding-block: 0;
+  flex-direction: column;
+  padding-block: 30px;
   margin: 0 auto;
   width: 100%;
 }
 
 .drink{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  justify-content: start;
+  flex-direction: row;
+  justify-content: space-between;
   line-height: 1.5;
-  width: 35%;
-  margin: 5px;
-  padding-inline: 30px;
+  width: 100%;
+  margin: 0;
+  /* margin-block: 10px; */
 }
-
+  .drink .item-name{
+    width: 50%;
+    text-align: left;
+  }
+  .drink .item-price{
+    width: 50%;
+    text-align: right;
+  }
 }
 
 /*-----------------------------------CONTACT PAGE-------------------------------------------------*/

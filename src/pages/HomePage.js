@@ -16,9 +16,10 @@ const HomePage = () => {
 
           <div className="home-info">
             <p className="home-bio">
-              Thank you for visiting Side Street Cafè, located in Newbury Park, CA. If you are
-              feeling like a great breakfast or lunch in a great environment, Side Street Cafè is
-              the place to be!
+              Nestled in the heart of Newbury Park, CA, Side Street Café is your go-to destination
+              for a delightful breakfast or lunch experience. Whether you're craving our signature
+              pancakes or a fresh, gourmet sandwich, our cozy ambiance and friendly staff make every
+              meal special. Come savor the flavors in an environment that feels like home!
             </p>
             <br />
             <div className="home-schedule">

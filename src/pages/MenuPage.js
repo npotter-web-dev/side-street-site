@@ -62,7 +62,7 @@ const MenuPage = () => {
                   {/* Map over items in each category */}
                   {category.items.map((item, index) => (
                     <div key={index} className="menu-item">
-                      <h3>{item.name}</h3>
+                      <h3 className="item-name">{item.name}</h3>
                       <p className="item-info">{item.description}</p>
                       <p className="item-price">${item.price}</p>
                     </div>
@@ -95,7 +95,7 @@ const MenuPage = () => {
                   {/* Map over items in each category */}
                   {category.items.map((item, index) => (
                     <div key={index} className="menu-item">
-                      <h3>{item.name}</h3>
+                      <h3 className="item-name">{item.name}</h3>
                       <p className="item-info">{item.description}</p>
                       <p className="item-price">${item.price}</p>
                     </div>
@@ -119,8 +119,8 @@ const MenuPage = () => {
                 {/* Map over items in each category */}
                 {category.items.map((item, index) => (
                   <div key={index} className="drink">
-                    <p className="drink-name">{item.name}</p>
-                    <p className="drink-price">${item.price}</p>
+                    <p className="item-name">{item.name}</p>
+                    <p className="item-price">${item.price}</p>
                   </div>
                 ))}
               </div>
