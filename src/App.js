@@ -7,7 +7,7 @@ import ReviewsPage from "./pages/ReviewsPage";
 import Footer from "./components/Footer";
 import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import React, { useEffect, useState } from "react";
-import ClipLoader from "react-spinners/ClipLoader";
+import FadeLoader from "react-spinners/FadeLoader";
 
 function App() {
   // Check if app is loading for the Loading Spinner
@@ -21,21 +21,26 @@ function App() {
     }, 3000); // Simulate a 3-second load time (you can adjust the time)
   }, []);
 
-  const spinnerContainerStyle = {
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    height: "100vh", // Center the spinner vertically and horizontally
-    backgroundColor: "#f3f3f3", // Optional: background color while loading
-  };
+  const sayings = [
+    "Just flipping your pancakes...",
+    "Gathering the ingredients...",
+    "Brewing your coffee...",
+    "Whipping up a fresh batter...",
+    "Whisking up something special...",
+    "Making sure everything is sunny-side up...",
+  ];
+
+  // Randomly select a saying
+  const loadingMessage = sayings[Math.floor(Math.random() * sayings.length)];
 
   return (
     <Router>
       <div className="container">
         {loading ? (
           // Display spinner while loading
-          <div className="spinner-container" style={spinnerContainerStyle}>
-            <ClipLoader size={50} color={"#36d7b7"} loading={loading} />
+          <div className="spinner-container">
+            <FadeLoader size={50} color={"#36d7b7"} loading={loading} />
+            <p className="loading-message">{loadingMessage}</p>
           </div>
         ) : (
           <div className="app">
