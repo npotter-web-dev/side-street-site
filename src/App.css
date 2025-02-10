@@ -41,7 +41,7 @@ body{
   --sage: rgba(122, 186, 108, 0.4);
   --shadow: 0 0 14px 8px rgba(0, 0, 0, 1);
 
-  --background1: url('./content/images/wood-focus.jpg');
+  --background1: url('./content/images/wood-focus.png');
 }
 
 .container{
@@ -55,7 +55,15 @@ body{
   height: 100%;
   margin: 0 auto;
   color: black;
-  /* color: #ffffff; */
+  animation: fadeIn 1s ease-out;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 @media (max-width: 600px){
   .app{
@@ -1161,24 +1169,33 @@ ul{
   flex-direction: column;
   margin: 100px auto;
   width: 60%;
-  height: 30em;
+  height: 50em;
   background-color: rgba(255, 255, 255, .3);
   backdrop-filter: blur(0px);
   box-shadow: 0 2px 8px rgba(0, 0, 0, .4), 0 2px 4px rgba(0, 0, 0, .1);
 }
 
+.reviews-title{
+  text-align: center;
+  margin: 100px auto;
+  line-height: 1.5;
+}
   .reviews-title h1{
-    font-family: "Brandink";
-    font-size: 62px;
+    font-family: "BrandinkLight";
+    font-size: 4em;
     color: black;
-    margin: 10px auto;
   }
   .reviews-title p{
     font-family: "Brandink";
-    font-size: 36px;
-    margin-inline: auto;
-    margin-bottom: 100px;
+    font-size: 3em;
+    padding: 15px;
     color: rgba(112, 130, 56, 1);
+  }
+  .reviews-title hr{
+    width: 75%;
+    border:1px solid #545454;
+    align-items: center;
+    margin: 0 auto;
   }
 
 .social-container{
@@ -1186,7 +1203,8 @@ ul{
   align-items: center;
   height: 100%;
   width: 100%;
-  padding-block: 30px;
+  margin-block: 20px;
+  padding-top: 3em;
 }
 
   .social-container .social-buttons{
@@ -1198,14 +1216,18 @@ ul{
 
   .social-container .social-icons {
     text-shadow: 0px 2px 8px rgb(0, 0, 0);
-    transition: color 0.2s ease-in-out, text-shadow 0.1s ease-in-out;
     transform: scale(1000%);
+  }
+
+  .social-container .social-icons:hover{
+    transform: scale(1050%);
+    transition: color 0.2s ease-in-out, transform 0.2s ease-in-out;
   }
 
   @media (max-width: 600px){
     .reviews-container{
       width: 95%;
-      height: 95vh;
+      height: 75vh;
       margin-block: 10px;
     }
 
@@ -1213,15 +1235,14 @@ ul{
       margin: 15px;
     }
       .reviews-title h1{
-        margin-bottom: 20px;
+        margin-block: 20px;
+        font-size: 2.5em;
+      }
+      .reviews-title p{
+        font-size: 2.25em;
       }
 
-    .reviews-container h1{
-      font-size: 40px;
-    }
-    .reviews-container p{
-      font-size: 28px;
-    }
+
     
   .reviews-container .social-icons{
     transform: scale(500%);

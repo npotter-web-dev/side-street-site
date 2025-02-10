@@ -13,7 +13,8 @@ const ReviewsPage = () => {
         <div className="reviews-container">
           <div className="reviews-title">
             <h1>Interested in leaving a review?</h1>
-            <p>Share your experience with the world!</p>
+            <hr />
+            <p>Share your experience!</p>
           </div>
           <div className="social-container">
             <ul className="social-buttons">
