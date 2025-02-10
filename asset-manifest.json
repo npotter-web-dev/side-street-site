@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/side-street-site/static/css/main.3d833fec.css",
-    "main.js": "/side-street-site/static/js/main.658ff5a4.js",
+    "main.css": "/side-street-site/static/css/main.c576a7bd.css",
+    "main.js": "/side-street-site/static/js/main.914b53bd.js",
     "static/media/wood-focus.png": "/side-street-site/static/media/wood-focus.1f33229ea9ae66a5f226.png",
     "static/media/cafe-sign.png": "/side-street-site/static/media/cafe-sign.0a0b725a88edfa4638d5.png",
     "static/media/veggies.jpg": "/side-street-site/static/media/veggies.e6f24e79718faacc2421.jpg",
@@ -11,11 +11,11 @@
     "static/media/BrandinkSans-Light.otf": "/side-street-site/static/media/BrandinkSans-Light.df21b83c1ecf2068ccd7.otf",
     "static/media/BrandinkSans.otf": "/side-street-site/static/media/BrandinkSans.5bed742da5f32e7f1466.otf",
     "index.html": "/side-street-site/index.html",
-    "main.3d833fec.css.map": "/side-street-site/static/css/main.3d833fec.css.map",
-    "main.658ff5a4.js.map": "/side-street-site/static/js/main.658ff5a4.js.map"
+    "main.c576a7bd.css.map": "/side-street-site/static/css/main.c576a7bd.css.map",
+    "main.914b53bd.js.map": "/side-street-site/static/js/main.914b53bd.js.map"
   },
   "entrypoints": [
-    "static/css/main.3d833fec.css",
-    "static/js/main.658ff5a4.js"
+    "static/css/main.c576a7bd.css",
+    "static/js/main.914b53bd.js"
   ]
 }
