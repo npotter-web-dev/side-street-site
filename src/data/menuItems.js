@@ -484,8 +484,8 @@ const lunchItems = [
   {
     id: 4,
     title: "Sides",
-    info: "",
-    image: "",
+    info: "this is a test to ssee if it effects styling",
+    image: omelettesImg,
     items: [
       { name: "French Fries", price: "5.99", description: "" },
       { name: "Fresh Fruit", price: "5.99", description: "" },

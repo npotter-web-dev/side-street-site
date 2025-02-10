@@ -4,7 +4,7 @@ import { FontAwesomeIcon as Icon } from "@fortawesome/react-fontawesome";
 import "../utils/icons/fontawesome";
 import CopyEmail from "../utils/CopyEmail";
 import social from "../data/socialMedia";
-import logo from "../content/images/ss_sign3.png";
+import logo from "../content/images/cafe-sign.png";
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -26,7 +26,7 @@ const Header = () => {
 
       {/* Site Title */}
       <div className="header-container">
-        <div className="header-contact lefter">
+        <div className="header-contact group1">
           <p>996 Lawrence Drive #103</p>
           <p>Newbury Park, CA</p>
         </div>
@@ -35,7 +35,7 @@ const Header = () => {
           <h2 className="header-subtitle">Where the Locals Eat!</h2>
         </div>
 
-        <div className="header-contact right">
+        <div className="header-contact group2">
           <p>(805) 499-9323</p>
           <ul className="social-buttons">
             <li>

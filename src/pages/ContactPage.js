@@ -24,7 +24,8 @@ const ContactPage = () => {
         <div className="contact-row">
           <div className="contact-main">
             <h1>We'd Love to See You Soon!</h1>
-            <p>996 Lawrence Drive #103 | Newbury Park, CA 91320</p>
+            <p className="address">996 Lawrence Drive #103</p>
+            <p>Newbury Park, CA 91320</p>
             <p>Monday - Friday : 6:30am - 2:00pm</p>
             <p>Saturday & Sunday : 7:00am - 2:00pm</p>
             <p>SideStreetCafe805@gmail.com</p>
