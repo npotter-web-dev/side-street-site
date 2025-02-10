@@ -2,21 +2,10 @@ import React, { useEffect } from "react";
 import social from "../data/socialMedia";
 import { FontAwesomeIcon as Icon } from "@fortawesome/react-fontawesome";
 import "../utils/icons/fontawesome";
+import SlowScroll from "../components/SlowScroll";
 
 const ReviewsPage = () => {
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollPosition = window.scrollY;
-      const backgroundPosition = `50% ${-(scrollPosition / 2)}px`;
-      document.querySelector(".page-container").style.backgroundPosition = backgroundPosition;
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+  SlowScroll();
 
   return (
     <div className="page-container">

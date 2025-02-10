@@ -499,7 +499,8 @@ ul{
 @media (max-width: 600px){
   .page-container{
     flex-direction: column;
-    background-repeat: repeat-y;
+    /* background-size:contain; */
+    background-attachment:fixed;
   }
 }
 
@@ -598,11 +599,6 @@ ul{
   margin: 0 auto;
   font-family: "BrandinkLight";
 }
-
-.home-bio{
-
-}
-
   .home-info .bold{
     font-family: "Brandink";
   }
@@ -613,6 +609,10 @@ ul{
 .home-schedule{
   margin-block: 20px;
   line-height: 2.5;
+}
+
+.home-gallery{
+  max-width: 50%;
 }
 
 @media (max-width: 600px){

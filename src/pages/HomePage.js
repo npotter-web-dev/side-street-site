@@ -1,19 +1,9 @@
 import React, { useEffect } from "react";
+import SwiperGallery from "../components/SwiperGallery";
+import SlowScroll from "../components/SlowScroll";
 
 const HomePage = () => {
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollPosition = window.scrollY;
-      const backgroundPosition = `50% ${-(scrollPosition / 2)}px`;
-      document.querySelector(".page-container").style.backgroundPosition = backgroundPosition;
-    };
-
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+  SlowScroll();
 
   return (
     <div className="page-container">

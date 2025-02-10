@@ -2,9 +2,8 @@ import React, { useRef } from "react";
 import { breakfastItems, lunchItems, drinkItems } from "../data/menuItems";
 import SwiperGallery from "../components/SwiperGallery";
 
-// Consider compartmentalizing
-
 const MenuPage = () => {
+  // Handle menu page navigation (scrolling to positions)
   const scrollTop = useRef(null);
   const scrollBreakfast = useRef(null);
   const scrollLunch = useRef(null);
