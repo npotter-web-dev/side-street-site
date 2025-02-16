@@ -2,8 +2,9 @@ import "./App.css";
 import Header from "./components/Header";
 import HomePage from "./pages/HomePage";
 import MenuPage from "./pages/MenuPage";
-import ContactPage from "./pages/ContactPage";
+import SpecialsPage from "./pages/SpecialsPage";
 import ReviewsPage from "./pages/ReviewsPage";
+import ContactPage from "./pages/ContactPage";
 import Footer from "./components/Footer";
 import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import React, { useEffect, useState } from "react";
@@ -48,8 +49,9 @@ function App() {
             <Routes>
               <Route path="/" exact element={<HomePage />} />
               <Route path="/menu" element={<MenuPage />} />
-              <Route path="/contact" element={<ContactPage />} />
               <Route path="/reviews" element={<ReviewsPage />} />
+              <Route path="/specials" element={<SpecialsPage />} />
+              <Route path="/contact" element={<ContactPage />} />
             </Routes>
             <Footer />
           </div>
