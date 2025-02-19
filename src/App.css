@@ -938,9 +938,6 @@ ul{
     padding: 10px;
   }
 
-
-
-
   .menu-gallery{
     justify-content: center;
     align-items: center;
@@ -984,7 +981,6 @@ ul{
     width: 100%;
   }
   
-  
   .subcategory-image img{
     justify-content: center;
     align-items: center;
@@ -1008,7 +1004,6 @@ ul{
     text-align: justify;
     margin-inline: 20px;
   }
-
 
 .items-container{
   display: flex;
@@ -1038,7 +1033,6 @@ ul{
   text-align: left;
   padding-bottom: 10px;
 }
-
 
 .item-info{
   width: 100%;
@@ -1072,6 +1066,16 @@ ul{
     width: 50%;
     text-align: right;
   }
+}
+
+/*-----------------------------------SPECIALS PAGE-------------------------------------------------*/
+
+.specials-page{
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
 }
 
 /*-----------------------------------CONTACT PAGE-------------------------------------------------*/
