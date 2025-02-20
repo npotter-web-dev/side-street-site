@@ -5,7 +5,7 @@ import "../utils/icons/fontawesome";
 import SlowScroll from "../components/SlowScroll";
 
 const ReviewsPage = () => {
-  SlowScroll();
+  // SlowScroll();
 
   return (
     <div className="page-container">

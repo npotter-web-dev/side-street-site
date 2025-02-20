@@ -3,11 +3,14 @@ import SwiperGallery from "../components/SwiperGallery";
 import SlowScroll from "../components/SlowScroll";
 
 const HomePage = () => {
-  SlowScroll();
+  // SlowScroll();
 
   return (
     <div className="page-container">
       <div className="home-page">
+        <div className="home-gallery">
+          <SwiperGallery />
+        </div>
         <div className="home-main">
           <div className="home-header">
             <h1 className="home-title">Side Street Cafe</h1>
