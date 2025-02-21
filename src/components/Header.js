@@ -20,7 +20,9 @@ const Header = () => {
         {isMobileMenuOpen ? (
           <p></p> // "x" icon when mobile menu is open -- 9932 for the X icon, currently squished sandwich
         ) : (
-          <p>Menu⋮</p> // bars icon when mobile menu is closed     &#8942;
+          <p>
+            Menu<big>⋮</big>
+          </p> // bars icon when mobile menu is closed     &#8942;   ⋮  &#8801;
         )}
       </div>
 

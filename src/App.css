@@ -329,15 +329,22 @@ ul{
     position: absolute;
     display:flex;
     margin-inline: 0;
-    margin-block: 10px;
-    text-align: end;
+    margin-block: 2px;
+    text-align: right;
     right: 0;
+    padding-right: 5px;
   }
     .mobile-menu-button p{
       font-family: "BrandinkLight";
       font-size: 1.5em;
       font-weight: 600;
       line-height: 1.5;
+      align-items: center;
+      justify-content: center;
+    }
+    .mobile-menu-button big{
+      font-size: 1.4em;
+      padding-left: 2px;
     }
 
   .mobile-menu-close-button{
