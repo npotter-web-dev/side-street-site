@@ -1,5 +1,4 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Link } from "react-router-dom";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/effect-fade";
@@ -16,17 +15,12 @@ const slidesData = [
   },
   {
     id: 2,
-    image: content.veggies,
-    caption: "Veggies",
-  },
-  {
-    id: 3,
     image: content.waffles,
-    caption: "Waffles",
+    caption: "Veggies",
   },
 ];
 
-const SwiperGallery = () => {
+const HomeSwiper = () => {
   return (
     <div className="swiper-container">
       <Swiper
@@ -55,9 +49,7 @@ const SwiperGallery = () => {
       >
         {slidesData.map((slide) => (
           <SwiperSlide key={slide.id}>
-            <Link to={slide.link}>
-              <img src={slide.image} className="swiper-img" />
-            </Link>
+            <img src={slide.image} className="swiper-img" />
           </SwiperSlide>
         ))}
         <div className="slider-controller">
@@ -74,4 +66,4 @@ const SwiperGallery = () => {
   );
 };
 
-export default SwiperGallery;
+export default HomeSwiper;

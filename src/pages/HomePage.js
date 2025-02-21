@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import SwiperGallery from "../components/SwiperGallery";
+import MenuSwiper from "../components/MenuSwiper";
 import SlowScroll from "../components/SlowScroll";
 
 const HomePage = () => {
@@ -9,7 +9,7 @@ const HomePage = () => {
     <div className="page-container">
       <div className="home-page">
         <div className="home-gallery">
-          <SwiperGallery />
+          <MenuSwiper />
         </div>
         <div className="home-main">
           <div className="home-header">

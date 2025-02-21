@@ -18,9 +18,9 @@ const Header = () => {
       {/* Mobile Menu Button */}
       <div className="mobile-menu-button" onClick={toggleMobileMenu}>
         {isMobileMenuOpen ? (
-          <h3></h3> // "x" icon when mobile menu is open -- 9932 for the X icon, currently squished sandwich
+          <p></p> // "x" icon when mobile menu is open -- 9932 for the X icon, currently squished sandwich
         ) : (
-          <h3>&#9776;</h3> // bars icon when mobile menu is closed
+          <p>Menu⋮</p> // bars icon when mobile menu is closed     &#8942;
         )}
       </div>
 
@@ -31,7 +31,7 @@ const Header = () => {
           <p>Newbury Park, CA</p>
         </div>
         <div className="header-logo">
-          <img className="site-logo" src={logo} alt="The 6202 Band Logo" />
+          <img className="site-logo" src={logo} alt="Side Street Cafe Logo" />
           <h2 className="header-subtitle">Where the Locals Eat!</h2>
         </div>
 
@@ -65,8 +65,8 @@ const Header = () => {
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
         <nav className="mobile-menu">
-          <div className="mobile-menu-button" onClick={toggleMobileMenu}>
-            <h3>&#9886;</h3> {/* "x" icon to close the mobile menu */}
+          <div className="mobile-menu-close-button" onClick={toggleMobileMenu}>
+            <p>X</p> {/* "x" icon to close the mobile menu */}
           </div>
           <ul className="navbar-options">
             <li>

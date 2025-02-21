@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import { breakfastItems, lunchItems, drinkItems } from "../data/menuItems";
-import SwiperGallery from "../components/SwiperGallery";
+import MenuSwiper from "../components/MenuSwiper";
 
 const MenuPage = () => {
   // Handle menu page navigation (scrolling to positions)
@@ -20,7 +20,7 @@ const MenuPage = () => {
     <div className="page-container">
       <div className="menu-page">
         <div className="menu-gallery">
-          <SwiperGallery />
+          <MenuSwiper />
         </div>
 
         <div className="menu-top" ref={scrollTop}>
@@ -49,11 +49,11 @@ const MenuPage = () => {
           </section>
 
           {breakfastItems.map((category) => (
-            <div key={category.id} className="subcategory">
+            <div key={category.id} className="subcategory-container">
               <div className="subcategory-image">
                 <img src={category.image} load="lazy" />
               </div>
-              <div className="subcategory-container">
+              <div className="subcategory-box">
                 <div className="subcategory-title">
                   <h2>{category.title}</h2>
                   <p>{category.info}</p>
@@ -82,11 +82,11 @@ const MenuPage = () => {
           </section>
 
           {lunchItems.map((category) => (
-            <div key={category.id} className="subcategory">
+            <div key={category.id} className="subcategory-container">
               <div className="subcategory-image">
                 <img src={category.image} load="lazy" />
               </div>
-              <div className="subcategory-container">
+              <div className="subcategory-box">
                 <div className="subcategory-title">
                   <h2>{category.title}</h2>
                   <p>{category.info}</p>
@@ -114,7 +114,7 @@ const MenuPage = () => {
             <hr />
           </section>
           {drinkItems.map((category) => (
-            <div key={category.id} className="subcategory">
+            <div key={category.id} className="subcategory-container">
               <div className="drink-container">
                 {/* Map over items in each category */}
                 {category.items.map((item, index) => (

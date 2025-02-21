@@ -58,6 +58,7 @@ body{
   animation: fadeIn 1s ease-out;
 }
 
+/* This is for the loading screen to fade into the site */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -92,6 +93,27 @@ h1, h2 {
 .loading-message{
   margin-top: 20px;
 }
+
+
+/*-----------------------------------GENERAL PAGE SETTING--------------------------------------------------*/
+.page-container{
+  background-image: var(--background1);
+  background-size: cover;
+  background-position: 50% 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  min-height: 900px;
+  z-index: 0;
+}
+@media (max-width: 800px){
+  .page-container{
+    flex-direction: column;
+  }
+}
+
 
 /*-----------------------------------SOCIAL MEDIA--------------------------------------------------*/
 
@@ -162,7 +184,6 @@ ul{
   list-style: none;
 }
 
-
 .site-header{
   z-index: 0;
   /* background-color: rgb(249, 255, 230); */
@@ -232,7 +253,6 @@ ul{
   }
   .group1 {
     width: 100%;
-    /* margin-right: 20em; */
     justify-content: center;
     align-items: center;
     font-size: 1.1rem;
@@ -240,7 +260,6 @@ ul{
  }
   .group2{
     width: 100%;
-    /* padding-left: 16em; */
     font-size: 1.3rem;
     margin: 0 auto;
   }
@@ -254,7 +273,6 @@ ul{
   max-width: 100%;
   background-color: rgba(255, 255, 255, .2);
   backdrop-filter: blur(25px);
-  
 }
 
 .navbar-options{
@@ -288,38 +306,54 @@ ul{
   justify-content: space-between;
 }
 
-
 @media (max-width: 800px){
-
   .site-header{
     margin-block: 0;
     background-attachment: scroll;
   }
 
-  .mobile-menu-button{
-    position: absolute;
-    display:inline-block;
-    margin-inline: auto 0;
-    text-align: end;
-    font-size: 38px;
-    padding: 4px;
-    right: 0;
-  }
-
   .mobile-menu {
     display: block;
-    /* background-color: var(--main); */
-    /* background-image: var(--background1); */
     background-color: rgba(255, 255, 255, .6);
     backdrop-filter: blur(20px);
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     z-index: 1000;
     transition: ease-in-out 1.5s;
   }
+
+  .mobile-menu-button{
+    position: absolute;
+    display:flex;
+    margin-inline: 0;
+    margin-block: 10px;
+    text-align: end;
+    right: 0;
+  }
+    .mobile-menu-button p{
+      font-family: "BrandinkLight";
+      font-size: 1.5em;
+      font-weight: 600;
+      line-height: 1.5;
+    }
+
+  .mobile-menu-close-button{
+    position: absolute;
+    display:flex;
+    padding-inline: 10px;
+    margin-block: 10px;
+    text-align: end;
+    right: 0;
+  }
+    .mobile-menu-close-button p{
+      font-family: "BrandinkLight";
+      font-size: 1.75em;
+      font-weight: 600;
+      line-height: 1.5;
+    }
 
   .mobile-menu .navbar-options {
     display: flex;
@@ -344,8 +378,8 @@ ul{
     flex-direction: column;
     justify-content: center;
     margin: 0 auto;
-    height: 100%;
-    
+    padding-top: 40px;
+    height: 100%; 
   }
 
   .header-logo{
@@ -375,9 +409,7 @@ ul{
   .header-navigation{
     display: none;
   }
-
 }
-
 
 /*-----------------------------------FOOTER--------------------------------------------------*/
 
@@ -455,7 +487,6 @@ ul{
   margin-top: 4px;
 }
 
-
 .copyright{
   display: flex;
   justify-content: center;
@@ -502,68 +533,9 @@ ul{
     flex-direction: row;
     transform: scale(.75);
   }
-
-}
-
-
-
-/*-----------------------------------GENERAL PAGE SETTING--------------------------------------------------*/
-.page-container{
-  background-image: var(--background1);
-  background-size: cover;
-  background-position: 50% 0;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  min-height: 900px;
-  z-index: 0;
-}
-@media (max-width: 800px){
-  .page-container{
-    flex-direction: column;
-  }
-}
-
-
-.page-title{
-  display: flex;
-  flex-direction: column;
-  font-size: 60px;
-  line-height: 2;
-  margin: 10px auto;
-}
-
-.subtitle{
-  font-size: 18px;
-  font-weight: bold;
-  font-style: italic;
-  margin: 10px auto;
-}
-
-.page-heading{
-  width: 50%;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  margin: 40px auto;
-}
-
-.title{
-  justify-content: center;
-  text-align: center;
-  font-size: 60px;
-  font-weight: 500;
-  margin: 20px;
-}
-
-.title span {
-  font-weight: 100;
 }
 
 /*-----------------------------------HOME PAGE-------------------------------------------------*/
-
 
 .home-page{
   display: flex;
@@ -584,7 +556,6 @@ ul{
   .home-gallery .swiper-img{
     height: auto;
   }
-
 
 .home-main{
   width: 50%;
@@ -653,7 +624,12 @@ ul{
   .home-page{
     flex-direction: column;
   }
-  
+    
+  .home-gallery{
+    width: 95%;
+    margin-block: 50px;
+  }
+
   .home-main{
     width: 100%;
     margin-top: 30px;
@@ -693,7 +669,8 @@ ul{
   width: 90%;
   margin: 0 auto;
   padding: 10px;
-  background-color: rgba(255, 255, 255, .2);
+  background-image: linear-gradient(to left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .4) 5%, rgba(255, 255, 255, .4) 95%, rgba(255, 255, 255, 0) 100%);
+  /* background-color: rgba(255, 255, 255, .2); */
   backdrop-filter: blur(2px);
 }
 
@@ -794,7 +771,7 @@ ul{
     width:70%;
   }
 
-.subcategory{
+.subcategory-container{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -807,13 +784,14 @@ ul{
   display: flex;
   justify-content: center;
   margin: 0 auto;
+  margin-bottom: 20px;
   width: 90%;
 }
-.subcategory img{
+.subcategory-image img{
   max-width: 100%;
 }
 
-.subcategory-container{
+.subcategory-box{
   width: 90%;
   padding-block: 60px;
   background-color: rgba(255, 255, 255, .3);
@@ -879,7 +857,7 @@ ul{
   font-size: 1em;
   font-weight: 100;
   text-align: center;
-  padding-bottom: 5px;
+  padding-bottom: 10px;
 }
 
 .item-price{
@@ -888,7 +866,7 @@ ul{
   font-style: italic;
   font-weight: 500;
   text-align: center;
-  line-height: 1.2;
+  line-height: 1;
 }
 
 .drink-container{
@@ -966,7 +944,7 @@ ul{
   .category-title hr{
     width: 20%;
   }
-  .subcategory{
+  .subcategory-container{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -982,16 +960,8 @@ ul{
     margin: 20px auto;
     width: 100%;
   }
-  
-  .subcategory-image img{
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    /* height: 100px; */
-    width: 100%;
-  }
 
-  .subcategory-container{
+  .subcategory-box{
     width: 100%;
     padding-block: 60px;
     background-color: rgba(255, 255, 255, .4);
@@ -1003,72 +973,71 @@ ul{
   }
   .subcategory-title p{
     font-size: 1em;
-    text-align: justify;
-    margin-inline: 20px;
+    text-align: center;
+    margin-inline: 10px;
   }
 
-.items-container{
-  display: flex;
-  flex-direction: column;
-  flex-wrap:wrap;
-  justify-content: space-evenly;
-  align-items: baseline;
-  height: fit-content;
-  width: 90%;
-  margin: 0 auto;  
-}
+  .items-container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap:wrap;
+    justify-content: space-evenly;
+    align-items: baseline;
+    height: fit-content;
+    width: 90%;
+    margin: 0 auto;  
+  }
 
-.menu-item{
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  justify-content: start;
-  min-width: 100%;
-  max-width: 100%;
-  padding: 10px;
-  margin-bottom: 10px;
-}
+  .menu-item{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    min-width: 100%;
+    max-width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
 
-.menu-item h3{
-  font-family: "Brandink";
-  font-size: 18px;
-  text-align: left;
-  padding-bottom: 10px;
-}
+  .menu-item h3{
+    font-family: "Brandink";
+    font-size: 18px;
+    text-align: left;
+    padding-bottom: 10px;
+  }
 
-.item-info{
-  width: 100%;
-  font-family: "Brandink";
-  font-size: 16px;
-  font-weight: 100;
-  text-align: left;
-  padding-bottom: 5px;
-}
-
-.drink-container{
-  flex-direction: column;
-  padding-block: 30px;
-  margin: 0 auto;
-  width: 100%;
-}
-
-.drink{
-  flex-direction: row;
-  justify-content: space-between;
-  line-height: 1.5;
-  width: 100%;
-  margin: 0;
-  /* margin-block: 10px; */
-}
-  .drink .item-name{
-    width: 50%;
+  .item-info{
+    width: 100%;
+    font-family: "Brandink";
+    font-size: 16px;
+    font-weight: 100;
     text-align: left;
   }
-  .drink .item-price{
-    width: 50%;
-    text-align: right;
+
+  .drink-container{
+    flex-direction: column;
+    padding-block: 30px;
+    margin: 0 auto;
+    width: 100%;
   }
-}
+
+  .drink{
+    flex-direction: row;
+    justify-content: space-between;
+    line-height: 1.5;
+    width: 100%;
+    margin: 0;
+    /* margin-block: 10px; */
+  }
+    .drink .item-name{
+      width: 50%;
+      text-align: left;
+    }
+    .drink .item-price{
+      width: 50%;
+      text-align: right;
+    }
+  }
 
 /*-----------------------------------SPECIALS PAGE-------------------------------------------------*/
 

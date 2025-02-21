@@ -6,7 +6,7 @@ const breakfastItems = [
   {
     id: 1,
     title: "2 Egg Classics and Scramblers",
-    info: "All Egg Breakfasts Served with Two Eggs, Home Fries, and Toast OR Biscuits 'n' Gravy. (Substitute Croissant or Bagel, Add $1.50) (Gluten free Bread $2.25)",
+    info: "All Egg Breakfasts Served with Two Eggs, Home Fries, and Toast OR Biscuits 'n' Gravy. (Substitute croissant or bagel +$1.50) (Gluten-free toast +$2.25)",
     image: omelettesImg,
     items: [
       { name: "Just Eggs (2 Eggs)", price: "11.99", description: "" },
@@ -78,7 +78,7 @@ const breakfastItems = [
   {
     id: 3,
     title: "Omelettes",
-    info: "Made with Three Eggs, Served with Toast OR Biscuits ‘n‛ Gravy AND Home Fries (substitute Croissant or Bagel, Add 1.50), (Gluten Free Toast 2.25). Watching your cholesterol? All Omelettes can be made with no yolks! (Egg Beaters - add  $3.00)",
+    info: "Made with Three Eggs, Served with Toast OR Biscuits ‘n‛ Gravy AND Home Fries (substitute croissant or bagel +$1.50), (Gluten-free toast +$2.25). Watching your cholesterol? All omelettes can be made with no yolks! (Egg Beaters +$3.00)",
     image: omelettesImg,
     items: [
       {
@@ -180,8 +180,8 @@ const breakfastItems = [
   {
     id: 6,
     title: "Waffles",
-    info: "Made from scratch, Belgian style, lightly dusted with Powdered Sugar and Cinnamon",
-    image: omelettesImg,
+    info: "Made From Scratch, Belgian Style, Lightly Dusted With Powdered Sugar and Cinnamon. Combos Served With 2 Eggs & Bacon or Sausage.",
+    image: wafflesImg,
     items: [
       { name: "Waffle (Plain)", price: "12.99", description: "" },
       { name: "Pecan Waffle", price: "13.99", description: "" },
@@ -191,10 +191,10 @@ const breakfastItems = [
       {
         name: "Waffle Combo",
         price: "16.99",
-        description: "served with 2 Eggs, Bacon or Sausage",
+        description: "",
       },
-      { name: "Pecan Combo", price: "18.99", description: "" },
-      { name: "Bacon Combo", price: "18.99", description: "" },
+      { name: "Pecan Waffle Combo", price: "18.99", description: "" },
+      { name: "Bacon Waffle Combo", price: "18.99", description: "" },
       { name: "Strawberry Waffle Combo", price: "18.99", description: "" },
       { name: "Banana Nut Waffle Combo", price: "18.99", description: "" },
       { name: "Chicken & Waffles", price: "15.99", description: "" },
@@ -204,7 +204,7 @@ const breakfastItems = [
     id: 7,
     title: "Pancakes",
     info: "",
-    image: omelettesImg,
+    image: wafflesImg,
     items: [
       { name: "Buttermilk Pancakes (2 Large)", price: "11.99", description: "" },
       { name: "Blueberry Pancakes", price: "12.99", description: "with Whipped Cream" },
@@ -262,24 +262,24 @@ const breakfastItems = [
       { name: "1 Egg", price: "3.75", description: "" },
       { name: "Tortilla", price: "2.00", description: "" },
       { name: "Toast", price: "2.95", description: "" },
+      { name: "Garlic Toast", price: "2.50", description: "" },
       { name: "English Muffin", price: "2.75", description: "" },
+      { name: "Biscuit", price: "3.25", description: "" },
       { name: "Croissant", price: "4.25", description: "" },
       { name: "Bagel", price: "4.25", description: "" },
-      { name: "Garlic Toast", price: "2.50", description: "" },
+      { name: "Side One Open Biscuit Topped W Gravy", price: "6.99", description: "" },
+      { name: "Gravy", price: "3.00", description: "" },
       { name: "Whipped Cream", price: "1.50", description: "" },
+      { name: "Hollandaise Sauce", price: "3.25", description: "" },
+      { name: "Cream Cheese", price: "1.50", description: "" },
+      { name: "Cottage Cheese", price: "3.25", description: "" },
+      { name: "Sour Cream", price: "1.50", description: "" },
+      { name: "1/2 Avocado or Guacamole", price: "2.95", description: "" },
+      { name: "Potato Salad or Cole Slaw", price: "4.25", description: "" },
       { name: "Onion Rings", price: "8.99", description: "" },
-      { name: "Biscuit", price: "3.25", description: "" },
       { name: "Home Fries", price: "3.50", description: "" },
       { name: "French Fries", price: "5.99", description: "" },
       { name: "Sweet Potato Fries", price: "8.99", description: "" },
-      { name: "Potato Salad or Cole Slaw", price: "4.25", description: "" },
-      { name: "Side One Open Biscuit Topped W Gravy", price: "6.99", description: "" },
-      { name: "Cottage Cheese", price: "3.25", description: "" },
-      { name: "Hollandaise Sauce", price: "3.25", description: "" },
-      { name: "Cream Cheese", price: "1.50", description: "" },
-      { name: "1/2 Avocado or Guacamole", price: "2.95", description: "" },
-      { name: "Gravy", price: "3.00", description: "" },
-      { name: "Sour Cream", price: "1.50", description: "" },
       { name: "Serrano Chilies", price: "1.95", description: "" },
       { name: "Side of Corned Beef Hash", price: "9.99", description: "" },
       { name: "Side of Chicken Breast", price: "6.99", description: "" },
@@ -291,39 +291,13 @@ const lunchItems = [
   {
     id: 1,
     title: "Sandwiches",
-    info: "Most of our sandwiches are served on White, Wheat, Rye, Sourdough or 7-Grain Bread (gluten free bread +$2.25). Sub a Croissant or French Roll, or add Cheese +$1.50. All include your choice of French Fries, Cole Slaw, Potato Salad, Soup or Mixed Green Salad (add Onion Rings or Sweet Potato Fries +$1.50). WE USE ABF FRESH CHICKEN BREASTS.",
+    info: "Most of our sandwiches are served on White, Wheat, Rye, Sourdough or 7-Grain Bread (Gluten-free bread +$2.25). Sub a Croissant or French Roll, or add Cheese +$1.50. All include your choice of French Fries, Cole Slaw, Potato Salad, Soup or Mixed Green Salad (Onion Rings or Sweet Potato Fries +$1.50). WE USE ABF FRESH CHICKEN BREASTS.",
     image: omelettesImg,
     items: [
       {
-        name: "Albacore Tuna Sandwich",
-        price: "14.99",
-        description: "with Lettuce, Tomato, Avocado, and Swiss on Grilled Sourdough",
-      },
-      { name: "Patty Melt", price: "14.99", description: "Beef Patty and Cheese" },
-      {
-        name: "Reuben",
-        price: "14.99",
-        description: "Corned Beef, Swiss Cheese and Sauerkraut on Grilled Rye",
-      },
-      {
-        name: "Tri-Tip Sandwich",
+        name: "Side Street Club",
         price: "15.99",
-        description: "with Grilled Onions, Lettuce, Tomato, and Avocado on Ciabatta",
-      },
-      {
-        name: "Turkey Melt",
-        price: "15.99",
-        description: "Turkey, Bacon, Swiss and Avocado on Grilled Sourdough",
-      },
-      {
-        name: "French Dip",
-        price: "14.99",
-        description: "Roast Beef and Swiss Cheese on French Roll served with Au Jus",
-      },
-      {
-        name: "Tuna Melt",
-        price: "14.99",
-        description: "on Grilled Sourdough with Swiss and American Cheese",
+        description: "Turkey, Ham, Bacon, Swiss and American Cheese, Lettuce, Tomato and Mayo",
       },
       {
         name: "Triple Decker Club",
@@ -337,46 +311,24 @@ const lunchItems = [
           "Chicken Breast, Bacon, Tomato, Avocado, Lettuce and Swiss Cheese on Grilled Wheat",
       },
       {
-        name: "California Melt",
+        name: "Reuben",
         price: "14.99",
-        description: "Turkey, Avocado, Bacon and Jack Cheese on Grilled Sourdough",
+        description: "Corned Beef, Swiss Cheese and Sauerkraut on Grilled Rye",
       },
-      { name: "Tuna Avocado Swiss Melt", price: "14.99", description: "on Grilled Sourdough" },
       {
         name: "Reuben",
         price: "12.99",
         description: "Corned Beef or Turkey on Grilled Rye with Swiss Cheese and Sauerkraut",
       },
-      {
-        name: "Beefeater",
-        price: "12.99",
-        description: "Roast Beef on Grilled Sourdough with Ortega Chilies and Jack Cheese",
-      },
-      {
-        name: "Suzanne's Lunch",
-        price: "14.99",
-        description:
-          "Grilled French Garlic Roll stuffed with Turkey, Jack Cheese, Ortega Chilies and Tomato",
-      },
-      { name: "Grilled Ham and Cheese", price: "10.99", description: "" },
-      { name: "Grilled Cheese", price: "11.99", description: "" },
-      { name: "BBQ Tri-Tip", price: "16.99", description: "on a French Roll" },
-      { name: "French Dip", price: "16.99", description: "with Au Jus on a French Roll" },
-      {
-        name: "Beef Philly",
-        price: "18.99",
-        description: "with Onions, Bell Pepper and Jack Cheese",
-      },
-      {
-        name: "Side Street Club",
-        price: "15.99",
-        description: "Turkey, Ham, Bacon, Swiss and American Cheese, Lettuce, Tomato and Mayo",
-      },
       { name: "Turkey Sandwich", price: "11.99", description: "" },
       { name: "Ham Sandwich", price: "11.99", description: "" },
       { name: "Roast Beef or Corned Beef", price: "12.99", description: "" },
-      { name: "Tuna Salad Sandwich", price: "12.99", description: "" },
       { name: "Chicken Salad Sandwich", price: "12.99", description: "" },
+      {
+        name: "Malibu Chicken Sandwich",
+        price: "16.99",
+        description: "Chicken, Ham, Swiss, Avocado, Lettuce and Tomato",
+      },
       { name: "Bacon, Lettuce and Tomato", price: "13.99", description: "(add Avocado +$2.95)" },
       {
         name: "Veggie Sandwich",
@@ -389,10 +341,62 @@ const lunchItems = [
         description:
           "Choice of Turkey, Chicken Salad, Tuna Salad, Roast Beef with Swiss Cheese, Avocado, Sprouts, Lettuce and Tomatoes Rolled in Whole Wheat Wrap with Brown Mustard and Mayo",
       },
+      // Fish
       {
-        name: "Malibu Chicken Sandwich",
-        price: "16.99",
-        description: "Chicken, Ham, Swiss, Avocado, Lettuce and Tomato",
+        name: "Albacore Tuna Sandwich",
+        price: "14.99",
+        description: "with Lettuce, Tomato, Avocado, and Swiss on Grilled Sourdough",
+      },
+      { name: "Tuna Salad Sandwich", price: "12.99", description: "" },
+      {
+        name: "Tuna Melt",
+        price: "14.99",
+        description: "on Grilled Sourdough with Swiss and American Cheese",
+      },
+      { name: "Tuna Avocado Swiss Melt", price: "14.99", description: "on Grilled Sourdough" },
+
+      // Hot
+
+      {
+        name: "Suzanne's Lunch",
+        price: "14.99",
+        description:
+          "Grilled French Garlic Roll stuffed with Turkey, Jack Cheese, Ortega Chilies and Tomato",
+      },
+      { name: "Grilled Ham and Cheese", price: "10.99", description: "" },
+      { name: "Grilled Cheese", price: "11.99", description: "" },
+      {
+        name: "Turkey Melt",
+        price: "15.99",
+        description: "Turkey, Bacon, Swiss and Avocado on Grilled Sourdough",
+      },
+      {
+        name: "California Melt",
+        price: "14.99",
+        description: "Turkey, Avocado, Bacon and Jack Cheese on Grilled Sourdough",
+      },
+      { name: "Patty Melt", price: "14.99", description: "Beef Patty and Cheese" },
+      {
+        name: "Beefeater",
+        price: "12.99",
+        description: "Roast Beef on Grilled Sourdough with Ortega Chilies and Jack Cheese",
+      },
+      {
+        name: "French Dip",
+        price: "14.99",
+        description: "Roast Beef and Swiss Cheese on French Roll served with Au Jus",
+      },
+      { name: "French Dip", price: "16.99", description: "with Au Jus on a French Roll" },
+      {
+        name: "Tri-Tip Sandwich",
+        price: "15.99",
+        description: "with Grilled Onions, Lettuce, Tomato, and Avocado on Ciabatta",
+      },
+      { name: "BBQ Tri-Tip", price: "16.99", description: "on a French Roll" },
+      {
+        name: "Beef Philly",
+        price: "18.99",
+        description: "with Onions, Bell Pepper and Jack Cheese",
       },
       {
         name: "Chicken Philly",
