@@ -20,9 +20,7 @@ const Header = () => {
         {isMobileMenuOpen ? (
           <p></p> // "x" icon when mobile menu is open -- 9932 for the X icon, currently squished sandwich
         ) : (
-          <p>
-            Menu<big>⋮</big>
-          </p> // bars icon when mobile menu is closed     &#8942;   ⋮  &#8801;
+          <p>&#8801;</p> // bars icon when mobile menu is closed     &#8942;   ⋮  &#8801;
         )}
       </div>
 
@@ -68,7 +66,7 @@ const Header = () => {
       {isMobileMenuOpen && (
         <nav className="mobile-menu">
           <div className="mobile-menu-close-button" onClick={toggleMobileMenu}>
-            <p>X</p> {/* "x" icon to close the mobile menu */}
+            <p>&#9932;</p> {/* "x" icon to close the mobile menu */}
           </div>
           <ul className="navbar-options">
             <li>

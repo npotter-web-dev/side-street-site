@@ -335,31 +335,27 @@ ul{
     padding-right: 5px;
   }
     .mobile-menu-button p{
-      font-family: "BrandinkLight";
-      font-size: 1.5em;
+      font-family: "Brandink";
+      font-size: 60px;
       font-weight: 600;
-      line-height: 1.5;
+      line-height: 1.25;
       align-items: center;
       justify-content: center;
-    }
-    .mobile-menu-button big{
-      font-size: 1.4em;
-      padding-left: 2px;
     }
 
   .mobile-menu-close-button{
     position: absolute;
     display:flex;
     padding-inline: 10px;
-    margin-block: 10px;
+    margin-block: 5px;
     text-align: end;
     right: 0;
   }
     .mobile-menu-close-button p{
-      font-family: "BrandinkLight";
-      font-size: 1.75em;
+      font-family: "Brandink";
+      font-size: 48px;
       font-weight: 600;
-      line-height: 1.5;
+      line-height: 1.25;
     }
 
   .mobile-menu .navbar-options {
