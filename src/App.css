@@ -781,7 +781,7 @@ ul{
   justify-content: center;
   max-width: 100%;
   margin: 10px auto;
-}
+  }
 
 .subcategory-image{
   display: flex;
@@ -800,6 +800,7 @@ ul{
   background-color: rgba(255, 255, 255, .3);
   backdrop-filter: blur(0px);
   box-shadow: 0 2px 8px rgba(0, 0, 0, .4), 0 2px 4px rgba(0, 0, 0, .1);
+  /* background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .4) 5%, rgba(255, 255, 255, .4) 95%, rgba(255, 255, 255, 0) 100%); */ 
 }
 
 .subcategory-title{
@@ -966,11 +967,9 @@ ul{
 
   .subcategory-box{
     width: 100%;
-    padding-block: 60px;
-    background-color: rgba(255, 255, 255, .4);
-    backdrop-filter: blur(3px);
-    box-shadow: 0 2px 8px rgba(0, 0, 0, .4), 0 2px 4px rgba(0, 0, 0, .1);
+    backdrop-filter: blur(2px);
   }
+  
   .subcategory-title{
     width: 100%;
   }
@@ -1050,8 +1049,35 @@ ul{
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  /* background-image: linear-gradient(to left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .4) 5%, rgba(255, 255, 255, .4) 95%, rgba(255, 255, 255, 0) 100%); */
+
+}
+.specials-page h1{
+  font-family: "Vintage";
+  font-size: 7em;
+  font-weight: 100;
+}
+.specials-page .subcategory-box{
+  background-color: none;
+  backdrop-filter: none;
+  background-image: radial-gradient(ellipse, rgba(255, 255, 255, .6)60%, rgba(255, 255, 255, 0)90%);
 }
 
+@media (max-width: 800px){
+  .specials-page{
+    width: 100%;
+    margin-block: 20px;
+  }
+  .specials-page h1{
+    font-size: 4em;
+    padding-block: 20px;
+  }
+
+  .specials-page .subcategory-box{
+    backdrop-filter: blur(3px);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .4), 0 2px 4px rgba(0, 0, 0, .1);
+  }
+}
 /*-----------------------------------CONTACT PAGE-------------------------------------------------*/
 
 
@@ -1164,7 +1190,6 @@ ul{
   margin: 50px auto;
   width: 60%;
   height: 100%;
-
   background-color: rgba(255, 255, 255, .3);
   backdrop-filter: blur(0px);
   box-shadow: 0 2px 8px rgba(0, 0, 0, .4), 0 2px 4px rgba(0, 0, 0, .1);
@@ -1234,7 +1259,6 @@ ul{
       align-items: center;
       justify-content: center;
     }
-
     .reviews-title{
       margin: 15px;
     }
@@ -1246,24 +1270,7 @@ ul{
         font-size: 2.25em;
       }
 
-
-    
-  .reviews-container .social-icons{
-    transform: scale(500%);
+    .reviews-container .social-icons{
+      transform: scale(500%);
+    }
   }
-  }
-/* 
-.review-card{
-  width: 30%;
-  background-color: rgba(255, 255, 255, .6);
-  border-radius: 5px;
-  box-shadow: var(--shadow);
-  margin: 8px;
-}
-
-  .review-card:hover{
-    transform: scale(101%);
-    transition: ease-in-out .3s;
-    box-shadow:0 0 14px 8px  rgba(255, 255, 255, .2);
-  } */
-

@@ -313,11 +313,6 @@ const lunchItems = [
       {
         name: "Reuben",
         price: "14.99",
-        description: "Corned Beef, Swiss Cheese and Sauerkraut on Grilled Rye",
-      },
-      {
-        name: "Reuben",
-        price: "12.99",
         description: "Corned Beef or Turkey on Grilled Rye with Swiss Cheese and Sauerkraut",
       },
       { name: "Turkey Sandwich", price: "11.99", description: "" },
@@ -386,7 +381,6 @@ const lunchItems = [
         price: "14.99",
         description: "Roast Beef and Swiss Cheese on French Roll served with Au Jus",
       },
-      { name: "French Dip", price: "16.99", description: "with Au Jus on a French Roll" },
       {
         name: "Tri-Tip Sandwich",
         price: "15.99",
@@ -536,7 +530,7 @@ const drinkItems = [
 const specialItems = [
   {
     id: 1,
-    title: "Specials",
+    title: "",
     info: "",
     image: "",
     items: [
