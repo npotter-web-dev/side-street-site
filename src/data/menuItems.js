@@ -1,13 +1,11 @@
-import wafflesImg from "../content/images/menu/waffles.jpg";
-import omelettesImg from "../content/images/menu/omelettes.jpg";
-import veggiesImg from "../content/images/menu/veggies.jpg";
+import { breakfast } from "../content/contentExport.js";
 
 const breakfastItems = [
   {
     id: 1,
     title: "2 Egg Classics and Scramblers",
     info: "All Egg Breakfasts Served with Two Eggs, Home Fries, and Toast OR Biscuits 'n' Gravy. (Substitute croissant or bagel +$1.50) (Gluten-free toast +$2.25)",
-    image: omelettesImg,
+    image: "",
     items: [
       { name: "Just Eggs (2 Eggs)", price: "11.99", description: "" },
       { name: "Applewood Smoked Bacon (4 Strips)", price: "15.99", description: "" },
@@ -20,20 +18,20 @@ const breakfastItems = [
       { name: "Carne Asada", price: "17.99", description: "" },
       {
         name: "Side Street Scrambler",
-        price: "14.99",
+        price: "17.99",
         description: "Chorizo, Spinach and Mushrooms",
       },
       {
         name: "Veggie Scrambler",
-        price: "14.99",
+        price: "15.99",
         description: "Mushrooms, Tomato, Bell Peppers, Onion, Avocado topped with Cheddar Cheese",
       },
       { name: "Chorizo Scrambler", price: "16.99", description: "" },
-      { name: "Minced Ham Scrambler", price: "15.99", description: "" },
-      { name: "Minced Hot Link Scrambler", price: "12.99", description: "" },
+      { name: "Minced Ham Scrambler", price: "16.99", description: "" },
+      { name: "Minced Hot Link Scrambler", price: "16.99", description: "" },
       {
         name: "Abc Scrambler",
-        price: "15.99",
+        price: "17.99",
         description: "with Tomato, Grilled Onions and American Cheese",
       },
     ],
@@ -42,11 +40,11 @@ const breakfastItems = [
     id: 2,
     title: "Eggs Benedict",
     info: "On an English Muffin, topped with Hollandaise, served with Home Fries",
-    image: omelettesImg,
+    image: breakfast.cbhBenny,
     items: [
       {
         name: "Traditional (Ham)",
-        price: "17.99",
+        price: "18.99",
         description: "On an English Muffin, topped with Hollandaise, served with Home Fries",
       },
       {
@@ -79,7 +77,7 @@ const breakfastItems = [
     id: 3,
     title: "Omelettes",
     info: "Made with Three Eggs, Served with Toast OR Biscuits ‘n‛ Gravy AND Home Fries (substitute croissant or bagel +$1.50), (Gluten-free toast +$2.25). Watching your cholesterol? All omelettes can be made with no yolks! (Egg Beaters +$3.00)",
-    image: omelettesImg,
+    image: breakfast.omelettes,
     items: [
       {
         name: "Side Street Special",
@@ -129,7 +127,7 @@ const breakfastItems = [
     id: 4,
     title: "South of the Border",
     info: "",
-    image: omelettesImg,
+    image: "",
     items: [
       {
         name: "Erik's Omelette",
@@ -155,7 +153,7 @@ const breakfastItems = [
     id: 5,
     title: "Fan Favorites",
     info: "",
-    image: omelettesImg,
+    image: "",
     items: [
       {
         name: "Breakfast Club Sandwich",
@@ -181,7 +179,7 @@ const breakfastItems = [
     id: 6,
     title: "Waffles",
     info: "Made From Scratch, Belgian Style, Lightly Dusted With Powdered Sugar and Cinnamon. Combos Served With 2 Eggs & Bacon or Sausage.",
-    image: wafflesImg,
+    image: breakfast.bananaNutWaffle,
     items: [
       { name: "Waffle (Plain)", price: "12.99", description: "" },
       { name: "Pecan Waffle", price: "13.99", description: "" },
@@ -204,7 +202,7 @@ const breakfastItems = [
     id: 7,
     title: "Pancakes",
     info: "",
-    image: wafflesImg,
+    image: "",
     items: [
       { name: "Buttermilk Pancakes (2 Large)", price: "11.99", description: "" },
       { name: "Blueberry Pancakes", price: "12.99", description: "with Whipped Cream" },
@@ -230,7 +228,7 @@ const breakfastItems = [
     id: 8,
     title: "Not So Hungry",
     info: "",
-    image: omelettesImg,
+    image: "",
     items: [
       { name: "Croissant", price: "5.99", description: "w/ Butter and Jelly" },
       { name: "Bagel & Cream Cheese", price: "5.99", description: "" },
@@ -253,7 +251,7 @@ const breakfastItems = [
     id: 9,
     title: "Side Orders",
     info: "",
-    image: omelettesImg,
+    image: "",
     items: [
       { name: "Applewood Smoked Bacon (4 Strips)", price: "7.99", description: "" },
       { name: "Turkey Sausage (4 Links)", price: "7.99", description: "" },
@@ -292,7 +290,7 @@ const lunchItems = [
     id: 1,
     title: "Sandwiches",
     info: "Most of our sandwiches are served on White, Wheat, Rye, Sourdough or 7-Grain Bread (Gluten-free bread +$2.25). Sub a Croissant or French Roll, or add Cheese +$1.50. All include your choice of French Fries, Cole Slaw, Potato Salad, Soup or Mixed Green Salad (Onion Rings or Sweet Potato Fries +$1.50). WE USE ABF FRESH CHICKEN BREASTS.",
-    image: omelettesImg,
+    image: "",
     items: [
       {
         name: "Side Street Club",
@@ -348,17 +346,17 @@ const lunchItems = [
         price: "14.99",
         description: "on Grilled Sourdough with Swiss and American Cheese",
       },
-      { name: "Tuna Avocado Swiss Melt", price: "14.99", description: "on Grilled Sourdough" },
+      { name: "Tuna Avocado Swiss Melt", price: "15.99", description: "on Grilled Sourdough" },
 
       // Hot
 
       {
         name: "Suzanne's Lunch",
-        price: "14.99",
+        price: "15.99",
         description:
           "Grilled French Garlic Roll stuffed with Turkey, Jack Cheese, Ortega Chilies and Tomato",
       },
-      { name: "Grilled Ham and Cheese", price: "10.99", description: "" },
+      { name: "Grilled Ham and Cheese", price: "12.99", description: "" },
       { name: "Grilled Cheese", price: "11.99", description: "" },
       {
         name: "Turkey Melt",
@@ -367,23 +365,23 @@ const lunchItems = [
       },
       {
         name: "California Melt",
-        price: "14.99",
+        price: "15.99",
         description: "Turkey, Avocado, Bacon and Jack Cheese on Grilled Sourdough",
       },
       { name: "Patty Melt", price: "14.99", description: "Beef Patty and Cheese" },
       {
         name: "Beefeater",
-        price: "12.99",
+        price: "14.99",
         description: "Roast Beef on Grilled Sourdough with Ortega Chilies and Jack Cheese",
       },
       {
         name: "French Dip",
-        price: "14.99",
+        price: "16.99",
         description: "Roast Beef and Swiss Cheese on French Roll served with Au Jus",
       },
       {
         name: "Tri-Tip Sandwich",
-        price: "15.99",
+        price: "16.99",
         description: "with Grilled Onions, Lettuce, Tomato, and Avocado on Ciabatta",
       },
       { name: "BBQ Tri-Tip", price: "16.99", description: "on a French Roll" },
@@ -403,7 +401,7 @@ const lunchItems = [
     id: 2,
     title: "Hamburgers",
     info: "All burgers are served with your choice of French Fries, Potato Salad, Cole Slaw, Soup, or Mixed Green Salad (Sub Onion Rings or Sweet Potato Fries +$1.00)",
-    image: omelettesImg,
+    image: "",
     items: [
       { name: "Burger", price: "12.99", description: "(with Cheese +$2.50)" },
       { name: "Ortega Jack Burger", price: "14.99", description: "" },
@@ -441,7 +439,7 @@ const lunchItems = [
     id: 3,
     title: "Soups and Salads",
     info: "Served with Garlic Toast and choice of dressing. (Sorry NO SOUP ON THE WEEKENDS)",
-    image: omelettesImg,
+    image: "",
     items: [
       { name: "Soup of the Day", price: "5.99/$6.99", description: "" },
       { name: "Soup and Garden Salad", price: "9.99", description: "" },
@@ -487,7 +485,7 @@ const lunchItems = [
     id: 4,
     title: "Sides",
     info: "",
-    image: omelettesImg,
+    image: "",
     items: [
       { name: "French Fries", price: "6.99", description: "" },
       { name: "Fresh Fruit", price: "7.99", description: "" },
@@ -506,17 +504,17 @@ const drinkItems = [
     id: 1,
     title: "Drinks",
     info: "",
-    image: omelettesImg,
+    image: "",
     items: [
       { name: "Coffee", price: "3.95", description: "" },
       { name: "Cold Brew Coffee", price: "5.25", description: "" },
       { name: "Hot Tea", price: "3.75", description: "" },
       { name: "Iced Tea", price: "3.75", description: "" },
-      { name: "Tropical Iced Tea", price: "3.00", description: "" },
+      { name: "Tropical Iced Tea", price: "3.75", description: "" },
       { name: "Soda (One Refill)", price: "3.00", description: "" },
-      { name: "Lemonade", price: "3.95", description: "" },
+      { name: "Lemonade", price: "3.75", description: "" },
       { name: "Milk", price: "3.75/4.25", description: "" },
-      { name: "Hot Chocolate", price: "4.25/5.25", description: "" },
+      { name: "Hot Chocolate", price: "4.95", description: "" },
       { name: "Chocolate Milk", price: "4.25/5.25", description: "" },
       { name: "Cranberry Juice", price: "4.25/5.25", description: "" },
       { name: "Grapefruit Juice", price: "4.25/5.25", description: "" },

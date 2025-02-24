@@ -31,8 +31,6 @@ const MenuPage = () => {
           </div>
 
           <p>
-            MAXIMUM OF 3 DIVIDED CHECKS PER TABLE.
-            <br />
             Kid's Menu Available
             <br />
             Take Out? Call (805) 499-9323

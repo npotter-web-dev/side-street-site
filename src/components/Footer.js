@@ -72,7 +72,7 @@ const Footer = () => {
           </div>
         </div>
         <label className="copyright">
-          © 2025 Side Street Cafe, Newbury Park. All righgts reserved. Website design by Nathan
+          © 2025 Side Street Cafe, Newbury Park. All rights reserved. Website design by Nathan
           Potter.
         </label>
       </div>

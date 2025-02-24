@@ -5,23 +5,23 @@ import "swiper/css/effect-fade";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { EffectFade, Pagination, Navigation, Autoplay } from "swiper/modules";
-import * as content from "../content/contentExport.js";
+import { breakfast } from "../content/contentExport.js";
 
 const slidesData = [
   {
     id: 1,
-    image: content.omelettes,
-    caption: "Omelette",
+    image: breakfast.bananaNutWaffle,
+    caption: "Banana Nut Waffle",
   },
   {
     id: 2,
-    image: content.veggies,
-    caption: "Veggies",
+    image: breakfast.cbhBenny,
+    caption: "Corned Beef Hash Benedict",
   },
   {
-    id: 3,
-    image: content.waffles,
-    caption: "Waffles",
+    id: 2,
+    image: breakfast.omelettes,
+    caption: "Omelettes",
   },
 ];
 
@@ -36,6 +36,7 @@ const MenuSwiper = () => {
         loop={true}
         grabCursor={true}
         centeredSlides={true}
+        overFlow="hidden"
         autoplay={{
           delay: 4500,
           disableOnInteraction: false,

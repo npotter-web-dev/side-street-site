@@ -5,18 +5,38 @@ import "swiper/css/effect-fade";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { EffectFade, Pagination, Navigation, Autoplay } from "swiper/modules";
-import * as content from "../content/contentExport.js";
+import { breakfast, specials } from "../content/contentExport.js";
 
 const slidesData = [
   {
     id: 1,
-    image: content.omelettes,
-    caption: "Omelette",
+    image: breakfast.bananaNutWaffle,
+    caption: "Banana Nut Waffle",
   },
   {
     id: 2,
-    image: content.waffles,
-    caption: "Veggies",
+    image: specials.mushroomSwiss,
+    caption: "Mushroom Swiss Burger",
+  },
+  {
+    id: 3,
+    image: specials.mannySandy,
+    caption: "Manny's Sandy",
+  },
+  {
+    id: 4,
+    image: breakfast.cbhBenny,
+    caption: "Corned Beef Hash Benedict",
+  },
+  {
+    id: 5,
+    image: specials.redVelvetWaffle,
+    caption: "Red Velvet Waffle",
+  },
+  {
+    id: 6,
+    image: specials.spicyChxSandy,
+    caption: "Spicy Chicken Sandwich",
   },
 ];
 
@@ -31,6 +51,7 @@ const HomeSwiper = () => {
         loop={true}
         grabCursor={true}
         centeredSlides={true}
+        overFlow="hidden"
         autoplay={{
           delay: 4500,
           disableOnInteraction: false,
