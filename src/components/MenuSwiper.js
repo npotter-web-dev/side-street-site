@@ -18,11 +18,6 @@ const slidesData = [
     image: breakfast.cbhBenny,
     caption: "Corned Beef Hash Benedict",
   },
-  {
-    id: 2,
-    image: breakfast.omelettes,
-    caption: "Omelettes",
-  },
 ];
 
 const MenuSwiper = () => {

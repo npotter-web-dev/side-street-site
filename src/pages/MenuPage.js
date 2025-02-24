@@ -24,18 +24,18 @@ const MenuPage = () => {
         </div>
 
         <div className="menu-top" ref={scrollTop}>
-          <div className="menu-nav">
-            <a onClick={() => scrollToElement(scrollBreakfast)}>Breakfast</a>
-            <a onClick={() => scrollToElement(scrollLunch)}>Lunch</a>
-            <a onClick={() => scrollToElement(scrollDrinks)}>Drinks</a>
-          </div>
-
           <p>
             Kid's Menu Available
             <br />
             Take Out? Call (805) 499-9323
           </p>
           <p className="tiny-script">(No Online Orders)</p>
+
+          <div className="menu-nav">
+            <a onClick={() => scrollToElement(scrollBreakfast)}>Breakfast</a>
+            <a onClick={() => scrollToElement(scrollLunch)}>Lunch</a>
+            <a onClick={() => scrollToElement(scrollDrinks)}>Drinks</a>
+          </div>
         </div>
 
         {/* BREAKFAST */}
