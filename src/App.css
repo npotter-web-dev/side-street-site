@@ -806,7 +806,7 @@ ul{
   max-height: 600px;
 }
 .subcategory-image img{
-  max-width: 90%;
+  object-fit: contain;
 }
 
 .subcategory-box{
@@ -964,21 +964,20 @@ ul{
     width: 20%;
   }
   .subcategory-container{
-    display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    max-width: 100%;
     margin: 0 auto;
   }
   
   .subcategory-image{
-    display: flex;
-    justify-content: center;
     align-items: center;
     margin: 20px auto;
-    width: 100%;
+    /* width: 90%; */
+    height: 60px;
   }
+
+  .subcategory-image img{
+  }
+
 
   .subcategory-box{
     width: 100%;

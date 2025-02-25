@@ -18,6 +18,16 @@ const slidesData = [
     image: breakfast.cbhBenny,
     caption: "Corned Beef Hash Benedict",
   },
+  {
+    id: 3,
+    image: breakfast.bananaNutWaffle,
+    caption: "Banana Nut Waffle",
+  },
+  {
+    id: 4,
+    image: breakfast.cbhBenny,
+    caption: "Corned Beef Hash Benedict",
+  },
 ];
 
 const MenuSwiper = () => {
