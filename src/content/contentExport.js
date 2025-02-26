@@ -9,6 +9,8 @@ import mannySandy from "../content/images/menu/manny-sandy.jpg";
 import redVelvetWaffle from "../content/images/menu/redvelvet-waffle.jpg";
 import mushroomSwiss from "../content/images/menu/mushroom-swiss.jpg";
 import spicyChxSandy from "../content/images/menu/spicychx-sandy.jpg";
+// Other
+import ownerPhoto from "../content/images/owner-photo.jpg";
 
 // Breakfast
 const breakfast = {
@@ -26,5 +28,9 @@ const specials = {
   mushroomSwiss,
   spicyChxSandy,
 };
+// Other
+const other = {
+  ownerPhoto,
+};
 
-export { breakfast, lunch, specials };
+export { breakfast, lunch, specials, other };

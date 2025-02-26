@@ -5,9 +5,14 @@ import "swiper/css/effect-fade";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { EffectFade, Pagination, Navigation, Autoplay } from "swiper/modules";
-import { breakfast, specials } from "../content/contentExport.js";
+import { breakfast, specials, other } from "../content/contentExport.js";
 
 const slidesData = [
+  {
+    id: 0,
+    image: other.ownerPhoto,
+    caption: "Banana Nut Waffle",
+  },
   {
     id: 1,
     image: breakfast.bananaNutWaffle,

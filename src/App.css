@@ -102,9 +102,9 @@ h1, h2 {
   background-position: 50% 0;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  width: 100%;
   display: flex;
   flex-direction: row;
+  width: 100%;
   min-height: 900px;
   z-index: 0;
 }
@@ -545,6 +545,8 @@ ul{
 .swiper-container{
   display: flex;
   overflow: hidden;
+  align-items: center;
+  justify-content: center;
 }
 .swiper-img{
   width: 100%;
@@ -573,31 +575,57 @@ ul{
 /*-----------------------------------HOME PAGE-------------------------------------------------*/
 
 .home-page{
-  display: flex;
+  /* display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   font-size: 1.3em;
   margin: 0 auto;
-  margin-top: 40px;
-  height: 100%;
+  max-height: 75%;
   width: 100%;
+  border: solid; */
+
+  width: 100%;
+  border: solid;
+
+  
+}
+
+
+.home-row{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  width: 100%;
+  margin: 40px auto;
+  backdrop-filter: blur(25px);
+  border: solid;
 }
 
 .home-gallery{
   width: 50%;
-  justify-content: center;
-  margin: 100px auto;
+  height: 100%;
+  margin: 0 auto;
+  border: solid;
+  overflow: hidden;
+  object-fit: contain;
 }
   .home-gallery .swiper-img{
-    height: auto;
+    border: solid;
+  }
+  .home-gallery img{
+    /* display: flex; */
+    /* object-fit: contain; */
   }
 
 .home-main{
+  display: flex;
+  flex-direction: column;
   width: 50%;
-  height: 100%;
+  height: 50%;
   padding: 40px;
-  /* margin-left: 50%; */
   justify-content: center;
   text-align: center;
   backdrop-filter: blur(25px);
@@ -658,6 +686,10 @@ ul{
 
 @media (max-width: 800px){
   .home-page{
+    flex-direction: column;
+  }
+
+  .home-row{
     flex-direction: column;
   }
     
@@ -800,11 +832,14 @@ ul{
 .subcategory-image{
   display: flex;
   justify-content: center;
-  margin: 0 auto;
-  margin-bottom: 20px;
   width: 90%;
   max-height: 600px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, .4), 0 2px 4px rgba(0, 0, 0, .1);
 }
+
 .subcategory-image img{
   object-fit: contain;
 }
@@ -969,15 +1004,13 @@ ul{
   }
   
   .subcategory-image{
+    position: relative;
     align-items: center;
     margin: 20px auto;
-    /* width: 90%; */
-    height: 60px;
   }
-
-  .subcategory-image img{
-  }
-
+    .subcategory-image img{
+      max-width: 90%;
+    }
 
   .subcategory-box{
     width: 100%;

@@ -48,8 +48,8 @@ const MenuPage = () => {
 
           {breakfastItems.map((category) => (
             <div key={category.id} className="subcategory-container">
-              <div className="subcategory-image">
-                <img src={category.image} load="lazy" />
+              <div className="image-container">
+                <img className="subcategory-image" src={category.image} load="lazy" />
               </div>
               <div className="subcategory-box">
                 <div className="subcategory-title">
