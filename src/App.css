@@ -575,62 +575,83 @@ ul{
 /*-----------------------------------HOME PAGE-------------------------------------------------*/
 
 .home-page{
-  /* display: flex;
-  flex-direction: row;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 1.3em;
-  margin: 0 auto;
-  max-height: 75%;
   width: 100%;
-  border: solid; */
-
-  width: 100%;
-  border: solid;
-
-  
 }
-
 
 .home-row{
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  height: 70vh;
+  object-fit: contain;
+  height: 100%;
   width: 100%;
+  max-height: 100%;
   margin: 40px auto;
   backdrop-filter: blur(25px);
-  border: solid;
 }
 
 .home-gallery{
-  width: 50%;
+  display: flex;
+  flex-direction: row;
   height: 100%;
+  max-width: 50%;
   margin: 0 auto;
-  border: solid;
   overflow: hidden;
   object-fit: contain;
 }
-  .home-gallery .swiper-img{
-    border: solid;
+
+.slick-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+  .arrow {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
   }
-  .home-gallery img{
-    /* display: flex; */
-    /* object-fit: contain; */
+    .slick-container:hover .arrow{
+      opacity: 1;
+      transition: opacity .3s ease-in-out
+    }
+    .slick-prev {
+      left: 10px !important;
+    }
+    .slick-next {
+      right: 10px !important;
+    }
+
+  .home-gallery img {
+    margin: 0 auto;
+    width: auto;     
+    height: 100%;  
+    max-width: 100%; 
+    max-height: 100vh;   
   }
 
 .home-main{
   display: flex;
   flex-direction: column;
-  width: 50%;
-  height: 50%;
-  padding: 40px;
   justify-content: center;
   text-align: center;
+  width: 50%;
+  height: 100%;
+  max-height: 100%;
+  margin: 0 auto;
+  padding: 40px;
   backdrop-filter: blur(25px);
 }
-
 .home-header{
   display: flex;
   flex-direction: column;
@@ -694,7 +715,9 @@ ul{
   }
     
   .home-gallery{
-    width: 95%;
+    width: auto;
+    max-width: 95%;
+    height: 50vh;
     margin-block: 50px;
   }
 
@@ -1129,6 +1152,8 @@ ul{
 
 
 .contact-page{
+  display: flex;
+  flex-direction: column;
   width: 100%;
   justify-content: center;
   align-items: center;

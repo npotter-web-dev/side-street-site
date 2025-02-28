@@ -11,7 +11,7 @@ const slidesData = [
   {
     id: 0,
     image: other.ownerPhoto,
-    caption: "Banana Nut Waffle",
+    caption: "Owner Photo",
   },
   {
     id: 1,
