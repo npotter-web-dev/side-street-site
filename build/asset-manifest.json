@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/side-street-site/static/css/main.33c0c897.css",
+    "main.css": "/side-street-site/static/css/main.fdbb0baf.css",
     "main.js": "/side-street-site/static/js/main.f99f017b.js",
     "static/media/wood-focus.jpg": "/side-street-site/static/media/wood-focus.ea79c8cc023e5862e421.jpg",
     "static/media/cafe-sign.png": "/side-street-site/static/media/cafe-sign.0a0b725a88edfa4638d5.png",
@@ -21,11 +21,11 @@
     "static/media/slick.ttf": "/side-street-site/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/side-street-site/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/side-street-site/index.html",
-    "main.33c0c897.css.map": "/side-street-site/static/css/main.33c0c897.css.map",
+    "main.fdbb0baf.css.map": "/side-street-site/static/css/main.fdbb0baf.css.map",
     "main.f99f017b.js.map": "/side-street-site/static/js/main.f99f017b.js.map"
   },
   "entrypoints": [
-    "static/css/main.33c0c897.css",
+    "static/css/main.fdbb0baf.css",
     "static/js/main.f99f017b.js"
   ]
 }
