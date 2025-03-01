@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { FontAwesomeIcon as Icon } from "@fortawesome/react-fontawesome";
 import "../utils/icons/fontawesome";
-import CopyEmail from "../utils/CopyEmail";
 import social from "../data/socialMedia";
 import logo from "../content/images/cafe-sign.png";
 
@@ -31,7 +30,7 @@ const Header = () => {
           <p>Newbury Park, CA</p>
         </div>
         <div className="header-logo">
-          <img className="site-logo" src={logo} alt="Side Street Cafe Logo" />
+          <img className="cafe-logo" src={logo} alt="Side Street Cafe Logo" />
           <h2 className="header-subtitle">Where the Locals Eat!</h2>
         </div>
 

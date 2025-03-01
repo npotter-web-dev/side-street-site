@@ -207,6 +207,8 @@ ul{
   margin: 0 auto;
   padding-block: 10px;
   line-height: 2;
+  background-image: linear-gradient(to left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .4) 5%, rgba(255, 255, 255, .4) 95%, rgba(255, 255, 255, 0) 100%);
+
 }
 
 .header-logo{
@@ -218,14 +220,14 @@ ul{
   /* width: 100%; */
 }
 
-.site-logo{
+.cafe-logo{
   display: flex;
   justify-content: center;
   margin: 0 auto;
   /* max-width: 400px; */
   max-height: 180px;
 }
-.site-logo img{
+.cafe-logo img{
   max-width: 33%;
 }
 
@@ -234,7 +236,7 @@ ul{
   font-family: "Vintage";
   font-size: 2rem;
   font-weight: 100;
-  line-height: normal;
+  line-height: 1;
   text-shadow: 0px 2px 2px rgba(0, 0, 0, 1);
 }
 
@@ -260,6 +262,7 @@ ul{
  }
   .group2{
     width: 100%;
+    line-height: 1;
     font-size: 1.3rem;
     margin: 0 auto;
   }
@@ -381,20 +384,23 @@ ul{
     flex-direction: column;
     justify-content: center;
     margin: 0 auto;
-    padding-top: 40px;
+    padding-top: 16px;
     height: 100%; 
   }
 
   .header-logo{
     position: relative;
-    margin: 0;
+    margin-bottom: 2em;
   }
 
-  .site-logo{
+  .cafe-logo{
     position: relative;
     max-width: 300px;
     height: 100%;
     margin: 0;
+  }
+  .header-subtitle{
+    line-height: .5;
   }
   
   .header-contact{
@@ -402,11 +408,14 @@ ul{
     text-align: center;
     justify-content: center;
     align-items: center;
-    margin-top: 1em;
   }
 
   .group1{
-    width: 100%;
+    visibility: hidden;
+    height: 0;
+  }
+  .group2{
+    line-height: .5;
   }
   
   .header-navigation{
@@ -538,40 +547,6 @@ ul{
   }
 }
 
-
-
-/*-----------------------------------SWIPER-------------------------------------------------*/
-
-.swiper-container{
-  display: flex;
-  overflow: hidden;
-  align-items: center;
-  justify-content: center;
-}
-.swiper-img{
-  width: 100%;
-  height: auto;
-}
-.swiper-slide:not(.swiper-slide-active) {
-  visibility: hidden; /* Completely hide inactive slides */
-}
-.swiper-pagination{
-  opacity: .3;
-}
-.swiper-container:hover .swiper-pagination{
-  opacity: 1;
-}
-.slider-arrow{
-  opacity: 0;
-}  
-  .swiper-container:hover .slider-arrow{
-    opacity: 1;
-    color: rgba(250, 250, 250, .3);
-    text-shadow: 0 0 2px rgba(0, 0, 0, .5);
-    transition: .2s ease-in-out;
-  }
-
-
 /*-----------------------------------HOME PAGE-------------------------------------------------*/
 
 .home-page{
@@ -583,6 +558,7 @@ ul{
 }
 
 .home-row{
+  position: absolute;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -599,7 +575,7 @@ ul{
   display: flex;
   flex-direction: row;
   height: 100%;
-  max-width: 50%;
+  width: 50%;
   margin: 0 auto;
   overflow: hidden;
   object-fit: contain;
@@ -616,7 +592,7 @@ ul{
   max-height: 100%;
 }
   .arrow {
-    display: flex !important;
+    display: flex;
     align-items: center;
     justify-content: center;
     opacity: 0;
@@ -626,12 +602,11 @@ ul{
       transition: opacity .3s ease-in-out
     }
     .slick-prev {
-      left: 10px !important;
+      left: 10px;
     }
     .slick-next {
-      right: 10px !important;
+      right: 10px;
     }
-
   .home-gallery img {
     margin: 0 auto;
     width: auto;     
@@ -691,13 +666,15 @@ ul{
   width: 90%;
   line-height: 2;
   margin: 0 auto;
-  font-family: "BrandinkLight";
+  font-size: 1.1em;
+  font-weight: 500;
 }
   .home-info .bold{
     font-family: "Brandink";
+    font-weight: 600;
   }
   .home-info p{
-    font-family: "BrandinkLight";
+    font-family: "Brandink";
   }
 
 .home-schedule{
@@ -712,6 +689,7 @@ ul{
 
   .home-row{
     flex-direction: column;
+    position: relative;
   }
     
   .home-gallery{
@@ -751,6 +729,38 @@ ul{
     line-height: 2;
   }
 }
+
+
+/*-----------------------------------SWIPER-------------------------------------------------*/
+
+.swiper-container{
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+}
+.swiper-img{
+  width: 100%;
+  height: auto;
+}
+.swiper-slide:not(.swiper-slide-active) {
+  visibility: hidden; /* Completely hide inactive slides */
+}
+.swiper-pagination{
+  opacity: .3;
+}
+.swiper-container:hover .swiper-pagination{
+  opacity: 1;
+}
+.slider-arrow{
+  opacity: 0;
+}  
+  .swiper-container:hover .slider-arrow{
+    opacity: 1;
+    color: rgba(250, 250, 250, .3);
+    text-shadow: 0 0 2px rgba(0, 0, 0, .5);
+    transition: .2s ease-in-out;
+  }
 
 
 /*-------------------------------------MENU PAGE------------------------*/
@@ -1114,13 +1124,31 @@ ul{
 /*-----------------------------------SPECIALS PAGE-------------------------------------------------*/
 
 .specials-page{
+  display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   /* background-image: linear-gradient(to left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .4) 5%, rgba(255, 255, 255, .4) 95%, rgba(255, 255, 255, 0) 100%); */
+}
 
+.specials-gallery{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  max-height: 100%;
+  width: 75%;
+  margin: 0 auto;
+  overflow: hidden;
+  object-fit: contain;
+}
+.specials-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .specials-page h1{
   font-family: "Vintage";

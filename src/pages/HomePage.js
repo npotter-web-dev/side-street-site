@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import HomeSwiper from "../components/HomeSwiper";
 import SlowScroll from "../components/SlowScroll";
 import SlickCarousel from "../components/SlickCarousel";
 

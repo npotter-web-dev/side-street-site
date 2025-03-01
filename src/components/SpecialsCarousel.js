@@ -2,20 +2,10 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import React from "react";
 import Slider from "react-slick";
-import { breakfast, specials, other } from "../content/contentExport.js";
+import { specials } from "../content/contentExport.js";
 import { useState, useEffect } from "react";
 
 const slideData = [
-  {
-    id: 0,
-    image: other.ownerPhoto,
-    caption: "Owner Photo",
-  },
-  {
-    id: 1,
-    image: breakfast.bananaNutWaffle,
-    caption: "Banana Nut Waffle",
-  },
   {
     id: 2,
     image: specials.mushroomSwiss,
@@ -25,11 +15,6 @@ const slideData = [
     id: 3,
     image: specials.mannySandy,
     caption: "Manny's Sandy",
-  },
-  {
-    id: 4,
-    image: breakfast.cbhBenny,
-    caption: "Corned Beef Hash Benedict",
   },
   {
     id: 5,
@@ -69,7 +54,7 @@ const PrevArrow = (props) => {
   );
 };
 
-const SlickCarousel = () => {
+const SpecialsCarousel = () => {
   const [loaded, setLoaded] = useState(false);
 
   // Preload images before showing the slider
@@ -101,16 +86,6 @@ const SlickCarousel = () => {
     nextArrow: <NextArrow />,
   };
   return (
-    // <div className="slick-container">
-    //   <Slider {...settings}>
-    //     {slideData.map((slide) => (
-    //       <div key={slide.id}>
-    //         <img src={slide.image} className="slick-img" alt={slide.caption} lazyLoad="false" />
-    //       </div>
-    //     ))}
-    //   </Slider>
-    // </div>
-
     <div className="slick-container">
       {!loaded ? (
         <div className="loading-placeholder">Loading...</div>
@@ -127,4 +102,4 @@ const SlickCarousel = () => {
   );
 };
 
-export default SlickCarousel;
+export default SpecialsCarousel;
