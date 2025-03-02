@@ -556,7 +556,7 @@ ul{
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 109vh;
+  height: 100vh;
 }
 
 .home-row{
@@ -692,13 +692,11 @@ ul{
   .home-row{
     flex-direction: column;
     position: relative;
+    margin-block: 10px;
   }
     
   .home-gallery{
-    width: auto;
-    max-width: 95%;
-    height: 50vh;
-    margin-block: 50px;
+    height: auto;
   }
 
   .home-main{
