@@ -20,13 +20,13 @@ const slidesData = [
   },
   {
     id: 3,
-    image: breakfast.bananaNutWaffle,
-    caption: "Banana Nut Waffle",
+    image: breakfast.pancakes,
+    caption: "Corned Beef Hash Benedict",
   },
   {
     id: 4,
-    image: breakfast.cbhBenny,
-    caption: "Corned Beef Hash Benedict",
+    image: breakfast.chxSteak,
+    caption: "Banana Nut Waffle",
   },
 ];
 

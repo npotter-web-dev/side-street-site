@@ -28,12 +28,12 @@ const slideData = [
   },
   {
     id: 4,
-    image: breakfast.cbhBenny,
+    image: breakfast.chxSteak,
     caption: "Corned Beef Hash Benedict",
   },
   {
     id: 5,
-    image: specials.redVelvetWaffle,
+    image: breakfast.pancakes,
     caption: "Red Velvet Waffle",
   },
   {

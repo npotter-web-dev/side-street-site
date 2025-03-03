@@ -1,8 +1,8 @@
 // Breakfast
-import omelettes from "../content/images/menu/omelettes.jpg";
 import cbhBenny from "../content/images/menu/cbh-benny.jpg";
 import bananaNutWaffle from "../content/images/menu/banananut-waffle.jpg";
-import waffles from "../content/images/menu/waffles.jpg";
+import pancakes from "../content/images/menu/pancakes.jpg";
+import chxSteak from "../content/images/menu/chx-steak.jpg";
 // Lunch
 // Specials
 import mannySandy from "../content/images/menu/manny-sandy.jpg";
@@ -14,10 +14,10 @@ import ownerPhoto from "../content/images/owner-photo.jpg";
 
 // Breakfast
 const breakfast = {
-  omelettes,
   cbhBenny,
   bananaNutWaffle,
-  waffles,
+  pancakes,
+  chxSteak,
 };
 // Lunch
 const lunch = {};

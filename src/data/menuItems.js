@@ -1,11 +1,11 @@
-import { breakfast } from "../content/contentExport.js";
+import { breakfast, lunch } from "../content/contentExport.js";
 
 const breakfastItems = [
   {
     id: 1,
     title: "2 Egg Classics and Scramblers",
     info: "All Egg Breakfasts Served with Two Eggs, Home Fries, and Toast OR Biscuits 'n' Gravy. (Substitute croissant or bagel +$1.50) (Gluten-free toast +$2.25)",
-    image: "",
+    image: breakfast.chxSteak,
     items: [
       { name: "Just Eggs (2 Eggs)", price: "11.99", description: "" },
       { name: "Applewood Smoked Bacon (4 Strips)", price: "15.99", description: "" },
@@ -202,7 +202,7 @@ const breakfastItems = [
     id: 7,
     title: "Pancakes",
     info: "",
-    image: "",
+    image: breakfast.pancakes,
     items: [
       { name: "Buttermilk Pancakes (2 Large)", price: "11.99", description: "" },
       { name: "Blueberry Pancakes", price: "12.99", description: "with Whipped Cream" },

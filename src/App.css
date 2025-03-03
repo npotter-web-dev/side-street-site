@@ -332,11 +332,13 @@ ul{
   .mobile-menu-button{
     position: absolute;
     display:flex;
-    margin-inline: 0;
-    margin-block: 2px;
+    flex-direction: row;
+    margin: 0px 2px;
+    padding: 4px;
+    padding-top: 0px;
     text-align: right;
     right: 0;
-    padding-right: 5px;
+    z-index: 100;
   }
     .mobile-menu-button p{
       font-family: "Brandink";
@@ -687,16 +689,23 @@ ul{
 @media (max-width: 800px){
   .home-page{
     flex-direction: column;
+    height: 100%;
   }
 
   .home-row{
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: relative;
-    margin-block: 10px;
+    margin-block: 100px;
+  }
+  .home-gallery{
+    width: 75%;
   }
     
-  .home-gallery{
-    height: auto;
+  .home-gallery img{
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .4), 0 2px 4px rgba(0, 0, 0, .1);
   }
 
   .home-main{
