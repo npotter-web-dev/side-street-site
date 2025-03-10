@@ -475,7 +475,7 @@ const lunchItems = [
           "Leaf Spinach topped with Crumbled Egg, Bacon, Mushrooms, Tomato. Served with Hot Bacon Dressing",
       },
       {
-        name: "Shelly's Chinese Chicken Salad",
+        name: "Chinese Chicken Salad",
         price: "17.99",
         description: "Shredded Chicken Breast served over Tossed Greens, Chopped",
       },
@@ -490,11 +490,9 @@ const lunchItems = [
       { name: "French Fries", price: "6.99", description: "" },
       { name: "Fresh Fruit", price: "7.99", description: "" },
       { name: "Homemade Potato Salad", price: "4.99", description: "" },
-      { name: "Mashed Potatoes", price: "5.99", description: "" },
       { name: "Coleslaw", price: "4.99", description: "" },
       { name: "Onion Rings", price: "8.99", description: "" },
       { name: "Cup of Soup", price: "6.99", description: "" },
-      { name: "Cup of Chili", price: "6.99", description: "" },
     ],
   },
 ];
