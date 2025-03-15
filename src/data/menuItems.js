@@ -76,7 +76,7 @@ const breakfastItems = [
   {
     id: 3,
     title: "Omelettes",
-    info: "Made with Three Eggs, Served with Toast OR Biscuits ‘n‛ Gravy AND Home Fries (substitute croissant or bagel +$1.50), (Gluten-free toast +$2.25). Watching your cholesterol? All omelettes can be made with no yolks! (Egg Beaters +$3.00)",
+    info: "Made with Three Eggs, Served with Toast OR Biscuits ‘n‛ Gravy AND Home Fries (substitute croissant or bagel +$2.50), (Gluten-free toast +$2.25). Watching your cholesterol? All omelettes can be made with no yolks! (Egg Beaters +$3.00)",
     image: "",
     items: [
       {
@@ -289,7 +289,7 @@ const lunchItems = [
   {
     id: 1,
     title: "Sandwiches",
-    info: "Most of our sandwiches are served on White, Wheat, Rye, Sourdough or 7-Grain Bread (Gluten-free bread +$2.25). Sub a Croissant or French Roll, or add Cheese +$1.50. All include your choice of French Fries, Cole Slaw, Potato Salad, Soup or Mixed Green Salad (Onion Rings or Sweet Potato Fries +$1.50). WE USE ABF FRESH CHICKEN BREASTS.",
+    info: "Most of our sandwiches are served on White, Wheat, Rye, Sourdough or 7-Grain Bread (Gluten-free bread +$2.95). Sub a Croissant or French Roll, or add Cheese +$2.50. All include your choice of French Fries, Cole Slaw, Potato Salad, Soup or Mixed Green Salad (Onion Rings or Sweet Potato Fries +$2.50). WE USE ABF FRESH CHICKEN BREASTS.",
     image: "",
     items: [
       {
@@ -400,7 +400,7 @@ const lunchItems = [
   {
     id: 2,
     title: "Hamburgers",
-    info: "All burgers are served with your choice of French Fries, Potato Salad, Cole Slaw, Soup, or Mixed Green Salad (Sub Onion Rings or Sweet Potato Fries +$1.00)",
+    info: "All burgers are served with your choice of French Fries, Potato Salad, Cole Slaw, Soup, or Mixed Green Salad (Sub Onion Rings or Sweet Potato Fries +$2.50)",
     image: "",
     items: [
       { name: "Burger", price: "12.99", description: "(with Cheese +$2.50)" },
@@ -441,7 +441,7 @@ const lunchItems = [
     info: "Served with Garlic Toast and choice of dressing. (Sorry NO SOUP ON THE WEEKENDS)",
     image: "",
     items: [
-      { name: "Soup of the Day", price: "5.99/$6.99", description: "" },
+      { name: "Soup of the Day", price: "5.99/$7.99", description: "" },
       { name: "Soup and Garden Salad", price: "9.99", description: "" },
       {
         name: "Bowl Soup or Salad and 1/2 Sandwich",

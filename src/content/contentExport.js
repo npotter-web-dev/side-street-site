@@ -10,7 +10,7 @@ import redVelvetWaffle from "../content/images/menu/redvelvet-waffle.jpg";
 import mushroomSwiss from "../content/images/menu/mushroom-swiss.jpg";
 import spicyChxSandy from "../content/images/menu/spicychx-sandy.jpg";
 // Other
-import ownerPhoto from "../content/images/owner-photo.jpg";
+import ownerPhoto from "../content/images/owner-photo.png";
 
 // Breakfast
 const breakfast = {
