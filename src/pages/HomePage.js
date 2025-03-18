@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import SlowScroll from "../components/SlowScroll";
 import SlickCarousel from "../components/SlickCarousel";
+import HomeSwiper from "../components/HomeSwiper";
 
 const HomePage = () => {
   // SlowScroll();
@@ -10,8 +11,8 @@ const HomePage = () => {
       <div className="home-page">
         <div className="home-row">
           <div className="home-gallery">
-            {/* <HomeSwiper /> */}
-            <SlickCarousel />
+            <HomeSwiper />
+            {/* <SlickCarousel /> */}
           </div>
           <div className="home-main">
             <div className="main-box">

@@ -577,46 +577,18 @@ ul{
 
 .home-gallery{
   display: flex;
-  flex-direction: row;
-  height: 100%;
-  width: 50%;
-  margin: 0 auto;
-  overflow: hidden;
-  object-fit: contain;
-}
-
-.slick-container{
-  display: flex;
-  flex-direction: column;
   justify-content: center;
-  margin: 0 auto;
-  width: auto;
-  height: auto;
-  max-width: 100%;
-  max-height: 100%;
+  width: 50%;
+  max-height: 550px;
+  margin: 40px auto;
 }
-  .arrow {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0;
+  .home-gallery .swiper-container{
+    border-radius: 5px;
+    max-width: auto;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .4), 0 2px 4px rgba(0, 0, 0, .1);
   }
-    .slick-container:hover .arrow{
-      opacity: 1;
-      transition: opacity .3s ease-in-out
-    }
-    .slick-prev {
-      left: 10px;
-    }
-    .slick-next {
-      right: 10px;
-    }
-  .home-gallery img {
-    margin: 0 auto;
-    width: auto;     
-    height: 100%;  
-    max-width: 100%; 
-    max-height: 100vh;   
+  .home-gallery .swiper-img{
+    display: flex;
   }
 
 .home-main{
@@ -699,14 +671,14 @@ ul{
     position: relative;
     margin-block: 100px;
   }
+
   .home-gallery{
-    width: 75%;
-  }
-    
-  .home-gallery img{
-    border-radius: 5px;
-    /* box-shadow: 0 2px 8px rgba(0, 0, 0, .4), 0 2px 4px rgba(0, 0, 0, .1); */
-  }
+    width: 90%;
+  }   
+    .home-gallery .swiper-container{
+      border-radius: 5px;
+      box-shadow: none;
+    }
 
   .home-main{
     width: 100%;
@@ -780,8 +752,7 @@ ul{
   margin: 0 auto;
   padding: 10px;
   background-image: linear-gradient(to left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .4) 5%, rgba(255, 255, 255, .4) 95%, rgba(255, 255, 255, 0) 100%);
-  /* background-color: rgba(255, 255, 255, .2); */
-  backdrop-filter: blur(2px);
+  backdrop-filter: none;
 }
   .menu-page p{
     font-family: "Brandink";
@@ -889,7 +860,7 @@ ul{
 .subcategory-box{
   width: 90%;
   padding-block: 60px;
-  background-color: rgba(255, 255, 255, .3);
+  background-color: rgba(255, 255, 255, .4);
   backdrop-filter: blur(0px);
   box-shadow: 0 2px 8px rgba(0, 0, 0, .4), 0 2px 4px rgba(0, 0, 0, .1);
   /* background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .4) 5%, rgba(255, 255, 255, .4) 95%, rgba(255, 255, 255, 0) 100%); */ 
