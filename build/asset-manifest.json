@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.66a6145a.css",
+    "main.css": "/static/css/main.92848cbc.css",
     "main.js": "/static/js/main.9d6a5307.js",
     "static/media/wood-focus.jpg": "/static/media/wood-focus.ea79c8cc023e5862e421.jpg",
     "static/media/cafe-sign.png": "/static/media/cafe-sign.0a0b725a88edfa4638d5.png",
@@ -21,11 +21,11 @@
     "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
-    "main.66a6145a.css.map": "/static/css/main.66a6145a.css.map",
+    "main.92848cbc.css.map": "/static/css/main.92848cbc.css.map",
     "main.9d6a5307.js.map": "/static/js/main.9d6a5307.js.map"
   },
   "entrypoints": [
-    "static/css/main.66a6145a.css",
+    "static/css/main.92848cbc.css",
     "static/js/main.9d6a5307.js"
   ]
 }
