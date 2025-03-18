@@ -4,7 +4,7 @@ const breakfastItems = [
   {
     id: 1,
     title: "2 Egg Classics and Scramblers",
-    info: "All Egg Breakfasts Served with Two Eggs, Home Fries, and Toast OR Biscuits 'n' Gravy. (Substitute croissant or bagel +$1.50) (Gluten-free toast +$2.25)",
+    info: "All Egg Breakfasts Served with Two Eggs, Home Fries, and Toast OR Biscuits 'n' Gravy. (Substitute croissant or bagel +$1.50) (Gluten-free toast +$2.95)",
     image: breakfast.chxSteak,
     items: [
       { name: "Just Eggs (2 Eggs)", price: "11.99", description: "" },
@@ -76,7 +76,7 @@ const breakfastItems = [
   {
     id: 3,
     title: "Omelettes",
-    info: "Made with Three Eggs, Served with Toast OR Biscuits ‘n‛ Gravy AND Home Fries (substitute croissant or bagel +$2.50), (Gluten-free toast +$2.25). Watching your cholesterol? All omelettes can be made with no yolks! (Egg Beaters +$3.00)",
+    info: "Made with Three Eggs, Served with Toast OR Biscuits ‘n‛ Gravy AND Home Fries (substitute croissant or bagel +$2.50), (Gluten-free toast +$2.95). Watching your cholesterol? All omelettes can be made with no yolks! (Egg Beaters +$3.00)",
     image: "",
     items: [
       {
@@ -226,24 +226,25 @@ const breakfastItems = [
   },
   {
     id: 8,
-    title: "Not So Hungry",
+    title: "Not So Hungry?",
     info: "",
     image: "",
     items: [
-      { name: "Croissant", price: "5.99", description: "w/ Butter and Jelly" },
-      { name: "Bagel & Cream Cheese", price: "5.99", description: "" },
       {
-        name: "Oatmeal",
-        price: "9.99",
-        description: "Served w/ Raisins, Brown Sugar, Milk and choice of toast",
+        name: "Hot Oatmeal",
+        price: "8.99",
+        description: "Served with raisins, brown sugar, milk and choice of toast",
       },
-      { name: "Fruit Bowl", price: "7.99", description: "" },
-      { name: "Greek Yogurt & Fruit", price: "10.99", description: "" },
-      { name: "Greek Yogurt & Fruit & Granola", price: "11.99", description: "" },
       {
-        name: "Sunrise Parfait",
-        price: "13.99",
-        description: "Low-fat Yogurt with Fresh Fruit and Granola",
+        name: "Biscuits 'n' Gravy",
+        price: "8.99",
+        description: "Two open biscuits topped with gravy. With Home Fries - $11.99",
+      },
+      { name: "Mixed Fresh Fruit", price: "6.99/$8.99", description: "" },
+      {
+        name: "Fresh Fruit Platter",
+        price: "14.99",
+        description: "Served with cottage cheese and granola",
       },
     ],
   },
@@ -265,7 +266,7 @@ const breakfastItems = [
       { name: "Biscuit", price: "3.25", description: "" },
       { name: "Croissant", price: "4.25", description: "" },
       { name: "Bagel", price: "4.25", description: "" },
-      { name: "Side One Open Biscuit Topped W Gravy", price: "6.99", description: "" },
+      { name: "Side One Open Biscuit Topped With Gravy", price: "5.99", description: "" },
       { name: "Gravy", price: "3.00", description: "" },
       { name: "Whipped Cream", price: "1.50", description: "" },
       { name: "Hollandaise Sauce", price: "3.25", description: "" },
