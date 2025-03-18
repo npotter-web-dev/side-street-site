@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.d0edf13e.css",
-    "main.js": "/static/js/main.5b3a8c57.js",
+    "main.css": "/static/css/main.66a6145a.css",
+    "main.js": "/static/js/main.9d6a5307.js",
     "static/media/wood-focus.jpg": "/static/media/wood-focus.ea79c8cc023e5862e421.jpg",
     "static/media/cafe-sign.png": "/static/media/cafe-sign.0a0b725a88edfa4638d5.png",
     "static/media/owner-photo.png": "/static/media/owner-photo.b3c288977ba88e371191.png",
@@ -21,11 +21,11 @@
     "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
-    "main.d0edf13e.css.map": "/static/css/main.d0edf13e.css.map",
-    "main.5b3a8c57.js.map": "/static/js/main.5b3a8c57.js.map"
+    "main.66a6145a.css.map": "/static/css/main.66a6145a.css.map",
+    "main.9d6a5307.js.map": "/static/js/main.9d6a5307.js.map"
   },
   "entrypoints": [
-    "static/css/main.d0edf13e.css",
-    "static/js/main.5b3a8c57.js"
+    "static/css/main.66a6145a.css",
+    "static/js/main.9d6a5307.js"
   ]
 }
