@@ -540,39 +540,39 @@ const specialItems = [
     info: "",
     image: "",
     items: [
-      { name: "Red Velvet Waffle", price: "12.99/ combo $17.99", description: "" },
       {
-        name: "Florentine Benedict",
-        price: "19.99",
-        description: "English muffin, spinach, tomato, ham, poached eggs, and hollandaise.",
+        name: "Spanish Fritatta",
+        price: "12.99/ combo $17.99",
+        description:
+          "Chopped chorizo patty, ortega chiles, red onion, tomato, spinach. Topped with cilantro and cotija cheese.",
       },
       {
-        name: "Manny's Sandy",
+        name: "Shelby's Waffle",
+        price: "19.99",
+        description:
+          "Chocolate chip waffle topped with strawberries, whipped cream, powdered sugar, and cinnamon.",
+      },
+      {
+        name: "Spicy Link Omlette",
+        price: "18.99",
+        description: "Chopped hot link, grilled onion, topped with pepperjack and avocado.",
+      },
+      {
+        name: "Guacamole Serrano Burger",
+        price: "17.99",
+        description: "Burger topped with pepperjack, guacamole, grilled serranos, and bacon.",
+      },
+      {
+        name: "Spicy Chicken Wrap",
         price: "16.99",
         description:
-          "Fried eggs, pepper jack, guacamole, tomato, and bacon. Served on a burger bun.",
+          "Spicy fried chicken, lettuce, tomato, avocado, cheddar cheese, and chipotle aoli. All wrapped up in a flour tortilla.",
       },
       {
-        name: "Potato Skin Benedict",
-        price: "20.99",
-        description: "Chopped bacon, green onion, poached eggs, and hollandaise.",
-      },
-      {
-        name: "Spicy Chicken Sandwich",
-        price: "14.99",
-        description:
-          "Spicy fried chicken, lettuce, tomato, avocado, cheddar cheese, and chipotle mayo.",
-      },
-      {
-        name: "Erik's Salad",
+        name: "Strawberry Chicken Salad",
         price: "15.99",
         description:
-          "Chopped crispy chicken, tomato, avocado, cheddar cheese, and your choice of dressing.",
-      },
-      {
-        name: "Mushroom Swiss Burger",
-        price: "13.99",
-        description: "Grilled mushrooms, swiss cheese, grilled onion, lettuce, and tomato.",
+          "Grilled chicken, chopped strawberries, avocado, and feta cheese. Served with a dressing of your choice.",
       },
     ],
   },

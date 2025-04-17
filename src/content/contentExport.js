@@ -5,10 +5,6 @@ import pancakes from "../content/images/menu/pancakes.jpg";
 import chxSteak from "../content/images/menu/chx-steak.jpg";
 // Lunch
 // Specials
-import mannySandy from "../content/images/menu/manny-sandy.jpg";
-import redVelvetWaffle from "../content/images/menu/redvelvet-waffle.jpg";
-import mushroomSwiss from "../content/images/menu/mushroom-swiss.jpg";
-import spicyChxSandy from "../content/images/menu/spicychx-sandy.jpg";
 // Other
 import ownerPhoto from "../content/images/owner-photo.png";
 
@@ -22,12 +18,7 @@ const breakfast = {
 // Lunch
 const lunch = {};
 // Specials
-const specials = {
-  mannySandy,
-  redVelvetWaffle,
-  mushroomSwiss,
-  spicyChxSandy,
-};
+const specials = {};
 // Other
 const other = {
   ownerPhoto,

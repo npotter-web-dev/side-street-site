@@ -19,29 +19,9 @@ const slidesData = [
     caption: "Banana Nut Waffle",
   },
   {
-    id: 2,
-    image: specials.mushroomSwiss,
-    caption: "Mushroom Swiss Burger",
-  },
-  {
-    id: 3,
-    image: specials.mannySandy,
-    caption: "Manny's Sandy",
-  },
-  {
     id: 4,
     image: breakfast.chxSteak,
     caption: "Corned Beef Hash Benedict",
-  },
-  {
-    id: 5,
-    image: breakfast.pancakes,
-    caption: "Red Velvet Waffle",
-  },
-  {
-    id: 6,
-    image: specials.spicyChxSandy,
-    caption: "Spicy Chicken Sandwich",
   },
 ];
 
