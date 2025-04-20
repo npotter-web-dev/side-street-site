@@ -5,6 +5,7 @@ import pancakes from "../content/images/menu/pancakes.jpg";
 import chxSteak from "../content/images/menu/chx-steak.jpg";
 // Lunch
 // Specials
+import special1 from "../content/images/menu/spicylink-omlette.jpg";
 // Other
 import ownerPhoto from "../content/images/owner-photo.png";
 
@@ -18,7 +19,7 @@ const breakfast = {
 // Lunch
 const lunch = {};
 // Specials
-const specials = {};
+const specials = { special1 };
 // Other
 const other = {
   ownerPhoto,

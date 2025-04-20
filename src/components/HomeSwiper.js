@@ -19,9 +19,19 @@ const slidesData = [
     caption: "Banana Nut Waffle",
   },
   {
-    id: 4,
+    id: 2,
     image: breakfast.chxSteak,
     caption: "Corned Beef Hash Benedict",
+  },
+  {
+    id: 3,
+    image: specials.special1,
+    caption: "Spicy Link Omlette",
+  },
+  {
+    id: 4,
+    image: breakfast.pancakes,
+    caption: "Blueberry Pancakes",
   },
 ];
 

@@ -1,14 +1,15 @@
 {
   "files": {
     "main.css": "/static/css/main.92848cbc.css",
-    "main.js": "/static/js/main.9552cb36.js",
+    "main.js": "/static/js/main.273ffed0.js",
     "static/media/wood-focus.jpg": "/static/media/wood-focus.ea79c8cc023e5862e421.jpg",
     "static/media/cafe-sign.png": "/static/media/cafe-sign.0a0b725a88edfa4638d5.png",
     "static/media/owner-photo.png": "/static/media/owner-photo.b3c288977ba88e371191.png",
     "static/media/chx-steak.jpg": "/static/media/chx-steak.8adf9d91c38e1c3d1e67.jpg",
     "static/media/pancakes.jpg": "/static/media/pancakes.7056525b0dcd068aceba.jpg",
     "static/media/banananut-waffle.jpg": "/static/media/banananut-waffle.9d83e90d79dc217c9d82.jpg",
-    "static/media/cbh-benny.jpg": "/static/media/cbh-benny.1c04ec20634b0e2a7e50.jpg",
+    "static/media/spicylink-omlette.jpg": "/static/media/spicylink-omlette.88937b29a3791e6634af.jpg",
+    "static/media/cbh-benny.jpg": "/static/media/cbh-benny.b60474b5b10181e619a6.jpg",
     "static/media/Goldsmith-Vintage.otf": "/static/media/Goldsmith-Vintage.6e570f7f7ca066b39504.otf",
     "static/media/BrandinkSans-Light.otf": "/static/media/BrandinkSans-Light.df21b83c1ecf2068ccd7.otf",
     "static/media/BrandinkSans.otf": "/static/media/BrandinkSans.5bed742da5f32e7f1466.otf",
@@ -18,10 +19,10 @@
     "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "main.92848cbc.css.map": "/static/css/main.92848cbc.css.map",
-    "main.9552cb36.js.map": "/static/js/main.9552cb36.js.map"
+    "main.273ffed0.js.map": "/static/js/main.273ffed0.js.map"
   },
   "entrypoints": [
     "static/css/main.92848cbc.css",
-    "static/js/main.9552cb36.js"
+    "static/js/main.273ffed0.js"
   ]
 }
