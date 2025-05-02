@@ -308,17 +308,6 @@ const lunchItems = [
         description: "Turkey, Ham, Bacon, Swiss and American Cheese, Lettuce, Tomato and Mayo",
       },
       {
-        name: "Triple Decker Club",
-        price: "15.99",
-        description: "Turkey, Ham, Bacon, Lettuce, Tomato and Mayo on Toasted Wheat Bread",
-      },
-      {
-        name: "Grilled Chicken Club",
-        price: "15.99",
-        description:
-          "Chicken Breast, Bacon, Tomato, Avocado, Lettuce and Swiss Cheese on Grilled Wheat",
-      },
-      {
         name: "Reuben",
         price: "14.99",
         description: "Corned Beef or Turkey on Grilled Rye with Swiss Cheese and Sauerkraut",
@@ -388,11 +377,6 @@ const lunchItems = [
         name: "French Dip",
         price: "16.99",
         description: "Roast Beef and Swiss Cheese on French Roll served with Au Jus",
-      },
-      {
-        name: "Tri-Tip Sandwich",
-        price: "16.99",
-        description: "with Grilled Onions, Lettuce, Tomato, and Avocado on Ciabatta",
       },
       { name: "BBQ Tri-Tip", price: "16.99", description: "on a French Roll" },
       {
@@ -488,6 +472,18 @@ const lunchItems = [
         name: "Chinese Chicken Salad",
         price: "17.99",
         description: "Shredded Chicken Breast served over Tossed Greens, Chopped",
+      },
+      {
+        name: "Taco Salad",
+        price: "17.99",
+        description:
+          "Refried Beans topped with Lettuce, Beef or Chicken, Cheddar Cheese, Tomatoes, Guacamole, Sour Cream and Salsa in a crispy Tortilla Shell",
+      },
+      {
+        name: "Cobb Salad",
+        price: "17.99",
+        description:
+          "Salad Greens topped with Chicken, Bacon, Egg, Green Onions, Diced Tomatoes, Avocado and Bleu Cheese Crumbles",
       },
     ],
   },

@@ -65,7 +65,7 @@ const HomeSwiper = () => {
       >
         {slidesData.map((slide) => (
           <SwiperSlide key={slide.id}>
-            <img src={slide.image} className="swiper-img" />
+            <img src={slide.image} className="swiper-img" alt="Side Street Cafe" />
           </SwiperSlide>
         ))}
         <div className="slider-controller">

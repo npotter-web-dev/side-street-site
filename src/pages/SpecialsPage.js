@@ -1,14 +1,10 @@
 import React from "react";
 import { specialItems } from "../data/menuItems";
-import SpecialsCarousel from "../components/SpecialsCarousel.js";
 
 const SpecialsPage = () => {
   return (
     <div className="page-container">
       <div className="specials-page">
-        {/* <div className="specials-gallery">
-          <SpecialsCarousel />
-        </div> */}
         <div className="specials-container">
           <h1>Specials</h1>
           {specialItems.map((category) => (
