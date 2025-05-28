@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import { FontAwesomeIcon as Icon } from "@fortawesome/react-fontawesome";
 import "../utils/icons/fontawesome";
 import social from "../data/socialMedia";
-// import logo from "../content/images/cafe-sign.png";
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);

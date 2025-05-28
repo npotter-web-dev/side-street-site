@@ -41,7 +41,7 @@ body{
   --sage: rgba(122, 186, 108, 0.4);
   --shadow: 0 0 14px 8px rgba(0, 0, 0, 1);
 
-  --background1: url('./content/images/wood-focus.jpg');
+  --background1: url('content/images/wood-focus.jpg');
 }
 
 .container{
