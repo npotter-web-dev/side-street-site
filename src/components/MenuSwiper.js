@@ -28,6 +28,11 @@ const slidesData = [
     image: breakfast.chxSteak,
     caption: "Banana Nut Waffle",
   },
+  {
+    id: 5,
+    image: breakfast.omlette,
+    caption: "Omelette",
+  },
 ];
 
 const MenuSwiper = () => {

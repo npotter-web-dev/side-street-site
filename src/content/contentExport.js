@@ -4,6 +4,7 @@ const breakfast = {
   bananaNutWaffle: "/images/menu/banananut-waffle.jpg",
   pancakes: "/images/menu/pancakes.jpg",
   chxSteak: "/images/menu/chx-steak.jpg",
+  omlette: "/images/menu/omlette.jpg",
 };
 
 // Specials

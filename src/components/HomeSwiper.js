@@ -33,6 +33,11 @@ const slidesData = [
     image: breakfast.pancakes,
     caption: "Blueberry Pancakes",
   },
+  {
+    id: 5,
+    image: breakfast.omlette,
+    caption: "Omelette",
+  },
 ];
 
 const HomeSwiper = () => {

@@ -77,7 +77,7 @@ const breakfastItems = [
     id: 3,
     title: "Omelettes",
     info: "Made with Three Eggs, Served with Toast OR Biscuits ‘n‛ Gravy AND Home Fries (substitute croissant or bagel +$2.50), (Gluten-free toast +$2.95). Watching your cholesterol? All omelettes can be made with no yolks! (Egg Beaters +$3.00)",
-    image: "",
+    image: breakfast.omlette,
     items: [
       {
         name: "Side Street Special",
