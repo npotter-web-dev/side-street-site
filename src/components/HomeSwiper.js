@@ -5,7 +5,7 @@ import "swiper/css/effect-fade";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { EffectFade, Pagination, Navigation, Autoplay } from "swiper/modules";
-import { breakfast, specials, other } from "../content/contentExport.js";
+import { breakfast, other } from "../content/contentExport.js";
 
 const slidesData = [
   {
@@ -25,18 +25,13 @@ const slidesData = [
   },
   {
     id: 3,
-    image: specials.special1,
-    caption: "Spicy Link Omlette",
+    image: breakfast.omlette,
+    caption: "Omlette",
   },
   {
     id: 4,
     image: breakfast.pancakes,
     caption: "Blueberry Pancakes",
-  },
-  {
-    id: 5,
-    image: breakfast.omlette,
-    caption: "Omelette",
   },
 ];
 
