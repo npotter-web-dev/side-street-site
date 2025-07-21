@@ -72,7 +72,7 @@ const Footer = () => {
           </div>
         </div>
         <p className="copyright">
-          © 2025 Side Street Cafe, Newbury Park, CA. All rights reserved. Website crafted by{" "}
+          © 2025 Side Street Cafe, Newbury Park, CA. Website developed by{" "}
           <a href="https://npotter.com/" target="_blank" rel="noopener noreferrer">
             npotter.com
           </a>
