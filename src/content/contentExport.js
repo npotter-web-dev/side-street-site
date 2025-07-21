@@ -8,13 +8,11 @@ const breakfast = {
 };
 
 // Specials
-const specials = {
-  special1: "/images/menu/spicylink-omlette.jpg",
-};
+const specials = {};
 
 // Other
 const other = {
   ownerPhoto: "/images/owner-photo.png",
 };
 
-export { breakfast, specials, other };
+export { breakfast, other };
