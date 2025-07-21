@@ -1,31 +1,17 @@
 {
   "files": {
-<<<<<<< HEAD
     "main.css": "/static/css/main.5aae0af4.css",
-    "main.js": "/static/js/main.583fdd64.js",
-=======
-    "main.css": "/static/css/main.011408a2.css",
-    "main.js": "/static/js/main.451f6269.js",
->>>>>>> a1180ea79f6aadafe7fac35426d5f34013304a3e
+    "main.js": "/static/js/main.29266e36.js",
     "static/media/wood-focus.jpg": "/static/media/wood-focus.6c4f326a12baa3f57a58.jpg",
     "static/media/Goldsmith-Vintage.otf": "/static/media/Goldsmith-Vintage.6e570f7f7ca066b39504.otf",
     "static/media/BrandinkSans-Light.otf": "/static/media/BrandinkSans-Light.df21b83c1ecf2068ccd7.otf",
     "static/media/BrandinkSans.otf": "/static/media/BrandinkSans.5bed742da5f32e7f1466.otf",
     "index.html": "/index.html",
-<<<<<<< HEAD
     "main.5aae0af4.css.map": "/static/css/main.5aae0af4.css.map",
-    "main.583fdd64.js.map": "/static/js/main.583fdd64.js.map"
+    "main.29266e36.js.map": "/static/js/main.29266e36.js.map"
   },
   "entrypoints": [
     "static/css/main.5aae0af4.css",
-    "static/js/main.583fdd64.js"
-=======
-    "main.011408a2.css.map": "/static/css/main.011408a2.css.map",
-    "main.451f6269.js.map": "/static/js/main.451f6269.js.map"
-  },
-  "entrypoints": [
-    "static/css/main.011408a2.css",
-    "static/js/main.451f6269.js"
->>>>>>> a1180ea79f6aadafe7fac35426d5f34013304a3e
+    "static/js/main.29266e36.js"
   ]
 }
