@@ -12,7 +12,7 @@ const breakfastItems = [
       { name: "Ham (6 oz.)", price: "15.99", description: "" },
       { name: "Patty Sausage (2 Patties)", price: "15.99", description: "" },
       { name: "Turkey Sausage Links (4 Links)", price: "15.99", description: "" },
-      { name: "Cajun Hot Links", price: "15.99", description: "" },
+      { name: "Cajun Hot Links", price: "14.99", description: "" },
       { name: "Hamburger Patty (8oz.)", price: "13.99", description: "" },
       { name: "Chicken Fried Steak", price: "16.99", description: "" },
       { name: "Carne Asada", price: "17.99", description: "" },
@@ -52,7 +52,7 @@ const breakfastItems = [
         price: "19.99",
         description: "Tomato, Sautéed Mushrooms, Spinach and Avocado",
       },
-      { name: "Club", price: "19.99", description: "Turkey, Bacon and Tomato" },
+      { name: "Club", price: "20.99", description: "Turkey, Bacon and Tomato" },
       { name: "Turkey Avocado", price: "19.99", description: "" },
       { name: "Crab Cake", price: "20.99", description: "(Add Avocado +$2.95)" },
       {
@@ -68,7 +68,7 @@ const breakfastItems = [
       { name: "Chorizo Benedict", price: "19.99", description: "" },
       {
         name: "Biker Benedict",
-        price: "19.99",
+        price: "18.99",
         description: "Poached Eggs, Sausage Pattie on top of Biscuit Covered in Gravy",
       },
     ],
@@ -91,7 +91,7 @@ const breakfastItems = [
       },
       {
         name: "Cobb",
-        price: "17.99",
+        price: "18.99",
         description: "Chicken, Bacon, Green Onions, topped with Avocado, Tomato and Bleu Cheese",
       },
       {
@@ -157,19 +157,19 @@ const breakfastItems = [
     items: [
       {
         name: "Breakfast Club Sandwich",
-        price: "13.99",
+        price: "16.99",
         description:
           "Scrambled Eggs with Bacon and Cheddar Cheese on a large English Muffin. Served with Home Fries.",
       },
       {
         name: "Corned Beef Hash",
-        price: "15.99",
+        price: "18.99",
         description:
           "Homemade! With Sautéed Mushrooms, Onions Parsley, Sliced Tomatoes and 2 Eggs Any Style. Choice of Toast or Biscuits ‘n‛ Gravy.",
       },
       {
         name: "The Whiplash Sandwich",
-        price: "14.99",
+        price: "17.99",
         description:
           "Fried Eggs with Bacon, Sausage and Cheddar Cheese on a choice of bread. Served with Home Fries.",
       },
@@ -209,7 +209,7 @@ const breakfastItems = [
       { name: "Gluten Free Pancakes", price: "13.99", description: "" },
       { name: "Pancake Combo", price: "15.99", description: "" },
       { name: "Blueberry Pancake Combo", price: "16.99", description: "" },
-      { name: "Strawberry Pancake Combo", price: "17.99", description: "" },
+      { name: "Strawberry Pancake Combo", price: "16.99", description: "" },
       { name: "Banana Nut Pancake Combo", price: "16.99", description: "" },
       { name: "7-Grain Pancake Combo", price: "15.99", description: "" },
       { name: "Chocolate Chip Pancake Combo", price: "16.99", description: "" },
@@ -263,34 +263,34 @@ const breakfastItems = [
     info: "",
     image: "",
     items: [
-      { name: "Applewood Smoked Bacon (4 Strips)", price: "7.99", description: "" },
-      { name: "Turkey Sausage (4 Links)", price: "7.99", description: "" },
-      { name: "Sausage Patty (2 Patties)", price: "7.99", description: "" },
-      { name: "Ham", price: "8.99", description: "" },
+      { name: "Applewood Smoked Bacon (4 Strips)", price: "7.50", description: "" },
+      { name: "Turkey Sausage (4 Links)", price: "7.50", description: "" },
+      { name: "Sausage Patty (2 Patties)", price: "7.50", description: "" },
+      { name: "Ham", price: "7.99", description: "" },
       { name: "1 Egg", price: "3.75", description: "" },
       { name: "Tortilla", price: "2.00", description: "" },
-      { name: "Toast", price: "2.95", description: "" },
+      { name: "Toast", price: "2.50", description: "" },
       { name: "Garlic Toast", price: "2.50", description: "" },
-      { name: "English Muffin", price: "2.75", description: "" },
+      { name: "English Muffin", price: "2.50", description: "" },
       { name: "Biscuit", price: "3.25", description: "" },
-      { name: "Croissant", price: "4.25", description: "" },
-      { name: "Bagel", price: "4.25", description: "" },
+      { name: "Croissant", price: "3.99", description: "" },
+      { name: "Bagel", price: "3.99", description: "" },
       { name: "Side One Open Biscuit Topped With Gravy", price: "5.99", description: "" },
       { name: "Gravy", price: "3.00", description: "" },
-      { name: "Whipped Cream", price: "1.50", description: "" },
+      { name: "Whipped Cream", price: "1.00", description: "" },
       { name: "Hollandaise Sauce", price: "3.25", description: "" },
-      { name: "Cream Cheese", price: "1.50", description: "" },
+      { name: "Cream Cheese", price: "1.25", description: "" },
       { name: "Cottage Cheese", price: "3.25", description: "" },
-      { name: "Sour Cream", price: "1.50", description: "" },
+      { name: "Sour Cream", price: "1.25", description: "" },
       { name: "1/2 Avocado or Guacamole", price: "2.95", description: "" },
-      { name: "Potato Salad or Cole Slaw", price: "4.25", description: "" },
-      { name: "Onion Rings", price: "8.99", description: "" },
-      { name: "Home Fries", price: "3.50", description: "" },
+      { name: "Potato Salad or Cole Slaw", price: "3.99", description: "" },
+      { name: "Onion Rings", price: "7.99", description: "" },
+      { name: "Home Fries", price: "3.95", description: "" },
       { name: "French Fries", price: "5.99", description: "" },
-      { name: "Sweet Potato Fries", price: "8.99", description: "" },
+      { name: "Sweet Potato Fries", price: "7.99", description: "" },
       { name: "Serrano Chilies", price: "1.95", description: "" },
-      { name: "Side of Corned Beef Hash", price: "9.99", description: "" },
-      { name: "Side of Chicken Breast", price: "6.99", description: "" },
+      { name: "Side of Corned Beef Hash", price: "8.99", description: "" },
+      { name: "Side of Chicken Breast", price: "8.99", description: "" },
     ],
   },
 ];
@@ -334,21 +334,10 @@ const lunchItems = [
           "Choice of Turkey, Chicken Salad, Tuna Salad, Roast Beef with Swiss Cheese, Avocado, Sprouts, Lettuce and Tomatoes Rolled in Whole Wheat Wrap with Brown Mustard and Mayo",
       },
       // Fish
-      {
-        name: "Albacore Tuna Sandwich",
-        price: "14.99",
-        description: "with Lettuce, Tomato, Avocado, and Swiss on Grilled Sourdough",
-      },
       { name: "Tuna Salad Sandwich", price: "12.99", description: "" },
-      {
-        name: "Tuna Melt",
-        price: "14.99",
-        description: "on Grilled Sourdough with Swiss and American Cheese",
-      },
       { name: "Tuna Avocado Swiss Melt", price: "15.99", description: "on Grilled Sourdough" },
 
       // Hot
-
       {
         name: "Suzanne's Lunch",
         price: "15.99",
@@ -357,11 +346,6 @@ const lunchItems = [
       },
       { name: "Grilled Ham and Cheese", price: "12.99", description: "" },
       { name: "Grilled Cheese", price: "11.99", description: "" },
-      {
-        name: "Turkey Melt",
-        price: "15.99",
-        description: "Turkey, Bacon, Swiss and Avocado on Grilled Sourdough",
-      },
       {
         name: "California Melt",
         price: "15.99",
@@ -397,7 +381,7 @@ const lunchItems = [
     info: "All burgers are served with your choice of French Fries, Potato Salad, Cole Slaw, Soup, or Mixed Green Salad (Sub Onion Rings or Sweet Potato Fries +$2.50)",
     image: "",
     items: [
-      { name: "Burger", price: "12.99", description: "(with Cheese +$2.50)" },
+      { name: "Burger", price: "12.99", description: "(with Cheese +$2.00)" },
       { name: "Ortega Jack Burger", price: "14.99", description: "" },
       { name: "Cheddar Avocado Burger", price: "15.99", description: "" },
       {
@@ -439,7 +423,7 @@ const lunchItems = [
       { name: "Soup and Garden Salad", price: "9.99", description: "" },
       {
         name: "Bowl Soup or Salad and 1/2 Sandwich",
-        price: "10.99",
+        price: "9.99",
         description: "(Choice of Ham, Turkey, Tuna, Roast Beef or Chicken Salad)",
       },
       { name: "Side Salad", price: "4.99", description: "(Accompanied with Meal - $2.50)" },
@@ -493,12 +477,12 @@ const lunchItems = [
     info: "",
     image: "",
     items: [
-      { name: "French Fries", price: "6.99", description: "" },
-      { name: "Fresh Fruit", price: "7.99", description: "" },
-      { name: "Homemade Potato Salad", price: "4.99", description: "" },
-      { name: "Coleslaw", price: "4.99", description: "" },
-      { name: "Onion Rings", price: "8.99", description: "" },
-      { name: "Cup of Soup", price: "6.99", description: "" },
+      { name: "French Fries", price: "5.99", description: "" },
+      { name: "Fresh Fruit", price: "6.99", description: "" },
+      { name: "Homemade Potato Salad", price: "3.99", description: "" },
+      { name: "Coleslaw", price: "3.99", description: "" },
+      { name: "Onion Rings", price: "7.99", description: "" },
+      { name: "Cup of Soup", price: "5.99", description: "" },
     ],
   },
 ];
@@ -515,9 +499,9 @@ const drinkItems = [
       { name: "Hot Tea", price: "3.75", description: "" },
       { name: "Iced Tea", price: "3.75", description: "" },
       { name: "Tropical Iced Tea", price: "3.75", description: "" },
-      { name: "Soda (One Refill)", price: "3.00", description: "" },
+      { name: "Soda (One Refill)", price: "3.75", description: "" },
       { name: "Lemonade", price: "3.75", description: "" },
-      { name: "Milk", price: "3.75/4.25", description: "" },
+      { name: "Milk", price: "5.25/6.25", description: "" },
       { name: "Hot Chocolate", price: "4.95", description: "" },
       { name: "Chocolate Milk", price: "4.25/5.25", description: "" },
       { name: "Cranberry Juice", price: "4.25/5.25", description: "" },
