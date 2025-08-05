@@ -554,11 +554,9 @@ ul{
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 100vh;
 }
 
 .home-row{
-  position: absolute;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -1351,3 +1349,139 @@ ul{
       transform: scale(500%);
     }
   }
+
+
+
+/*-------------------------------------DREW PAGE and HERO SECTION (homepage)------------------------*/
+
+.drew-row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  object-fit: contain;
+  height: 100%;
+  width: 100%;
+  max-height: 100%;
+  margin: 40px auto;
+  padding-inline: 10%;
+  padding-block: 20px;
+  backdrop-filter: blur(25px);
+  border-top: rgba(255, 255, 255, .2) solid 20px;
+  border-bottom: rgba(255, 255, 255, .2) solid 20px;
+}
+.drew-left, .drew-right{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 35%;
+}
+.drew-left img{
+  height: 400px;
+}
+.drew-photo{
+}
+.drew-photo img{
+  height: 500px;
+  margin: 0 auto;
+}
+
+.drew-page{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.drew-header{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+}
+.drew-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding-block: 20px;
+}
+
+.drew-gallery{
+  display: flex;
+  justify-content: center;
+  width: 60%;
+  height: max-content;
+  margin: 40px auto;
+}
+  .drew-gallery .swiper-container{
+    border-radius: 5px;
+    max-width: auto;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .4), 0 2px 4px rgba(0, 0, 0, .1);
+  }
+  .drew-gallery .swiper-img{
+    display: flex;
+  }
+
+
+.drew-gallery img{
+  height: 600px;
+  width: auto;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.drew-header {
+  text-align: center;
+  padding: 2rem 1rem 1rem;
+  backdrop-filter: blur(25px);
+}
+
+.drew-header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  color: #444;
+}
+
+.drew-header h2 {
+  margin-top: 0.5rem;
+  font-size: 1.5rem;
+  color: #777;
+}
+
+.drew-info {
+  padding: 2rem 2rem;
+  font-size: 1.125rem;
+  line-height: 1.6;
+  backdrop-filter: blur(25px);
+  color: #555;
+}
+
+.support-links {
+  text-align: center;
+  padding: 2rem 1rem;
+  backdrop-filter: blur(25px);
+}
+
+.support-links a {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: #444;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+
+.support-links a:hover {
+  background: #666;
+}

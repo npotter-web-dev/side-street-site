@@ -1,0 +1,32 @@
+const drew = {
+  photo1: "/images/drewAlbum/drew-photo1.jpg",
+  photo2: "/images/drewAlbum/drew-photo2.jpg",
+  photo3: "/images/drewAlbum/drew-photo3.jpg",
+  photo4: "/images/drewAlbum/drew-photo4.jpg",
+  photo5: "/images/drewAlbum/drew-photo5.jpg",
+  photo6: "/images/drewAlbum/drew-photo6.jpg",
+  photo7: "/images/drewAlbum/drew-photo7.jpg",
+  photo8: "/images/drewAlbum/drew-photo8.jpg",
+  photo9: "/images/drewAlbum/drew-photo9.jpg",
+  photo10: "/images/drewAlbum/drew-photo10.jpg",
+  photo11: "/images/drewAlbum/drew-photo11.jpg",
+  photo12: "/images/drewAlbum/drew-photo12.jpg",
+  photo13: "/images/drewAlbum/drew-photo13.jpg",
+  photo14: "/images/drewAlbum/drew-photo14.jpg",
+  photo15: "/images/drewAlbum/drew-photo15.jpg",
+  photo16: "/images/drewAlbum/drew-photo16.jpg",
+  photo17: "/images/drewAlbum/drew-photo17.jpg",
+  photo18: "/images/drewAlbum/drew-photo18.jpg",
+  photo19: "/images/drewAlbum/drew-photo19.jpg",
+  photo20: "/images/drewAlbum/drew-photo20.jpg",
+  photo21: "/images/drewAlbum/drew-photo21.jpg",
+  photo22: "/images/drewAlbum/drew-photo22.jpg",
+  photo23: "/images/drewAlbum/drew-photo23.jpg",
+  photo24: "/images/drewAlbum/drew-photo24.jpg",
+  photo25: "/images/drewAlbum/drew-photo25.jpg",
+  photo26: "/images/drewAlbum/drew-photo26.jpg",
+
+  memoryLogo: "/images/drewAlbum/InMemory.png",
+};
+
+export { drew };

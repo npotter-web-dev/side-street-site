@@ -1,6 +1,9 @@
 import React, { useEffect } from "react";
 import SlowScroll from "../components/SlowScroll";
 import HomeSwiper from "../components/HomeSwiper";
+import DrewSwiper from "../components/DrewSwiper";
+import { Link } from "react-router-dom";
+import { drew, photo1 } from "../content/drewExport.js";
 
 const HomePage = () => {
   // SlowScroll();
@@ -35,6 +38,19 @@ const HomePage = () => {
                   <p className="bold">Join us!</p>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+        <div className="drew-row">
+          <div className="drew-left">
+            <img src={drew.memoryLogo}></img>
+            <Link to="/drew" className="button1">
+              Learn About Him
+            </Link>
+          </div>
+          <div className="drew-right">
+            <div className="drew-photo">
+              <img src={drew.photo1}></img>
             </div>
           </div>
         </div>

@@ -5,6 +5,7 @@ import MenuPage from "./pages/MenuPage";
 import SpecialsPage from "./pages/SpecialsPage";
 import ReviewsPage from "./pages/ReviewsPage";
 import ContactPage from "./pages/ContactPage";
+import DrewPage from "./pages/DrewPage";
 import Footer from "./components/Footer";
 import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import React, { useEffect, useState } from "react";
@@ -52,6 +53,7 @@ function App() {
               <Route path="/reviews" element={<ReviewsPage />} />
               <Route path="/specials" element={<SpecialsPage />} />
               <Route path="/contact" element={<ContactPage />} />
+              <Route path="/drew" element={<DrewPage />} />
             </Routes>
             <Footer />
           </div>
