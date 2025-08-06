@@ -3,7 +3,7 @@ import SlowScroll from "../components/SlowScroll";
 import HomeSwiper from "../components/HomeSwiper";
 import DrewSwiper from "../components/DrewSwiper";
 import { Link } from "react-router-dom";
-import { drew, photo1 } from "../content/drewExport.js";
+import { drew } from "../content/drewExport.js";
 
 const HomePage = () => {
   // SlowScroll();
@@ -44,7 +44,7 @@ const HomePage = () => {
         <div className="drew-row">
           <div className="drew-left">
             <img src={drew.memoryLogo}></img>
-            <Link to="/drew" className="button1">
+            <Link to="/drew" className="drew-button">
               Learn About Him
             </Link>
           </div>

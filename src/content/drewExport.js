@@ -25,6 +25,7 @@ const drew = {
   photo24: "/images/drewAlbum/drew-photo24.jpg",
   photo25: "/images/drewAlbum/drew-photo25.jpg",
   photo26: "/images/drewAlbum/drew-photo26.jpg",
+  photo27: "/images/drewAlbum/drew-photo27.jpg",
 
   memoryLogo: "/images/drewAlbum/InMemory.png",
 };
