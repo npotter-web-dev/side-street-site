@@ -10,6 +10,7 @@ import Footer from "./components/Footer";
 import { HashRouter as Router, Route, Routes } from "react-router-dom";
 import React, { useEffect, useState } from "react";
 import FadeLoader from "react-spinners/FadeLoader";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   // Check if app is loading for the Loading Spinner
@@ -47,6 +48,7 @@ function App() {
         ) : (
           <div className="app">
             <Header />
+            <ScrollToTop />
             <Routes>
               <Route path="/" exact element={<HomePage />} />
               <Route path="/menu" element={<MenuPage />} />

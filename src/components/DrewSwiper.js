@@ -43,7 +43,7 @@ const DrewSwiper = () => {
         modules={[EffectFade, Pagination, Navigation, Autoplay]}
         effect={"fade"}
         fadeEffect={{ crossFade: true }}
-        speed={500}
+        speed={1500}
         slidesPerView={1}
         spaceBetween={10}
         loop={true}

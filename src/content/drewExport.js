@@ -26,6 +26,16 @@ const drew = {
   photo25: "/images/drewAlbum/drew-photo25.jpg",
   photo26: "/images/drewAlbum/drew-photo26.jpg",
   photo27: "/images/drewAlbum/drew-photo27.jpg",
+  photo28: "/images/drewAlbum/drew-photo28.jpg",
+  photo29: "/images/drewAlbum/drew-photo29.jpg",
+  photo30: "/images/drewAlbum/drew-photo30.jpg",
+  photo31: "/images/drewAlbum/drew-photo31.jpg",
+  photo32: "/images/drewAlbum/drew-photo32.jpg",
+  photo33: "/images/drewAlbum/drew-photo33.jpg",
+  photo34: "/images/drewAlbum/drew-photo34.jpg",
+  photo35: "/images/drewAlbum/drew-photo35.jpg",
+  photo36: "/images/drewAlbum/drew-photo36.jpg",
+  photo37: "/images/drewAlbum/drew-photo37.jpg",
 
   memoryLogo: "/images/drewAlbum/InMemory.png",
 };
