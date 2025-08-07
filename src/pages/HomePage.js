@@ -45,7 +45,7 @@ const HomePage = () => {
           <div className="drew-left">
             <img src={drew.memoryLogo}></img>
             <Link to="/drew" className="drew-button">
-              Learn About Him
+              Learn More
             </Link>
           </div>
           <div className="drew-right">
