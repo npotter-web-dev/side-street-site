@@ -15,6 +15,7 @@ const DrewPage = () => {
         <div className="drew-content">
           <div className="drew-header">
             <h1>Andrew Canepa</h1>
+            <h2>September 9, 1991 - July 28, 2025</h2>
             <h2>Forever in Our Hearts.</h2>
           </div>
           <div className="drew-tribute">
